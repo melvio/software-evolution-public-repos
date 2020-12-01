@@ -1,0 +1,440 @@
+[
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionDayOfYear.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionMonth.java",
+      "/src/smallsql/database/ExpressionFunctionDayOfYear.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/SSStatement.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSPreparedStatement.java",
+      "/src/smallsql/database/SSStatement.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/LongList.java",
+    "clone_sisters": [
+      "/src/smallsql/database/DataSources.java",
+      "/src/smallsql/database/ForeignKeys.java",
+      "/src/smallsql/database/LongList.java",
+      "/src/smallsql/database/Strings.java",
+      "/src/smallsql/database/Expressions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/BasicTestCase.java",
+    "clone_sisters": [
+      "/src/smallsql/database/MemoryStream.java",
+      "/src/smallsql/junit/BasicTestCase.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/SSDatabaseMetaData.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSDatabaseMetaData.java",
+      "/src/smallsql/junit/TestDBMetaData.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionMonth.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionMonth.java",
+      "/src/smallsql/database/ExpressionFunctionDayOfYear.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Columns.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescriptions.java",
+      "/src/smallsql/database/ForeignKeys.java",
+      "/src/smallsql/database/Strings.java",
+      "/src/smallsql/database/Columns.java",
+      "/src/smallsql/database/Expressions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestExceptions.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestJoins.java",
+      "/src/smallsql/junit/TestExceptions.java",
+      "/src/smallsql/junit/TestFunctions.java",
+      "/src/smallsql/junit/TestOperatoren.java",
+      "/src/smallsql/junit/TestDataTypes.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/DataSources.java",
+    "clone_sisters": [
+      "/src/smallsql/database/DataSources.java",
+      "/src/smallsql/database/LongList.java",
+      "/src/smallsql/database/Expressions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Money.java",
+    "clone_sisters": [
+      "/src/smallsql/database/MutableNumeric.java",
+      "/src/smallsql/database/MemoryStream.java",
+      "/src/smallsql/database/LongTreeList.java",
+      "/src/smallsql/database/StoreImpl.java",
+      "/src/smallsql/database/Money.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionYear.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionMinute.java",
+      "/src/smallsql/database/ExpressionFunctionDayOfMonth.java",
+      "/src/smallsql/database/ExpressionFunctionHour.java",
+      "/src/smallsql/database/ExpressionFunctionYear.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/StoreImpl.java",
+    "clone_sisters": [
+      "/src/smallsql/database/MutableNumeric.java",
+      "/src/smallsql/database/MemoryStream.java",
+      "/src/smallsql/database/LongTreeList.java",
+      "/src/smallsql/database/StoreImpl.java",
+      "/src/smallsql/database/Money.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/CommandSelect.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSPreparedStatement.java",
+      "/src/smallsql/database/CommandSelect.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Table.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescription.java",
+      "/src/smallsql/database/View.java",
+      "/src/smallsql/database/Table.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestJoins.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestJoins.java",
+      "/src/smallsql/junit/TestExceptions.java",
+      "/src/smallsql/junit/TestFunctions.java",
+      "/src/smallsql/junit/TestOperatoren.java",
+      "/src/smallsql/junit/TestDataTypes.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Identity.java",
+    "clone_sisters": [
+      "/src/smallsql/database/Utils.java",
+      "/src/smallsql/database/Identity.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/FileIndexNode.java",
+    "clone_sisters": [
+      "/src/smallsql/database/View.java",
+      "/src/smallsql/database/FileIndexNode.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ForeignKeys.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescriptions.java",
+      "/src/smallsql/database/ForeignKeys.java",
+      "/src/smallsql/database/LongList.java",
+      "/src/smallsql/database/Strings.java",
+      "/src/smallsql/database/Columns.java",
+      "/src/smallsql/database/Expressions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/BenchTest.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/BenchTest.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Expressions.java",
+    "clone_sisters": [
+      "/src/smallsql/database/DataSources.java",
+      "/src/smallsql/database/IndexDescriptions.java",
+      "/src/smallsql/database/ForeignKeys.java",
+      "/src/smallsql/database/LongList.java",
+      "/src/smallsql/database/Strings.java",
+      "/src/smallsql/database/Columns.java",
+      "/src/smallsql/database/Expressions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/SSPreparedStatement.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSPreparedStatement.java",
+      "/src/smallsql/database/SSStatement.java",
+      "/src/smallsql/database/CommandSelect.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionTimestampAdd.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionTimestampAdd.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/SQLParser.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SQLParser.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/DateTime.java",
+    "clone_sisters": [
+      "/src/smallsql/database/DateTime.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunction.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunction.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/IndexDescription.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescription.java",
+      "/src/smallsql/database/TableView.java",
+      "/src/smallsql/database/View.java",
+      "/src/smallsql/database/Table.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestOrderBy.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestOrderBy.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionHour.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionMinute.java",
+      "/src/smallsql/database/ExpressionFunctionDayOfMonth.java",
+      "/src/smallsql/database/ExpressionFunctionHour.java",
+      "/src/smallsql/database/ExpressionFunctionYear.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/SSConnection.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSConnection.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionArithmetic.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionArithmetic.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestTransactions.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestTransactions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/StorePageMap.java",
+    "clone_sisters": [
+      "/src/smallsql/database/StorePageMap.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestOperatoren.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestJoins.java",
+      "/src/smallsql/junit/TestExceptions.java",
+      "/src/smallsql/junit/TestFunctions.java",
+      "/src/smallsql/junit/TestOperatoren.java",
+      "/src/smallsql/junit/TestDataTypes.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestDataTypes.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestJoins.java",
+      "/src/smallsql/junit/TestExceptions.java",
+      "/src/smallsql/junit/TestFunctions.java",
+      "/src/smallsql/junit/TestOperatoren.java",
+      "/src/smallsql/junit/TestDataTypes.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Utils.java",
+    "clone_sisters": [
+      "/src/smallsql/database/Utils.java",
+      "/src/smallsql/database/Identity.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestResultSet.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestStatement.java",
+      "/src/smallsql/junit/TestResultSet.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestStatement.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestStatement.java",
+      "/src/smallsql/junit/TestResultSet.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/MutableNumeric.java",
+    "clone_sisters": [
+      "/src/smallsql/database/MutableNumeric.java",
+      "/src/smallsql/database/MemoryStream.java",
+      "/src/smallsql/database/LongTreeList.java",
+      "/src/smallsql/database/StoreImpl.java",
+      "/src/smallsql/database/Money.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionDayOfMonth.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionMinute.java",
+      "/src/smallsql/database/ExpressionFunctionDayOfMonth.java",
+      "/src/smallsql/database/ExpressionFunctionHour.java",
+      "/src/smallsql/database/ExpressionFunctionYear.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/SSCallableStatement.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSResultSet.java",
+      "/src/smallsql/database/SSCallableStatement.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/IndexDescriptions.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescriptions.java",
+      "/src/smallsql/database/ForeignKeys.java",
+      "/src/smallsql/database/Strings.java",
+      "/src/smallsql/database/Columns.java",
+      "/src/smallsql/database/Expressions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/View.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescription.java",
+      "/src/smallsql/database/View.java",
+      "/src/smallsql/database/Table.java",
+      "/src/smallsql/database/FileIndexNode.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/AllTests.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/AllTests.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionSubstring.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionSubstring.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Language/Language.java",
+    "clone_sisters": [
+      "/src/smallsql/database/Language/Language.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/TableView.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescription.java",
+      "/src/smallsql/database/TableView.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/MemoryStream.java",
+    "clone_sisters": [
+      "/src/smallsql/database/MutableNumeric.java",
+      "/src/smallsql/database/MemoryStream.java",
+      "/src/smallsql/junit/BasicTestCase.java",
+      "/src/smallsql/database/LongTreeList.java",
+      "/src/smallsql/database/StoreImpl.java",
+      "/src/smallsql/database/Money.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/SSResultSet.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSResultSet.java",
+      "/src/smallsql/database/SSCallableStatement.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestDBMetaData.java",
+    "clone_sisters": [
+      "/src/smallsql/database/SSDatabaseMetaData.java",
+      "/src/smallsql/junit/TestDBMetaData.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/ExpressionFunctionMinute.java",
+    "clone_sisters": [
+      "/src/smallsql/database/ExpressionFunctionMinute.java",
+      "/src/smallsql/database/ExpressionFunctionDayOfMonth.java",
+      "/src/smallsql/database/ExpressionFunctionHour.java",
+      "/src/smallsql/database/ExpressionFunctionYear.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/IndexNode.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexNode.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Index.java",
+    "clone_sisters": [
+      "/src/smallsql/database/Index.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/Strings.java",
+    "clone_sisters": [
+      "/src/smallsql/database/IndexDescriptions.java",
+      "/src/smallsql/database/ForeignKeys.java",
+      "/src/smallsql/database/LongList.java",
+      "/src/smallsql/database/Strings.java",
+      "/src/smallsql/database/Columns.java",
+      "/src/smallsql/database/Expressions.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/junit/TestFunctions.java",
+    "clone_sisters": [
+      "/src/smallsql/junit/TestJoins.java",
+      "/src/smallsql/junit/TestExceptions.java",
+      "/src/smallsql/junit/TestFunctions.java",
+      "/src/smallsql/junit/TestOperatoren.java",
+      "/src/smallsql/junit/TestDataTypes.java"
+    ]
+  },
+  {
+    "name": "/src/smallsql/database/LongTreeList.java",
+    "clone_sisters": [
+      "/src/smallsql/database/MutableNumeric.java",
+      "/src/smallsql/database/MemoryStream.java",
+      "/src/smallsql/database/LongTreeList.java",
+      "/src/smallsql/database/StoreImpl.java",
+      "/src/smallsql/database/Money.java"
+    ]
+  }
+]
