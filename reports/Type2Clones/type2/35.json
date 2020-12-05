@@ -1,0 +1,32 @@
+[
+  {
+    "name": "/src/DuplClass2.java",
+    "clone_data": "<div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://Type2Clones/src/DuplClass2.java|(0,189,<1,0>,<14,2>)\n</div><div class=\"clonecode\"><pre><code> \npublic class DuplClass2 {\n\t\n\tprivate long signature2(int z, long a) {\n\t\tif (z == a) {\n\t\t\treturn (int)(z * a);\n\t\t} else if (a > z) {\n\t\t\treturn z;\n\t\t} else {\n\t\t\treturn (int)a + z;\n\t\t}\n\t}\n\n}\n\n</div></code></pre><div class=\"cloneloc\">Location: |project://Type2Clones/src/DuplClass.java|(0,193,<1,0>,<14,2>)\n</div><div class=\"clonecode\"><pre><code> \npublic class DuplClass {\n\t\n\tpublic static int signature1(int x, long y) {\n\t\tif (x == y) {\n\t\t\treturn (int)(x * y);\n\t\t} else if (x > y) {\n\t\t\treturn x;\n\t\t} else {\n\t\t\treturn (int)y + x;\n\t\t}\n\t}\n\n}\n\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/DuplClass2.java",
+      "/src/DuplClass.java"
+    ]
+  },
+  {
+    "name": "/src/FirstClone.java",
+    "clone_data": "<div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>)\n</div><div class=\"clonecode\"><pre><code> // method clone\n\tpublic int imatype2clone(String x) {\n\t\tif (x.startsWith(\"hiya mom\")){\n\t\t\treturn (x + x).length();\n\t\t} else if (x.startsWith(\"hiya mom\")){\n\t\t\treturn (x + x).length();\n\t\t} else if (x.endsWith(\"hiyaa dad\")) {\n\t\t\treturn x.length() * 2;\n\t\t} else if (x.contains(\"hiyaa sis\")) {\n\t\t\treturn x.length() + x.length();\n\t\t} else {\n\t\t\treturn x.length() * 5 - (x+x+x).length();\n\t\t}\n\t}\n</div></code></pre><div class=\"cloneloc\">Location: |project://Type2Clones/src/FirstClone.java|(418,389,<18,1>,<31,2>)\n</div><div class=\"clonecode\"><pre><code> // method clone\n\tpublic int imatype2clonetoo(String y) {\n\t\tif (y.startsWith(\"hiya mom\")){\n\t\t\treturn (y + y).length();\n\t\t} else if (y.startsWith(\"hiya mom\")){\n\t\t\treturn (y + y).length();\n\t\t} else if (y.endsWith(\"hiyaa dad\")) {\n\t\t\treturn y.length() * 2;\n\t\t} else if (y.contains(\"hiyaa sis\")) {\n\t\t\treturn y.length() + y.length();\n\t\t} else {\n\t\t\treturn y.length() * 5 - (y+y+y).length();\n\t\t}\n\t}\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/FirstClone.java"
+    ]
+  },
+  {
+    "name": "/src/DuplClass.java",
+    "clone_data": "<div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://Type2Clones/src/DuplClass2.java|(0,189,<1,0>,<14,2>)\n</div><div class=\"clonecode\"><pre><code> \npublic class DuplClass2 {\n\t\n\tprivate long signature2(int z, long a) {\n\t\tif (z == a) {\n\t\t\treturn (int)(z * a);\n\t\t} else if (a > z) {\n\t\t\treturn z;\n\t\t} else {\n\t\t\treturn (int)a + z;\n\t\t}\n\t}\n\n}\n\n</div></code></pre><div class=\"cloneloc\">Location: |project://Type2Clones/src/DuplClass.java|(0,193,<1,0>,<14,2>)\n</div><div class=\"clonecode\"><pre><code> \npublic class DuplClass {\n\t\n\tpublic static int signature1(int x, long y) {\n\t\tif (x == y) {\n\t\t\treturn (int)(x * y);\n\t\t} else if (x > y) {\n\t\t\treturn x;\n\t\t} else {\n\t\t\treturn (int)y + x;\n\t\t}\n\t}\n\n}\n\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/DuplClass2.java",
+      "/src/DuplClass.java"
+    ]
+  },
+  {
+    "name": "/src/testt/VariableClone.java",
+    "clone_data": "<div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://Type2Clones/src/testt/VariableClone.java|(105,108,<7,2>,<12,45>)\n</div><div class=\"clonecode\"><pre><code> int r = 3;\n\t\tint i = 3;\n\t\tint c = 3;\n\t\tint k = 3;\n\t\tint o = 3;\n\t\tint s = 3;int n4 = 3;int n2 = 3;int n3 = 3;\n</div></code></pre><div class=\"cloneloc\">Location: |project://Type2Clones/src/testt/VariableClone.java|(276,108,<17,2>,<22,45>)\n</div><div class=\"clonecode\"><pre><code> int m = 3;\n\t\tint e = 3;\n\t\tint l = 3;\n\t\tint v = 3;\n\t\tint i = 3;\n\t\tint n = 3;int n4 = 3;int n2 = 3;int n3 = 3;\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/testt/VariableClone.java"
+    ]
+  }
+]
