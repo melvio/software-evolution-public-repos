@@ -1,18 +1,14 @@
 [
   {
-    "salesperson": "Robin",
+    "salesperson": "Type 1",
     "sales": 12
   },
   {
-    "salesperson": "Anne",
+    "salesperson": "Type 2",
     "sales": 41
   },
   {
-    "salesperson": "Mark",
+    "salesperson": "Type 3",
     "sales": 16
-  },
-  {
-    "salesperson": "Mary",
-    "sales": 29
   }
 ]
