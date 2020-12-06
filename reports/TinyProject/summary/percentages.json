@@ -1,14 +1,14 @@
 [
   {
-    "clonetype": "Type 1",
-    "percentage": 12
+    "salesperson": "Type 1",
+    "sales": 12
   },
   {
-    "clonetype": "Type 2",
-    "percentage": 41
+    "salesperson": "Type 2",
+    "sales": 41
   },
   {
-    "clonetype": "Type 3",
-    "percentage": 16
+    "salesperson": "Type 3",
+    "sales": 16
   }
 ]
