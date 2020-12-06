@@ -1,8 +1,14 @@
 [
-   {
-      "typee": "Type 1", "valuee": 10},
-   {
-      "typee": "Type 2", "valuee": 11},
-   {
-      "typee": "Type 3", "valuee": 19}
+  {
+    "clonetype": "Type 1",
+    "percentage": 12
+  },
+  {
+    "clonetype": "Type 2",
+    "percentage": 41
+  },
+  {
+    "clonetype": "Type 3",
+    "percentage": 16
+  }
 ]
