@@ -5,18 +5,6 @@
 ======             Type: 1             ======= 
 ==============================================
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(316,156,<15,30>,<16,90>)
-```
- Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
-				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"))
-```
-Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(688,156,<27,19>,<28,63>)
-```
- Arrays.asList(new String("Tom Jones"), new String("Harry Major"), new String("Ethan Hardy"),
-				new String("Nancy Smith"), new String("Deborah Sprightly"))
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://DifferentTypesProject/src/org/main/a/Type1CloneConstruct.java|(119,200,<8,2>,<19,3>)
 ```
  for (int i = 0 ; i < x ; x = x + y, y = x + y) {

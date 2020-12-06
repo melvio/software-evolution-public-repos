@@ -21,12 +21,5 @@
       "/src/org/main/a/OverFile1Type1.java",
       "/src/org/main/a/OverFile2Type1.java"
     ]
-  },
-  {
-    "name": "/src/org/main/a/Type2Clone.java",
-    "clone_data": "<div class=\"youjustclickedon\">You just came from: Type2Clone.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(316,156,<15,30>,<16,90>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/DifferentTypesProject/src/org/main/a/Type2Clone.java#L15-L16 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> Arrays.asList(new String(\"Tom Jones\"), new String(\"Harry Major\"),\n\t\t\t\tnew String(\"Ethan Hardy\"), new String(\"Nancy Smith\"), new String(\"Deborah Sprightly\"))\n</div></code></pre><div class=\"cloneloc\">Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(688,156,<27,19>,<28,63>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/DifferentTypesProject/src/org/main/a/Type2Clone.java#L27-L28 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> Arrays.asList(new String(\"Tom Jones\"), new String(\"Harry Major\"), new String(\"Ethan Hardy\"),\n\t\t\t\tnew String(\"Nancy Smith\"), new String(\"Deborah Sprightly\"))\n</div></code></pre></div>\n",
-    "clone_sisters": [
-      "/src/org/main/a/Type2Clone.java"
-    ]
   }
 ]
