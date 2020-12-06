@@ -1,0 +1,157 @@
+
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 1             ======= 
+==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(316,156,<15,30>,<16,90>)
+```
+ Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
+				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"))
+```
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(688,156,<27,19>,<28,63>)
+```
+ Arrays.asList(new String("Tom Jones"), new String("Harry Major"), new String("Ethan Hardy"),
+				new String("Nancy Smith"), new String("Deborah Sprightly"))
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://DifferentTypesProject/src/org/main/a/Type1CloneConstruct.java|(119,200,<8,2>,<19,3>)
+```
+ for (int i = 0 ; i < x ; x = x + y, y = x + y) {
+			if (x > y) {
+				continue;
+			} else if (x * y > x || true) {
+				throw new OutOfMemoryError(u);
+			}
+			else {
+				x = y >> x;
+				break;
+			}
+
+		}
+```
+Location: |project://DifferentTypesProject/src/org/main/a/Type1CloneConstruct.java|(389,200,<25,2>,<36,3>)
+```
+ for (int i = 0 ; i < x ; x = x + y, y = x + y) {
+			if (x > y) {
+				continue;
+			} else if (x * y > x || true) {
+				throw new OutOfMemoryError(u);
+			}
+			else {
+				x = y >> x;
+				break;
+			}
+
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(56,209,<6,1>,<14,2>)
+```
+ public static Object f (short x, byte y ) throws Throwable {
+		if (x + y > 3 || x + y < -2) {
+			System.exit(10);
+			return new Integer(0);
+		} else {
+			Thread.sleep(1337);
+			return new Error("oeps");
+		}
+	}
+```
+Location: |project://DifferentTypesProject/src/org/main/a/OverFile2Type1.java|(54,213,<5,1>,<15,2>)
+```
+ public static Object f (short x, byte y ) throws Throwable {
+		if (x + y > 3 || x + y < -2) {
+			System.exit(10);
+			return new Integer(0);
+
+		} else {
+			Thread.sleep(1337);
+			return new Error("oeps");
+		}
+		
+	}
+```
+
+
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 2             ======= 
+==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>)
+```
+ long f() {
+		Function<String, String> funcEmpToString = (String s) -> {
+			return s + s;
+		};
+		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
+				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> empNameList = Collections.emptyList();
+		empNameList.forEach(System.out::println);
+
+		return 1;
+	}
+```
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(590,351,<23,1>,<33,2>)
+```
+ int g() {
+		Function<String, String> f = (String e) -> {
+			return e + e;
+		};
+		List<String> l = Arrays.asList(new String("Tom Jones"), new String("Harry Major"), new String("Ethan Hardy"),
+				new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> l2 = Collections.emptyList();
+		l2.forEach(System.out::println);
+
+		return 1;
+	}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(0,269,<1,0>,<16,2>)
+```
+ package org.main.a;
+
+public class OverFile1Type1 {
+	
+	
+	public static Object f (short x, byte y ) throws Throwable {
+		if (x + y > 3 || x + y < -2) {
+			System.exit(10);
+			return new Integer(0);
+		} else {
+			Thread.sleep(1337);
+			return new Error("oeps");
+		}
+	}
+
+}
+
+```
+Location: |project://DifferentTypesProject/src/org/main/a/OverFile2Type1.java|(0,271,<1,0>,<17,2>)
+```
+ package org.main.a;
+
+public class OverFile2Type1 {
+	
+	public static Object f (short x, byte y ) throws Throwable {
+		if (x + y > 3 || x + y < -2) {
+			System.exit(10);
+			return new Integer(0);
+
+		} else {
+			Thread.sleep(1337);
+			return new Error("oeps");
+		}
+		
+	}
+
+}
+
+```
+
