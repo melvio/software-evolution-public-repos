@@ -1,5 +1,8 @@
 [
-   {"type": "Type 1", "value": 10},
-   {"type": "Type 2", "value": 11},
-   {"type": "Type 3", "value": 19}
+   {
+      "type": "Type 1", "value": 10},
+   {
+      "type": "Type 2", "value": 11},
+   {
+      "type": "Type 3", "value": 19}
 ]
