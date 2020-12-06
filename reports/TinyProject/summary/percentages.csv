@@ -1,9 +1,5 @@
 [
   {
-    "salesperson": "Bob",
-    "sales": 33
-  },
-  {
     "salesperson": "Robin",
     "sales": 12
   },
