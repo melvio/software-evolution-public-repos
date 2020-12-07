@@ -72,9 +72,3 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(41,474,<3,1>,<18
 	}
 ```
 
-
- 
-==============================================
-====== Start of clone classes printing ======= 
-======             Type: 2             ======= 
-==============================================
