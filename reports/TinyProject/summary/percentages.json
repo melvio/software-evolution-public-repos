@@ -1,14 +1,14 @@
 [
   {
-    "salesperson": "Type 1",
-    "sales": 12
+    "type": "Type 1",
+    "value": 12
   },
   {
-    "salesperson": "Type 2",
-    "sales": 41
+    "type": "Type 2",
+    "value": 41
   },
   {
-    "salesperson": "Type 3",
-    "sales": 16
+    "type": "Type 3",
+    "value": 16
   }
 ]
