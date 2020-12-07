@@ -1,14 +1,14 @@
 [
   {
-    "type": "Type 1",
-    "value": 12
+    "clonetype": "Type 1",
+    "percentage": 12
   },
   {
-    "type": "Type 2",
-    "value": 41
+    "clonetype": "Type 2",
+    "percentage": 41
   },
   {
-    "type": "Type 3",
-    "value": 16
+    "clonetype": "Type 3",
+    "percentage": 16
   }
 ]
