@@ -1,0 +1,14 @@
+[
+  {
+    "clonetype": "Type 1",
+    "percentage": 5
+  },
+  {
+    "clonetype": "Type 2",
+    "percentage": 15
+  },
+  {
+    "clonetype": "Type 3",
+    "percentage": 20
+  }
+]
