@@ -43,70 +43,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRo
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6284,837,<128,69>,<156,5>)
-```
- {
-            pr.setObject( 1, testValue.small);
-            pr.setObject( 2, testValue.large);
-            pr.execute();
-
-            pr.setObject( 1, testValue.small);
-            pr.setObject( 2, testValue.small);
-            pr.execute();
-
-            pr.setObject( 1, testValue.large);
-            pr.setObject( 2, testValue.large);
-            pr.execute();
-
-            pr.setObject( 1, testValue.large);
-            pr.setObject( 2, testValue.small);
-            pr.execute();
-
-            pr.setObject( 1, null);
-            pr.setObject( 2, testValue.small);
-            pr.execute();
-
-            pr.setObject( 1, testValue.small);
-            pr.setObject( 2, null);
-            pr.execute();
-
-            pr.setObject( 1, null);
-            pr.setObject( 2, null);
-            pr.execute();
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5879,815,<115,12>,<141,25>)
-```
- pr.setObject( 1, testValue.small);
-            pr.setObject( 2, testValue.large);
-            pr.execute();
-
-            pr.setObject( 1, testValue.small);
-            pr.setObject( 2, testValue.small);
-            pr.execute();
-
-            pr.setObject( 1, testValue.large);
-            pr.setObject( 2, testValue.large);
-            pr.execute();
-
-            pr.setObject( 1, testValue.large);
-            pr.setObject( 2, testValue.small);
-            pr.execute();
-
-            pr.setObject( 1, null);
-            pr.setObject( 2, testValue.small);
-            pr.execute();
-
-            pr.setObject( 1, testValue.small);
-            pr.setObject( 2, null);
-            pr.execute();
-
-            pr.setObject( 1, null);
-            pr.setObject( 2, null);
-            pr.execute();
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/Database.java|(13990,89,<395,2>,<397,16>)
 ```
  Object[][] result = new Object[rows.size()][];
@@ -174,6 +110,18 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Database.java|(18590
  String tableName = tables.get(t);
     		TableView tab = getTableView( con, tableName);
 			if(!(tab instanceof Table)) continue;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13100,81,<363,8>,<364,41>)
+```
+ page[ offset++ ] = (byte)(value >> 8);
+        page[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13521,81,<377,8>,<378,41>)
+```
+ page[ offset++ ] = (byte)(value >> 8);
+        page[ offset++ ] = (byte)(value);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -662,39 +610,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13100,81,<363,8>,<364,41>)
-```
- page[ offset++ ] = (byte)(value >> 8);
-        page[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13521,81,<377,8>,<378,41>)
-```
- page[ offset++ ] = (byte)(value >> 8);
-        page[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(14266,81,<398,8>,<399,41>)
-```
- page[ offset++ ] = (byte)(value >> 8);
-        page[ offset++ ] = (byte)(value);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2035,169,<69,2>,<72,37>)
-```
- puffer[ offset++ ] = (byte)(value >> 24);
-		puffer[ offset++ ] = (byte)(value >> 16);
-		puffer[ offset++ ] = (byte)(value >> 8);
-		puffer[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2453,169,<81,2>,<84,37>)
-```
- puffer[ offset++ ] = (byte)(value >> 24);
-		puffer[ offset++ ] = (byte)(value >> 16);
-		puffer[ offset++ ] = (byte)(value >> 8);
-		puffer[ offset++ ] = (byte)(value);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/TableResult.java|(5522,114,<180,6>,<180,120>)
 ```
  store = ((StorePageLink)insertStorePages.get( (int)(filePos & 0x3FFFFFFFFFFFFFFFL) )).getStore( table, con, lock);
@@ -759,22 +674,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSu
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13423,179,<375,8>,<378,41>)
-```
- page[ offset++ ] = (byte)(value >> 24);
-        page[ offset++ ] = (byte)(value >> 16);
-        page[ offset++ ] = (byte)(value >> 8);
-        page[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(14168,179,<396,8>,<399,41>)
-```
- page[ offset++ ] = (byte)(value >> 24);
-        page[ offset++ ] = (byte)(value >> 16);
-        page[ offset++ ] = (byte)(value >> 8);
-        page[ offset++ ] = (byte)(value);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/IndexDescription.java|(6136,299,<186,9>,<194,9>)
 ```
  catch(Throwable e){
@@ -814,24 +713,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(11532,1
             rs = st.executeQuery( "SELECT count(*) FROM " + tableName);
             rs.next();
             int count = rs.getInt(1);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/Join.java|(1837,128,<52,75>,<57,5>)
-```
- {
-        this.type = type;
-        this.condition = condition;
-        this.left = left;
-        this.right = right;
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/JoinScroll.java|(2000,110,<59,8>,<62,27>)
-```
- this.type = type;
-        this.condition = condition;
-        this.left = left;
-        this.right = right;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1139,48 +1020,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(45022,240,<1239,24>,<1243,25>)
-```
- if(token2 != null && token2.value == SQLTokenizer.POINT){
-                            expr.setNameAfterTableAlias( nextIdentifier() );
-                        }else{
-                            previousToken();
-                        }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(50855,272,<1332,32>,<1336,33>)
-```
- if(token2 != null && token2.value == SQLTokenizer.POINT){
-                                    expr.setNameAfterTableAlias( nextIdentifier() );
-                                }else{
-                                    previousToken();
-                                }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3529,284,<102,1>,<109,2>)
-```
- private static String bytes2hex( byte[] bytes ){
-		StringBuffer buf = new StringBuffer(bytes.length << 1);
-		for(int i=0; i<bytes.length; i++){
-			buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
-			buf.append( digits[ (bytes[i]     ) & 0x0F ] );
-		}
-		return buf.toString();
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(6330,321,<205,4>,<212,5>)
-```
- static String bytes2hex( byte[] bytes ){
-        StringBuffer buf = new StringBuffer(bytes.length << 1);
-        for(int i=0; i<bytes.length; i++){
-            buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
-            buf.append( digits[ (bytes[i]     ) & 0x0F ] );
-        }
-        return buf.toString();
-    }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(8376,191,<249,4>,<253,32>)
 ```
  if(failed == null){
@@ -1199,26 +1038,45 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(70
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(6282,388,<188,4>,<196,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3576,237,<102,48>,<109,2>)
 ```
- /**
-     * Identical to the Implementation from Utils.string2boolean
-     */
-    private boolean string2boolean( String val){
-        try{
-            return Double.parseDouble( val ) != 0;
-        }catch(NumberFormatException e){/*ignore it if it not a number*/}
-        return "true".equalsIgnoreCase( val ) || "yes".equalsIgnoreCase( val ) || "t".equalsIgnoreCase( val );
+ {
+		StringBuffer buf = new StringBuffer(bytes.length << 1);
+		for(int i=0; i<bytes.length; i++){
+			buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+			buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+		}
+		return buf.toString();
+	}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(6369,282,<205,43>,<212,5>)
+```
+ {
+        StringBuffer buf = new StringBuffer(bytes.length << 1);
+        for(int i=0; i<bytes.length; i++){
+            buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+            buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+        }
+        return buf.toString();
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(11150,303,<317,4>,<322,5>)
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(45022,240,<1239,24>,<1243,25>)
 ```
- static boolean string2boolean( String val){
-        try{
-            return Double.parseDouble( val ) != 0;
-        }catch(NumberFormatException e){/*ignore it if it not a number*/}
-        return "true".equalsIgnoreCase( val ) || "yes".equalsIgnoreCase( val ) || "t".equalsIgnoreCase( val );
-    }
+ if(token2 != null && token2.value == SQLTokenizer.POINT){
+                            expr.setNameAfterTableAlias( nextIdentifier() );
+                        }else{
+                            previousToken();
+                        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(50855,272,<1332,32>,<1336,33>)
+```
+ if(token2 != null && token2.value == SQLTokenizer.POINT){
+                                    expr.setNameAfterTableAlias( nextIdentifier() );
+                                }else{
+                                    previousToken();
+                                }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1295,22 +1153,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/IndexScrollStatus.ja
 ```
  IndexNode node = status.nodes[idx];
 				nodeStack.push( new IndexNodeScrollStatus(node, status.asc, scroll, level) );
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(4825,120,<154,8>,<157,22>)
-```
- for(int i=0; i<length; i++){
-            result = (result << 8) | (bytes[i] & 0xFF);
-        }
-        return result;
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(5082,120,<163,8>,<166,22>)
-```
- for(int i=0; i<length; i++){
-            result = (result << 8) | (bytes[i] & 0xFF);
-        }
-        return result;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1468,28 +1310,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Index.java|(13527,11
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(11745,251,<267,4>,<273,5>)
-```
- private static TestValue a(String dataType, Object small, Object large){
-        TestValue value = new TestValue();
-        value.dataType  = dataType;
-        value.small     = small;
-        value.large     = large;
-        return value;
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(10437,251,<204,4>,<210,5>)
-```
- private static TestValue a(String dataType, Object small, Object large){
-        TestValue value = new TestValue();
-        value.dataType  = dataType;
-        value.small     = small;
-        value.large     = large;
-        return value;
-    }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18762,470,<707,2>,<725,36>)
 ```
  //jetzt irgendwo in die Mitte scrollen
@@ -1533,6 +1353,26 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(19578
 		count = -1;
 		while(rs.next()) count++;		
 		assertEquals( valueCount, count );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6541,153,<136,12>,<141,25>)
+```
+ pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6961,153,<150,12>,<155,25>)
+```
+ pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1754,6 +1594,18 @@ Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionLe
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(1889,79,<63,2>,<64,37>)
+```
+ puffer[ offset++ ] = (byte)(value >> 8);
+		puffer[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2125,79,<71,2>,<72,37>)
+```
+ puffer[ offset++ ] = (byte)(value >> 8);
+		puffer[ offset++ ] = (byte)(value);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3451,74,<101,29>,<101,103>)
 ```
  digits = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'}
@@ -1928,9 +1780,9 @@ Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionCo
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5149,301,<95,4>,<104,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5171,279,<95,26>,<104,5>)
 ```
- public void tearDown(){
+ {
         try{
             Connection con = AllTests.getConnection();
             Statement st = con.createStatement();
@@ -1941,9 +1793,9 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(51
         }
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(3053,301,<68,4>,<77,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(3075,279,<68,26>,<77,5>)
 ```
- public void tearDown(){
+ {
         try{
             Connection con = AllTests.getConnection();
             Statement st = con.createStatement();
@@ -1954,9 +1806,9 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(305
         }
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(22524,301,<374,4>,<383,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(22546,279,<374,26>,<383,5>)
 ```
- public void tearDown(){
+ {
         try{
             Connection con = AllTests.getConnection();
             Statement st = con.createStatement();
@@ -1967,9 +1819,9 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(225
         }
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestMoneyRounding.java|(1787,301,<53,4>,<62,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestMoneyRounding.java|(1809,279,<53,26>,<62,5>)
 ```
- public void tearDown(){
+ {
         try{
             Connection con = AllTests.getConnection();
             Statement st = con.createStatement();
@@ -2144,23 +1996,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(12928,1
             ResultSet rs = st1.executeQuery( "SELECT count(*) FROM " + tableName);
             rs.next();
             int count = rs.getInt(1);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(1889,79,<63,2>,<64,37>)
-```
- puffer[ offset++ ] = (byte)(value >> 8);
-		puffer[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2125,79,<71,2>,<72,37>)
-```
- puffer[ offset++ ] = (byte)(value >> 8);
-		puffer[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2543,79,<83,2>,<84,37>)
-```
- puffer[ offset++ ] = (byte)(value >> 8);
-		puffer[ offset++ ] = (byte)(value);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -2537,6 +2372,26 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(29
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(6409,261,<191,47>,<196,5>)
+```
+ {
+        try{
+            return Double.parseDouble( val ) != 0;
+        }catch(NumberFormatException e){/*ignore it if it not a number*/}
+        return "true".equalsIgnoreCase( val ) || "yes".equalsIgnoreCase( val ) || "t".equalsIgnoreCase( val );
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(11192,261,<317,46>,<322,5>)
+```
+ {
+        try{
+            return Double.parseDouble( val ) != 0;
+        }catch(NumberFormatException e){/*ignore it if it not a number*/}
+        return "true".equalsIgnoreCase( val ) || "yes".equalsIgnoreCase( val ) || "t".equalsIgnoreCase( val );
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRTrim.java|(1868,86,<59,2>,<61,11>)
 ```
  byte[] b = new byte[length];
@@ -2685,28 +2540,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/TableView.java|(2932
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(3723,337,<106,2>,<112,50>)
-```
- theSuite.addTestSuite(TestDeleteUpdate.class);
-		theSuite.addTest     (TestFunctions.suite() );
-		theSuite.addTestSuite(TestGroupBy.class);
-		theSuite.addTestSuite(TestIdentifer.class);
-		theSuite.addTest     (TestJoins.suite());
-        theSuite.addTestSuite(TestLanguage.class);
-		theSuite.addTestSuite(TestMoneyRounding.class );
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(3868,331,<109,2>,<115,41>)
-```
- theSuite.addTestSuite(TestIdentifer.class);
-		theSuite.addTest     (TestJoins.suite());
-        theSuite.addTestSuite(TestLanguage.class);
-		theSuite.addTestSuite(TestMoneyRounding.class );
-		theSuite.addTest     (TestOperatoren.suite() );
-		theSuite.addTestSuite(TestOrderBy.class);
-		theSuite.addTestSuite(TestOther.class);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionMonth.java|(0,1727,<1,0>,<54,3>)
 ```
  /* =============================================================
@@ -2849,6 +2682,41 @@ Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13972,375,<392,8>,<399,41>)
+```
+ page[ offset++ ] = (byte)(value >> 56);
+        page[ offset++ ] = (byte)(value >> 48);
+        page[ offset++ ] = (byte)(value >> 40);
+        page[ offset++ ] = (byte)(value >> 32);
+        page[ offset++ ] = (byte)(value >> 24);
+        page[ offset++ ] = (byte)(value >> 16);
+        page[ offset++ ] = (byte)(value >> 8);
+        page[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2273,349,<77,2>,<84,37>)
+```
+ puffer[ offset++ ] = (byte)(value >> 56);
+		puffer[ offset++ ] = (byte)(value >> 48);
+		puffer[ offset++ ] = (byte)(value >> 40);
+		puffer[ offset++ ] = (byte)(value >> 32);
+		puffer[ offset++ ] = (byte)(value >> 24);
+		puffer[ offset++ ] = (byte)(value >> 16);
+		puffer[ offset++ ] = (byte)(value >> 8);
+		puffer[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(3400,325,<119,2>,<126,34>)
+```
+ bytes[offset++] = (byte)(value >> 56);
+		bytes[offset++] = (byte)(value >> 48);
+		bytes[offset++] = (byte)(value >> 40);
+		bytes[offset++] = (byte)(value >> 32);
+		bytes[offset++] = (byte)(value >> 24);
+		bytes[offset++] = (byte)(value >> 16);
+		bytes[offset++] = (byte)(value >> 8);
+		bytes[offset++] = (byte)(value);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/StorePageMap.java|(2488,57,<99,2>,<100,21>)
 ```
  int i = (int)(key % table.length);
@@ -2936,44 +2804,23 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.
         cmd.setParamValue( parameterIndex, new Integer(x), SQLTokenizer.INT);
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3677,182,<108,4>,<111,5>)
-```
- public void setLong(int parameterIndex, long x) throws SQLException {
-        checkStatement();
-        cmd.setParamValue( parameterIndex, new Long(x), SQLTokenizer.BIGINT);
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3877,183,<114,4>,<117,5>)
-```
- public void setFloat(int parameterIndex, float x) throws SQLException {
-        checkStatement();
-        cmd.setParamValue( parameterIndex, new Float(x), SQLTokenizer.REAL);
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4078,188,<120,4>,<123,5>)
-```
- public void setDouble(int parameterIndex, double x) throws SQLException {
-        checkStatement();
-        cmd.setParamValue( parameterIndex, new Double(x), SQLTokenizer.DOUBLE);
-    }
-```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(12683,131,<468,2>,<472,18>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(11684,249,<373,4>,<377,5>)
 ```
- init();
-		Connection con = AllTests.getConnection();
-		Statement st = con.createStatement();
-		ResultSet rs;
-		Double oldValue;
+ public PreparedStatement prepareStatement(String sql, int autoGeneratedKeys) throws SQLException {
+        SSPreparedStatement pr = new SSPreparedStatement( this, sql);
+        pr.setNeedGeneratedKeys(autoGeneratedKeys);
+        return pr;
+    }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(13334,130,<494,2>,<498,17>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(11951,243,<380,4>,<384,5>)
 ```
- init();
-		Connection con = AllTests.getConnection();
-		Statement st = con.createStatement();
-		ResultSet rs;
-		Float oldValue;
+ public PreparedStatement prepareStatement(String sql, int[] columnIndexes) throws SQLException {
+        SSPreparedStatement pr = new SSPreparedStatement( this, sql);
+        pr.setNeedGeneratedKeys(columnIndexes);
+        return pr;
+    }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3015,68 +2862,49 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Index.java|(14283,35
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4284,185,<126,4>,<129,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(11871,118,<269,8>,<272,21>)
 ```
- public void setBigDecimal(int parameterIndex, BigDecimal x) throws SQLException {
-        checkStatement();
-        cmd.setParamValue( parameterIndex, x, SQLTokenizer.DECIMAL);
-    }
+ value.dataType  = dataType;
+        value.small     = small;
+        value.large     = large;
+        return value;
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4487,177,<132,4>,<135,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(10563,118,<206,8>,<209,21>)
 ```
- public void setString(int parameterIndex, String x) throws SQLException {
-        checkStatement();
-        cmd.setParamValue( parameterIndex, x, SQLTokenizer.VARCHAR);
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4682,175,<138,4>,<141,5>)
-```
- public void setBytes(int parameterIndex, byte[] x) throws SQLException {
-        checkStatement();
-        cmd.setParamValue( parameterIndex, x, SQLTokenizer.BINARY);
-    }
+ value.dataType  = dataType;
+        value.small     = small;
+        value.large     = large;
+        return value;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/IndexDescriptions.java|(2351,175,<82,1>,<86,2>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(12683,131,<468,2>,<472,18>)
 ```
- private final void resize(int newSize){
-		IndexDescription[] dataNew = new IndexDescription[newSize];
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		Double oldValue;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(13334,130,<494,2>,<498,17>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		Float oldValue;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(1930,87,<72,2>,<73,46>)
+```
+ String[] dataNew = new String[newSize];
 		System.arraycopy(data, 0, dataNew, 0, size);
-		data = dataNew;		
-	}
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/Columns.java|(4062,155,<156,1>,<160,2>)
+Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(2089,86,<79,8>,<80,50>)
 ```
- private final void resize(int newSize){
-		Column[] dataNew = new Column[newSize];
-		System.arraycopy(data, 0, dataNew, 0, size);
-		data = dataNew;		
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(1887,155,<71,1>,<75,2>)
-```
- private final void resize(int newSize){
-		String[] dataNew = new String[newSize];
-		System.arraycopy(data, 0, dataNew, 0, size);
-		data = dataNew;		
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3167,163,<130,1>,<134,2>)
-```
- private final void resize(int newSize){
-		Expression[] dataNew = new Expression[newSize];
-		System.arraycopy(data, 0, dataNew, 0, size);
-		data = dataNew;		
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/ForeignKeys.java|(1929,163,<71,1>,<75,2>)
-```
- private final void resize(int newSize){
-		ForeignKey[] dataNew = new ForeignKey[newSize];
-		System.arraycopy(data, 0, dataNew, 0, size);
-		data = dataNew;		
-	}
+ String[] array = new String[size];
+        System.arraycopy(data, 0, array, 0, size);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3115,6 +2943,25 @@ Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(3
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(17139,80,<600,41>,<603,2>)
+```
+ {
+		data[offset++] = (byte)(value >> 8);
+		data[offset++] = (byte)(value);
+	}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(18634,95,<541,8>,<542,48>)
+```
+ page[ offset++ ] = (byte)(lengthColumn >> 8);
+        page[ offset++ ] = (byte)(lengthColumn);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(12223,89,<449,12>,<450,47>)
+```
+ complement[offset++] = (byte)(val >> 8);
+            complement[offset++] = (byte)(val);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(4845,175,<104,8>,<104,183>)
 ```
  int[] colTypes = {Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL };
@@ -3136,16 +2983,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(132
  public static void main(String[] argv) {
         junit.swingui.TestRunner.main(new String[]{TestDataTypes.class.getName()});
     }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(5024,89,<119,16>,<119,105>)
-```
- values = new Object[]{null,new Float(0.0), new Float(-12.123), new Float(22812345234.9)};
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(5218,92,<123,16>,<123,108>)
-```
- values = new Object[]{null,new Double(0.0), new Double(-12.123), new Double(22812345234.9)};
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3271,24 +3108,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(14173,201,<502,52>,<506,13>)
-```
- {
-                // simple Long Value
-                long temp = (((long)value[0]) << 32) | (value[1] & 0xFFFFFFFFL);
-                return temp / scaleFloatFactor[scale] * signum;
-            }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(15086,202,<525,52>,<529,13>)
-```
- {
-                // simple Long Value
-                long temp = (((long)value[0]) << 32) | (value[1] & 0xFFFFFFFFL);
-                return temp / scaleDoubleFactor[scale] * signum;
-            }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4436,314,<131,4>,<139,5>)
 ```
  public float getFloat(int columnIndex) throws SQLException {
@@ -3379,6 +3198,29 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13423,179,<375,8>,<378,41>)
+```
+ page[ offset++ ] = (byte)(value >> 24);
+        page[ offset++ ] = (byte)(value >> 16);
+        page[ offset++ ] = (byte)(value >> 8);
+        page[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2035,169,<69,2>,<72,37>)
+```
+ puffer[ offset++ ] = (byte)(value >> 24);
+		puffer[ offset++ ] = (byte)(value >> 16);
+		puffer[ offset++ ] = (byte)(value >> 8);
+		puffer[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(12113,199,<447,12>,<450,47>)
+```
+ complement[offset++] = (byte)(val >> 24);
+            complement[offset++] = (byte)(val >> 16);
+            complement[offset++] = (byte)(val >> 8);
+            complement[offset++] = (byte)(val);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(5534,319,<179,8>,<186,34>)
 ```
  result[0] = (byte)(value >> 56);
@@ -3403,38 +3245,67 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Identity.java|(2300,
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/IndexDescriptions.java|(1829,195,<62,1>,<67,2>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6284,837,<128,69>,<156,5>)
 ```
- final IndexDescription get(int idx){
-		// SAVER: use SmallSQLException
-		if (idx >= size)
-			throw new IndexOutOfBoundsException("Column index: "+idx+", Size: "+size);
-		return data[idx];
-	}
+ {
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+    }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/Columns.java|(1734,150,<58,1>,<62,2>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5879,815,<115,12>,<141,25>)
 ```
- final Column get(int idx){
-		if (idx >= size)
-			throw new IndexOutOfBoundsException("Column index: "+idx+", Size: "+size);
-		return data[idx];
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(1604,150,<56,1>,<60,2>)
-```
- final String get(int idx){
-		if (idx >= size)
-			throw new IndexOutOfBoundsException("Column index: "+idx+", Size: "+size);
-		return data[idx];
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/ForeignKeys.java|(1628,154,<56,1>,<60,2>)
-```
- final ForeignKey get(int idx){
-		if (idx >= size)
-			throw new IndexOutOfBoundsException("Column index: "+idx+", Size: "+size);
-		return data[idx];
-	}
+ pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3448,41 +3319,19 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.j
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/LongList.java|(1813,115,<67,1>,<72,2>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4284,185,<126,4>,<129,5>)
 ```
- final void add(long value){
-		if(size >= data.length ){
-			resize(size << 1);
-		}
-		data[ size++ ] = value;
-	}
+ public void setBigDecimal(int parameterIndex, BigDecimal x) throws SQLException {
+        checkStatement();
+        cmd.setParamValue( parameterIndex, x, SQLTokenizer.DECIMAL);
+    }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(1763,115,<63,1>,<68,2>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4487,177,<132,4>,<135,5>)
 ```
- final void add(String descr){
-		if(size >= data.length ){
-			resize(size << 1);
-		}
-		data[size++] = descr;
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(1930,117,<71,1>,<76,2>)
-```
- final void add(Expression expr){
-		if(size >= data.length ){
-			resize(size << 1);
-		}
-		data[size++] = expr;
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/ForeignKeys.java|(1791,129,<63,1>,<68,2>)
-```
- final void add(ForeignKey foreignKey){
-		if(size >= data.length ){
-			resize(size << 1);
-		}
-		data[size++] = foreignKey;
-	}
+ public void setString(int parameterIndex, String x) throws SQLException {
+        checkStatement();
+        cmd.setParamValue( parameterIndex, x, SQLTokenizer.VARCHAR);
+    }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3606,16 +3455,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(4394,80,<107,16>,<107,96>)
-```
- values = new Object[]{null,new Long(123), new Long(-2123), new Long(392839283)};
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(4549,89,<110,16>,<110,105>)
-```
- values = new Object[]{null,new Integer(123), new Integer(-2123), new Integer(392839283)};
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(4208,115,<94,8>,<94,123>)
 ```
  int[] colTypes = {Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL, Types.NULL };
@@ -3623,6 +3462,85 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(42
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(12939,138,<264,8>,<264,146>)
 ```
  int[] colTypes = {Types.SMALLINT, Types.VARCHAR, Types.INTEGER, Types.VARCHAR, Types.INTEGER, Types.NULL, Types.SMALLINT, Types.SMALLINT};
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(75710,196,<1957,31>,<1957,227>)
+```
+ COMMANDS_CREATE = {SQLTokenizer.DATABASE, SQLTokenizer.TABLE, SQLTokenizer.VIEW, SQLTokenizer.INDEX, SQLTokenizer.PROCEDURE, SQLTokenizer.UNIQUE, SQLTokenizer.CLUSTERED, SQLTokenizer.NONCLUSTERED}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(79791,201,<1988,31>,<1988,232>)
+```
+ MISSING_OPTIONS_DATATYPE = { SQLTokenizer.DEFAULT, SQLTokenizer.IDENTITY, SQLTokenizer.NOT, SQLTokenizer.NULL, SQLTokenizer.PRIMARY, SQLTokenizer.UNIQUE, SQLTokenizer.COMMA, SQLTokenizer.PARENTHESIS_R}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3529,284,<102,1>,<109,2>)
+```
+ private static String bytes2hex( byte[] bytes ){
+		StringBuffer buf = new StringBuffer(bytes.length << 1);
+		for(int i=0; i<bytes.length; i++){
+			buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+			buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+		}
+		return buf.toString();
+	}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(6330,321,<205,4>,<212,5>)
+```
+ static String bytes2hex( byte[] bytes ){
+        StringBuffer buf = new StringBuffer(bytes.length << 1);
+        for(int i=0; i<bytes.length; i++){
+            buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+            buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+        }
+        return buf.toString();
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(6282,388,<188,4>,<196,5>)
+```
+ /**
+     * Identical to the Implementation from Utils.string2boolean
+     */
+    private boolean string2boolean( String val){
+        try{
+            return Double.parseDouble( val ) != 0;
+        }catch(NumberFormatException e){/*ignore it if it not a number*/}
+        return "true".equalsIgnoreCase( val ) || "yes".equalsIgnoreCase( val ) || "t".equalsIgnoreCase( val );
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(11150,303,<317,4>,<322,5>)
+```
+ static boolean string2boolean( String val){
+        try{
+            return Double.parseDouble( val ) != 0;
+        }catch(NumberFormatException e){/*ignore it if it not a number*/}
+        return "true".equalsIgnoreCase( val ) || "yes".equalsIgnoreCase( val ) || "t".equalsIgnoreCase( val );
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(3723,337,<106,2>,<112,50>)
+```
+ theSuite.addTestSuite(TestDeleteUpdate.class);
+		theSuite.addTest     (TestFunctions.suite() );
+		theSuite.addTestSuite(TestGroupBy.class);
+		theSuite.addTestSuite(TestIdentifer.class);
+		theSuite.addTest     (TestJoins.suite());
+        theSuite.addTestSuite(TestLanguage.class);
+		theSuite.addTestSuite(TestMoneyRounding.class );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(3868,331,<109,2>,<115,41>)
+```
+ theSuite.addTestSuite(TestIdentifer.class);
+		theSuite.addTest     (TestJoins.suite());
+        theSuite.addTestSuite(TestLanguage.class);
+		theSuite.addTestSuite(TestMoneyRounding.class );
+		theSuite.addTest     (TestOperatoren.suite() );
+		theSuite.addTestSuite(TestOrderBy.class);
+		theSuite.addTestSuite(TestOther.class);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3686,6 +3604,18 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3051,89,<125,2>,<126,45>)
+```
+ Expression[] array = new Expression[size];
+		System.arraycopy( data, 0, array, 0, size);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3210,95,<131,2>,<132,46>)
+```
+ Expression[] dataNew = new Expression[newSize];
+		System.arraycopy(data, 0, dataNew, 0, size);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6153,342,<180,4>,<189,5>)
 ```
  public Time getTime(int columnIndex) throws SQLException {
@@ -3733,24 +3663,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(30346,1
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(2052,158,<78,4>,<82,5>)
-```
- public String[] toArray() {
-        String[] array = new String[size];
-        System.arraycopy(data, 0, array, 0, size);
-        return array;     
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3018,143,<124,1>,<128,2>)
-```
- final Expression[] toArray(){
-		Expression[] array = new Expression[size];
-		System.arraycopy( data, 0, array, 0, size);
-		return array;
-	}
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13042,139,<361,8>,<364,41>)
 ```
  if(newSize > page.length) resizePage(newSize);
@@ -3764,29 +3676,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(1857
 
         page[ offset++ ] = (byte)(lengthColumn >> 8);
         page[ offset++ ] = (byte)(lengthColumn);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(25646,211,<763,12>,<766,93>)
-```
- Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-            if(wasNull) return null;
-            return new Date(DateTime.addDateTimeOffset( expr.getLong(), cal.getTimeZone() ));
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(26334,211,<783,12>,<786,93>)
-```
- Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-            if(wasNull) return null;
-            return new Time(DateTime.addDateTimeOffset( expr.getLong(), cal.getTimeZone() ));
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(27037,216,<803,12>,<806,98>)
-```
- Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-            if(wasNull) return null;
-            return new Timestamp(DateTime.addDateTimeOffset( expr.getLong(), cal.getTimeZone() ));
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3817,32 +3706,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(1
  byte[] temp = new byte[newsize];
 		System.arraycopy(data, 0, temp, 0, data.length);
 		data = temp;
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(11684,249,<373,4>,<377,5>)
-```
- public PreparedStatement prepareStatement(String sql, int autoGeneratedKeys) throws SQLException {
-        SSPreparedStatement pr = new SSPreparedStatement( this, sql);
-        pr.setNeedGeneratedKeys(autoGeneratedKeys);
-        return pr;
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(11951,243,<380,4>,<384,5>)
-```
- public PreparedStatement prepareStatement(String sql, int[] columnIndexes) throws SQLException {
-        SSPreparedStatement pr = new SSPreparedStatement( this, sql);
-        pr.setNeedGeneratedKeys(columnIndexes);
-        return pr;
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(12212,242,<387,4>,<391,5>)
-```
- public PreparedStatement prepareStatement(String sql, String[] columnNames) throws SQLException {
-        SSPreparedStatement pr = new SSPreparedStatement( this, sql);
-        pr.setNeedGeneratedKeys(columnNames);
-        return pr;
-    }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3977,24 +3840,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/DateTime.java|(22184
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(8122,136,<284,7>,<288,31>)
-```
- offset = offset1;
-							offset1 = offset2;
-							offset2 = offset3;
-							firstNode = firstNode1;
-							firstNode1 = firstNode2;
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(8148,143,<285,7>,<289,31>)
-```
- offset1 = offset2;
-							offset2 = offset3;
-							firstNode = firstNode1;
-							firstNode1 = firstNode2;
-							firstNode2 = firstNode3;
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(13220,180,<267,8>,<270,31>)
 ```
  assertRSMetaData(rs, colNames, colTypes);
@@ -4081,6 +3926,60 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(3011
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5149,301,<95,4>,<104,5>)
+```
+ public void tearDown(){
+        try{
+            Connection con = AllTests.getConnection();
+            Statement st = con.createStatement();
+            st.execute("drop table " + table);
+            st.close();
+        }catch(Throwable e){
+            //e.printStackTrace();
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(3053,301,<68,4>,<77,5>)
+```
+ public void tearDown(){
+        try{
+            Connection con = AllTests.getConnection();
+            Statement st = con.createStatement();
+            st.execute("drop table " + table);
+            st.close();
+        }catch(Throwable e){
+            //e.printStackTrace();
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(22524,301,<374,4>,<383,5>)
+```
+ public void tearDown(){
+        try{
+            Connection con = AllTests.getConnection();
+            Statement st = con.createStatement();
+            st.execute("drop table " + table);
+            st.close();
+        }catch(Throwable e){
+            //e.printStackTrace();
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestMoneyRounding.java|(1787,301,<53,4>,<62,5>)
+```
+ public void tearDown(){
+        try{
+            Connection con = AllTests.getConnection();
+            Statement st = con.createStatement();
+            st.execute("drop table " + table);
+            st.close();
+        }catch(Throwable e){
+            //e.printStackTrace();
+        }
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(3805,308,<113,4>,<121,5>)
 ```
  public int getInt(int columnIndex) throws SQLException {
@@ -4132,69 +4031,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
             throw SmallSQLException.createFromException( e );
         }
     }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/LongList.java|(1663,141,<60,1>,<64,2>)
-```
- final long get(int idx){
-		if (idx >= size)
-			throw new IndexOutOfBoundsException("Index: "+idx+", Size: "+size);
-		return data[idx];
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(1774,147,<64,1>,<68,2>)
-```
- final Expression get(int idx){
-		if (idx >= size)
-			throw new IndexOutOfBoundsException("Index: "+idx+", Size: "+size);
-		return data[idx];
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/DataSources.java|(1510,147,<48,1>,<52,2>)
-```
- final DataSource get(int idx){
-		if (idx >= size)
-			throw new IndexOutOfBoundsException("Index: "+idx+", Size: "+size);
-		return data[idx];
-	}
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(11450,135,<255,8>,<258,24>)
-```
- for(int i=0; i<TESTS.length; i++){
-            theSuite.addTest(new TestOperatoren( TESTS[i] ) );
-        }
-        return theSuite;
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(13116,142,<329,8>,<332,24>)
-```
- for(int i=0; i<DATATYPES.length; i++){
-            theSuite.addTest(new TestDataTypes( DATATYPES[i] ) );
-        }
-        return theSuite;
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(23782,134,<408,8>,<411,24>)
-```
- for(int i=0; i<TESTS.length; i++){
-            theSuite.addTest(new TestFunctions( TESTS[i] ) );
-        }
-        return theSuite;
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestExceptions.java|(4885,135,<116,8>,<119,24>)
-```
- for(int i=0; i<TESTS.length; i++){
-            theSuite.addTest(new TestExceptions( TESTS[i] ) );
-        }
-        return theSuite;
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(10290,130,<197,8>,<200,24>)
-```
- for(int i=0; i<TESTS.length; i++){
-            theSuite.addTest(new TestJoins( TESTS[i] ) );
-        }
-        return theSuite;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -4482,71 +4318,6 @@ final class ExpressionFunctionYear extends ExpressionFunctionReturnInt {
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(8898,217,<292,4>,<294,5>)
-```
- public PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency) throws SQLException {
-        return new SSPreparedStatement( this, sql, resultSetType, resultSetConcurrency);
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSConnection.java|(9133,212,<297,4>,<299,5>)
-```
- public CallableStatement prepareCall(String sql, int resultSetType, int resultSetConcurrency) throws SQLException {
-        return new SSCallableStatement( this, sql, resultSetType, resultSetConcurrency);
-    }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(12113,199,<447,12>,<450,47>)
-```
- complement[offset++] = (byte)(val >> 24);
-            complement[offset++] = (byte)(val >> 16);
-            complement[offset++] = (byte)(val >> 8);
-            complement[offset++] = (byte)(val);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(3568,157,<123,2>,<126,34>)
-```
- bytes[offset++] = (byte)(value >> 24);
-		bytes[offset++] = (byte)(value >> 16);
-		bytes[offset++] = (byte)(value >> 8);
-		bytes[offset++] = (byte)(value);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13972,375,<392,8>,<399,41>)
-```
- page[ offset++ ] = (byte)(value >> 56);
-        page[ offset++ ] = (byte)(value >> 48);
-        page[ offset++ ] = (byte)(value >> 40);
-        page[ offset++ ] = (byte)(value >> 32);
-        page[ offset++ ] = (byte)(value >> 24);
-        page[ offset++ ] = (byte)(value >> 16);
-        page[ offset++ ] = (byte)(value >> 8);
-        page[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2273,349,<77,2>,<84,37>)
-```
- puffer[ offset++ ] = (byte)(value >> 56);
-		puffer[ offset++ ] = (byte)(value >> 48);
-		puffer[ offset++ ] = (byte)(value >> 40);
-		puffer[ offset++ ] = (byte)(value >> 32);
-		puffer[ offset++ ] = (byte)(value >> 24);
-		puffer[ offset++ ] = (byte)(value >> 16);
-		puffer[ offset++ ] = (byte)(value >> 8);
-		puffer[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(3400,325,<119,2>,<126,34>)
-```
- bytes[offset++] = (byte)(value >> 56);
-		bytes[offset++] = (byte)(value >> 48);
-		bytes[offset++] = (byte)(value >> 40);
-		bytes[offset++] = (byte)(value >> 32);
-		bytes[offset++] = (byte)(value >> 24);
-		bytes[offset++] = (byte)(value >> 16);
-		bytes[offset++] = (byte)(value >> 8);
-		bytes[offset++] = (byte)(value);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(13257,209,<419,6>,<422,47>)
 ```
  Expression col = columnExpressions.get(i);
@@ -4572,46 +4343,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/DateTime.java|(6084,
 ```
  if(idx2 < 0) idx2 = datetime.length();
 				second = Integer.parseInt(datetime.substring(idx1, idx2).trim());
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(7246,135,<215,6>,<217,56>)
-```
- final Expressions params = cmd.params;
-	    	final int size = params.size();
-			ExpressionValue[] values = new ExpressionValue[size];
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(12822,197,<410,4>,<414,54>)
-```
- Columns tableColumns = table.columns;
-				int count = tableColumns.size();
-				
-				// order the new Values after it position in the table
-				Expression[] updateValues = new Expression[count];
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(14388,191,<454,3>,<458,53>)
-```
- Columns tabColumns = table.columns;
-			int count = tabColumns.size();
-					
-			// order the new Values after it position in the table
-			Expression[] updateValues = new Expression[count];
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(8544,178,<322,4>,<325,5>)
-```
- final void setNeedGeneratedKeys(int[] columnIndexes) throws SQLException{
-        needGeneratedKeys = columnIndexes != null;
-        generatedKeyIndexes = columnIndexes;
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(8732,173,<328,4>,<331,5>)
-```
- final void setNeedGeneratedKeys(String[] columnNames) throws SQLException{
-        needGeneratedKeys = columnNames != null;
-        generatedKeyNames = columnNames;
-    }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -4691,20 +4422,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(17
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestFunctions.java|(22251,106,<362,8>,<364,33>)
-```
- TestValue value = new TestValue();
-        value.function  = function;
-        value.result    = result;
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestExceptions.java|(5138,103,<124,8>,<126,35>)
-```
- TestValue value = new TestValue();
-        value.sql       = sql;
-        value.sqlstate  = sqlstate;
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(4115,342,<114,2>,<120,51>)
 ```
  theSuite.addTestSuite(TestOrderBy.class);
@@ -4768,35 +4485,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(69
                 }
                 failed.setNextException(ex);
             }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(17139,80,<600,41>,<603,2>)
-```
- {
-		data[offset++] = (byte)(value >> 8);
-		data[offset++] = (byte)(value);
-	}
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(18634,95,<541,8>,<542,48>)
-```
- page[ offset++ ] = (byte)(lengthColumn >> 8);
-        page[ offset++ ] = (byte)(lengthColumn);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2769,72,<91,3>,<92,34>)
-```
- puffer[ offset++ ] = (byte)(c >> 8);
-			puffer[ offset++ ] = (byte)(c);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(12223,89,<449,12>,<450,47>)
-```
- complement[offset++] = (byte)(val >> 8);
-            complement[offset++] = (byte)(val);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(3652,73,<125,2>,<126,34>)
-```
- bytes[offset++] = (byte)(value >> 8);
-		bytes[offset++] = (byte)(value);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -4928,25 +4616,5 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
             throw SmallSQLException.createFromException( e );
         }
     }
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(3230,101,<107,3>,<109,17>)
-```
- byte[] temp = new byte[newSize];
-			System.arraycopy(puffer, 0, temp, 0, offset);
-			puffer = temp;
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(4716,112,<133,16>,<135,28>)
-```
- byte[] tmp2 = new byte[k];
-                System.arraycopy( tmp, 0, tmp2, 0, k);
-                obj1 = tmp2;
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(5131,88,<146,4>,<148,16>)
-```
- byte[] tmp2 = new byte[k];
-				System.arraycopy( tmp, 0, tmp2, 0, k);
-				obj2 = tmp2;
 ```
 
