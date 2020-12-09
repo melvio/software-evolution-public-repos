@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="DifferentTypesProject/src"/>
+	<classpathentry kind="src" path="hsqldb-2.3.1/hsqldb/doc/verbatim/src"/>
+	<classpathentry kind="src" path="hsqldb-2.3.1/hsqldb/src"/>
+	<classpathentry kind="src" path="KeepTinyProject/src"/>
+	<classpathentry kind="src" path="smallsql0.21_src/src"/>
+	<classpathentry kind="src" path="TinyProject/src"/>
+	<classpathentry kind="src" path="Type2Clones/src"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/build/gradle-ivyxml-plugin-0.3.2.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/build/gradle-javaPropFile-plugin-0.6.0.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/build/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/ant.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/commons-logging-api-1.1.3.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/javax.servlet_3.1.0.v201410161800.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/slf4j-nop-1.7.5.jar"/>
+	<classpathentry kind="lib" path="hsqldb-2.3.1/hsqldb/lib/sqltool.jar"/>
+	<classpathentry kind="lib" path="smallsql0.21_src/lib/junit-3.8.1.jar"/>
+	<classpathentry kind="output" path="DifferentTypesProject/bin"/>
+</classpath>
