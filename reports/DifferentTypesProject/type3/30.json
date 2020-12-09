@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "name": "/src/org/main/a/OverFile1Type1.java",
+    "clone_data": "<div class=\"youjustclickedon\">You're looking at the page for the file: OverFile1Type1.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(119,143,<7,2>,<13,3>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/DifferentTypesProject/src/org/main/a/OverFile1Type1.java#L7-L13 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> if (x + y > 3 || x + y < -2) {\n\t\t\tSystem.exit(10);\n\t\t\treturn new Integer(0);\n\t\t} else {\n\t\t\tThread.sleep(1337);\n\t\t\treturn new Error(\"oeps\");\n\t\t}\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/org/main/a/OverFile1Type1.java"
+    ]
+  }
+]
