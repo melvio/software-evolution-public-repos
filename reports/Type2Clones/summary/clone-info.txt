@@ -104,3 +104,9 @@ Location: |project://Type2Clones/src/testt/VariableClone.java|(276,108,<17,2>,<2
 		int n = 3;int n4 = 3;int n2 = 3;int n3 = 3;
 ```
 
+
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 3             ======= 
+==============================================

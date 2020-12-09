@@ -5,6 +5,18 @@
 ======             Type: 1             ======= 
 ==============================================
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(316,156,<15,30>,<16,90>)
+```
+ Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
+				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"))
+```
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(688,156,<27,19>,<28,63>)
+```
+ Arrays.asList(new String("Tom Jones"), new String("Harry Major"), new String("Ethan Hardy"),
+				new String("Nancy Smith"), new String("Deborah Sprightly"))
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://DifferentTypesProject/src/org/main/a/Type1CloneConstruct.java|(119,200,<8,2>,<19,3>)
 ```
  for (int i = 0 ; i < x ; x = x + y, y = x + y) {
@@ -37,9 +49,9 @@ Location: |project://DifferentTypesProject/src/org/main/a/Type1CloneConstruct.ja
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(56,209,<6,1>,<14,2>)
+Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(115,150,<6,60>,<14,2>)
 ```
- public static Object f (short x, byte y ) throws Throwable {
+ {
 		if (x + y > 3 || x + y < -2) {
 			System.exit(10);
 			return new Integer(0);
@@ -49,9 +61,9 @@ Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(5
 		}
 	}
 ```
-Location: |project://DifferentTypesProject/src/org/main/a/OverFile2Type1.java|(54,213,<5,1>,<15,2>)
+Location: |project://DifferentTypesProject/src/org/main/a/OverFile2Type1.java|(113,154,<5,60>,<15,2>)
 ```
- public static Object f (short x, byte y ) throws Throwable {
+ {
 		if (x + y > 3 || x + y < -2) {
 			System.exit(10);
 			return new Integer(0);
@@ -143,3 +155,9 @@ public class OverFile2Type1 {
 
 ```
 
+
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 3             ======= 
+==============================================

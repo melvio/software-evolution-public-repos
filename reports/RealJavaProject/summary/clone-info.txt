@@ -148,3 +148,9 @@ Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(4
 	}
 ```
 
+
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 3             ======= 
+==============================================
