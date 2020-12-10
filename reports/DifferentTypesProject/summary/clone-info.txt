@@ -1,4 +1,23 @@
 
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 53.65853659%
+*****************************
+** Number of clone classes:
+** 3
+*****************************
+** Number of clones:
+** 6
+*****************************
+** Size (SLOC) of largest clone: 
+** 11
+*****************************
+** The largest clones:
+** {|project://DifferentTypesProject/src/org/main/a/Type1CloneConstruct.java|(119,200,<8,2>,<19,3>),|project://DifferentTypesProject/src/org/main/a/Type1CloneConstruct.java|(389,200,<25,2>,<36,3>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -77,6 +96,25 @@ Location: |project://DifferentTypesProject/src/org/main/a/OverFile2Type1.java|(1
 ```
 
 
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 53.65853659%
+*****************************
+** Number of clone classes:
+** 2
+*****************************
+** Number of clones:
+** 4
+*****************************
+** Size (SLOC) of largest clone: 
+** 12
+*****************************
+** The largest clones:
+** {|project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(0,269,<1,0>,<16,2>),|project://DifferentTypesProject/src/org/main/a/OverFile2Type1.java|(0,271,<1,0>,<17,2>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -156,6 +194,25 @@ public class OverFile2Type1 {
 ```
 
 
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 8.536585366%
+*****************************
+** Number of clone classes:
+** 1
+*****************************
+** Number of clones:
+** 1
+*****************************
+** Size (SLOC) of largest clone: 
+** 7
+*****************************
+** The largest clones:
+** {|project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(119,143,<7,2>,<13,3>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 

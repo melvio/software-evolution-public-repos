@@ -1,10 +1,48 @@
 
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.%
+*****************************
+** Number of clone classes:
+** 0
+*****************************
+** Number of clones:
+** 0
+*****************************
+** Size (SLOC) of largest clone: 
+** 0
+*****************************
+** The largest clones:
+** {}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 1             ======= 
 ==============================================
 
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 75.%
+*****************************
+** Number of clone classes:
+** 3
+*****************************
+** Number of clones:
+** 6
+*****************************
+** Size (SLOC) of largest clone: 
+** 13
+*****************************
+** The largest clones:
+** {|project://Type2Clones/src/FirstClone.java|(418,389,<18,1>,<31,2>),|project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -105,8 +143,59 @@ Location: |project://Type2Clones/src/testt/VariableClone.java|(276,108,<17,2>,<2
 ```
 
 
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 26.25%
+*****************************
+** Number of clone classes:
+** 1
+*****************************
+** Number of clones:
+** 3
+*****************************
+** Size (SLOC) of largest clone: 
+** 9
+*****************************
+** The largest clones:
+** {|project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>)
+```
+ if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)
+```
+ if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+

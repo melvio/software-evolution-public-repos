@@ -1,4 +1,23 @@
 
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 83.87096774%
+*****************************
+** Number of clone classes:
+** 2
+*****************************
+** Number of clones:
+** 4
+*****************************
+** Size (SLOC) of largest clone: 
+** 16
+*****************************
+** The largest clones:
+** {|project://TinyProject/src/DuplicationExamples.java|(78,438,<4,37>,<19,2>),|project://TinyProject/src/DuplicationExamples2.java|(77,438,<3,37>,<18,2>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -73,6 +92,25 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(77,438,<3,37>,<1
 ```
 
 
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 51.61290323%
+*****************************
+** Number of clone classes:
+** 1
+*****************************
+** Number of clones:
+** 2
+*****************************
+** Size (SLOC) of largest clone: 
+** 16
+*****************************
+** The largest clones:
+** {|project://TinyProject/src/DuplicationExamples.java|(42,474,<4,1>,<19,2>),|project://TinyProject/src/DuplicationExamples2.java|(41,474,<3,1>,<18,2>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -119,6 +157,25 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(41,474,<3,1>,<18
 ```
 
 
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.%
+*****************************
+** Number of clone classes:
+** 0
+*****************************
+** Number of clones:
+** 0
+*****************************
+** Size (SLOC) of largest clone: 
+** 0
+*****************************
+** The largest clones:
+** {}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 

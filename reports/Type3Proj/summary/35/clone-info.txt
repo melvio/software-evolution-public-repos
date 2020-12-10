@@ -1,0 +1,136 @@
+
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 30.%
+*****************************
+** Number of clone classes:
+** 1
+*****************************
+** Number of clones:
+** 2
+*****************************
+** Size (SLOC) of largest clone: 
+** 3
+*****************************
+** The largest clones:
+** {|project://Type3Proj/src/org/Type3.java|(123,72,<9,2>,<11,20>),|project://Type3Proj/src/org/Type3.java|(301,72,<19,2>,<21,20>)}
+** The largest clones in code:
+** 
+** largest clone number: 1
+** int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+** largest clone number: 2
+** int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+*****************************
+** The largest clone SLOC:
+** 6
+*****************************
+** The largest clone classes (loc):
+** {[|project://Type3Proj/src/org/Type3.java|(123,72,<9,2>,<11,20>),|project://Type3Proj/src/org/Type3.java|(301,72,<19,2>,<21,20>)]}
+*****************************
+** The largest clone classes in code:
+** 
+** largest clone class number: 1
+** int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 1             ======= 
+==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type3Proj/src/org/Type3.java|(123,72,<9,2>,<11,20>)
+```
+ int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+```
+Location: |project://Type3Proj/src/org/Type3.java|(301,72,<19,2>,<21,20>)
+```
+ int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+```
+
+
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.%
+*****************************
+** Number of clone classes:
+** 0
+*****************************
+** Number of clones:
+** 0
+*****************************
+** Size (SLOC) of largest clone: 
+** 0
+*****************************
+** The largest clones:
+** {}
+** The largest clones in code:
+** 
+*****************************
+** The largest clone SLOC:
+** 0
+*****************************
+** The largest clone classes (loc):
+** {}
+*****************************
+** The largest clone classes in code:
+** 
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 2             ======= 
+==============================================
+
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.%
+*****************************
+** Number of clone classes:
+** 0
+*****************************
+** Number of clones:
+** 0
+*****************************
+** Size (SLOC) of largest clone: 
+** 0
+*****************************
+** The largest clones:
+** {}
+** The largest clones in code:
+** 
+*****************************
+** The largest clone SLOC:
+** 0
+*****************************
+** The largest clone classes (loc):
+** {}
+*****************************
+** The largest clone classes in code:
+** 
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 3             ======= 
+==============================================

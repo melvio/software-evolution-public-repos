@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "/src/com/duplication/DuplicationExamples2.java",
+    "clone_data": "<div class=\"youjustclickedon\">You're looking at the page for the file: DuplicationExamples2.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://RealJavaProject/src/com/duplication/DuplicationExamples2.java|(0,227,<1,0>,<12,3>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/RealJavaProject/src/com/duplication/DuplicationExamples2.java#L1-L12 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> package com.duplication;\r\n\r\npublic class DuplicationExamples2 {\r\n\t\r\n\tpublic void testAgainstOtherClass() {\r\n\t\tif (true) {\r\n\t\t\tSystem.out.println(\"This is true\");\r\n\t\t} \r\n\t\tSystem.out.println(\"This is false\");\r\n\t\treturn;\r\n\t}\r\n}\r\n\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/com/duplication/DuplicationExamples2.java"
+    ]
+  },
+  {
+    "name": "/src/com/example/DuplicationExamples.java",
+    "clone_data": "<div class=\"youjustclickedon\">You're looking at the page for the file: DuplicationExamples.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/RealJavaProject/src/com/example/DuplicationExamples.java#L41-L53 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> public void testAgainstOtherClass() {\r\n\t\tif (true) {\r\n\t\t\tSystem.out.println(\"This is true\");\r\n\t\t} \r\n\t\tfor (int i = 0; i < 10; i++) {\r\n\t\t\tif (true) {\r\n\t\t\t\tSystem.out.println(\"True!\");\r\n\t\t\t}\r\n\t\t\tif (true) {\r\n\t\t\t\tSystem.out.println(\"True 2!\");\r\n\t\t\t}\r\n\t\t}\r\n\t}\n</div></code></pre><div class=\"cloneloc\">Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/RealJavaProject/src/com/example/DuplicationExamples.java#L41-L53 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> {\r\n\t\tif (true) {\r\n\t\t\tSystem.out.println(\"This is true\");\r\n\t\t} \r\n\t\tfor (int i = 0; i < 10; i++) {\r\n\t\t\tif (true) {\r\n\t\t\t\tSystem.out.println(\"True!\");\r\n\t\t\t}\r\n\t\t\tif (true) {\r\n\t\t\t\tSystem.out.println(\"True 2!\");\r\n\t\t\t}\r\n\t\t}\r\n\t}\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/com/example/DuplicationExamples.java"
+    ]
+  }
+]

@@ -1,25 +1,28 @@
 
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 5.702940182%
+*****************************
+** Number of clone classes:
+** 113
+*****************************
+** Number of clones:
+** 263
+*****************************
+** Size (SLOC) of largest clone: 
+** 19
+*****************************
+** The largest clones:
+** {|project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(2976,966,<85,8>,<107,48>),|project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(4893,966,<128,8>,<150,48>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 1             ======= 
 ==============================================
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(1346,312,<45,8>,<48,79>)
-```
- st.execute("alter table "+table+" add b varchar(4) primary key");
-        ResultSet rs = st.executeQuery("Select * From " + table);
-        assertRSMetaData( rs, new String[]{"a", "b"},  new int[]{Types.VARCHAR, Types.VARCHAR} );
-        rs = con.getMetaData().getIndexInfo( null, null, table, false, false );
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(2694,312,<75,8>,<78,79>)
-```
- st.execute("alter table "+table+" add b varchar(4) primary key");
-        ResultSet rs = st.executeQuery("Select * From " + table);
-        assertRSMetaData( rs, new String[]{"a", "b"},  new int[]{Types.VARCHAR, Types.VARCHAR} );
-        rs = con.getMetaData().getIndexInfo( null, null, table, false, false );
-```
-
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTruncate.java|(1645,311,<46,2>,<60,3>)
 ```
@@ -59,69 +62,47 @@ Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRo
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(4881,112,<167,2>,<172,3>)
+Location: |project://smallsql0.21_src/src/smallsql/database/Database.java|(13990,89,<395,2>,<397,16>)
 ```
- if(num.scale < scale){
-			num.setScale(scale);
-		}else
-		if(num.scale > scale){
-			setScale(num.scale);
-		}
+ Object[][] result = new Object[rows.size()][];
+		rows.toArray(result);
+		return result;
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(6715,112,<235,2>,<240,3>)
+Location: |project://smallsql0.21_src/src/smallsql/database/Database.java|(15775,89,<438,2>,<440,16>)
 ```
- if(num.scale < scale){
-			num.setScale(scale);
-		}else
-		if(num.scale > scale){
-			setScale(num.scale);
-		}
+ Object[][] result = new Object[rows.size()][];
+		rows.toArray(result);
+		return result;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Database.java|(17183,89,<474,2>,<476,16>)
+```
+ Object[][] result = new Object[rows.size()][];
+		rows.toArray(result);
+		return result;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Database.java|(18207,89,<505,2>,<507,16>)
+```
+ Object[][] result = new Object[rows.size()][];
+		rows.toArray(result);
+		return result;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Database.java|(19524,89,<542,2>,<544,16>)
+```
+ Object[][] result = new Object[rows.size()][];
+		rows.toArray(result);
+		return result;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(1577,435,<46,3>,<53,99>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SmallSQLException.java|(4596,127,<145,5>,<146,57>)
 ```
- con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
-			assertRowCount( 0, "Select * from Scrollable");
-
-			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
-			assertRowCount( 1, "Select * from Scrollable");
-			assertRowCount( 0, "Select * from Scrollable Where 1=0");
-
-			Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+ String message = translateMsg(messageCode, new Object[] { param0 });
+    	String sqlState = language.getSqlState(messageCode);
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(3032,444,<79,3>,<86,108>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SmallSQLException.java|(5993,127,<182,5>,<183,57>)
 ```
- con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
-			assertRowCount( 0, "Select * from Scrollable");
-
-			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
-			assertRowCount( 1, "Select * from Scrollable");
-			assertRowCount( 0, "Select * from Scrollable Where 1=0");
-
-            Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(4450,444,<111,3>,<118,108>)
-```
- con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
-			assertRowCount( 0, "Select * from Scrollable");
-
-			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
-			assertRowCount( 1, "Select * from Scrollable");
-			assertRowCount( 0, "Select * from Scrollable Where 1=0");
-
-            Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(6059,444,<147,3>,<154,108>)
-```
- con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
-			assertRowCount( 0, "Select * from Scrollable");
-
-			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
-			assertRowCount( 1, "Select * from Scrollable");
-			assertRowCount( 0, "Select * from Scrollable Where 1=0");
-
-            Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+ String message = translateMsg(messageCode, new Object[] { param0 });
+    	String sqlState = language.getSqlState(messageCode);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -203,6 +184,22 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(28455,2
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(5824,181,<135,25>,<139,21>)
+```
+ {
+                        store.page = storePage.page;
+                        store.sharedPageData = true;
+                        store.readPageHeader();
+                    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(6590,87,<157,2>,<159,25>)
+```
+ store.page = storePage.page;
+		store.sharedPageData = true;
+		store.readPageHeader();
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(2976,966,<85,8>,<107,48>)
 ```
  assertEquals("getRow", 1, rs.getRow() );
@@ -257,6 +254,24 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(489
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(17695,140,<666,47>,<671,3>)
+```
+ {
+			String newValue = rs.getString("c2");
+			assertTrue( oldValue.compareTo( newValue ) < 0 );
+			oldValue = newValue;
+			count++;
+		}
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18217,132,<686,4>,<689,12>)
+```
+ String newValue = rs.getString("c2");
+				assertTrue( oldValue.compareTo( newValue ) < 0 );
+				oldValue = newValue;
+				count++;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(8130,302,<182,8>,<182,310>)
 ```
  String[] colNames = {"TABLE_CAT", "TABLE_SCHEM", "TABLE_NAME", "COLUMN_NAME", "DATA_TYPE", "TYPE_NAME", "COLUMN_SIZE", "BUFFER_LENGTH", "DECIMAL_DIGITS", "NUM_PREC_RADIX", "NULLABLE", "REMARKS", "COLUMN_DEF", "SQL_DATA_TYPE", "SQL_DATETIME_SUB", "CHAR_OCTET_LENGTH", "ORDINAL_POSITION", "IS_NULLABLE"};
@@ -267,6 +282,24 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.j
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9886,128,<356,2>,<360,15>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		int oldValue;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(10511,128,<382,2>,<386,15>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		int oldValue;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(11286,231,<234,8>,<234,239>)
 ```
  String[] colNames = {"PKTABLE_CAT", "PKTABLE_SCHEM", "PKTABLE_NAME", "PKCOLUMN_NAME", "FKTABLE_CAT", "FKTABLE_SCHEM", "FKTABLE_NAME", "FKCOLUMN_NAME", "KEY_SEQ", "UPDATE_RULE", "DELETE_RULE", "FK_NAME", "PK_NAME", "DEFERRABILITY"};
@@ -274,6 +307,30 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(11
 Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(19973,231,<821,3>,<821,234>)
 ```
  String[] colNames = {"PKTABLE_CAT", "PKTABLE_SCHEM", "PKTABLE_NAME", "PKCOLUMN_NAME", "FKTABLE_CAT", "FKTABLE_SCHEM", "FKTABLE_NAME", "FKCOLUMN_NAME", "KEY_SEQ", "UPDATE_RULE", "DELETE_RULE", "FK_NAME", "PK_NAME", "DEFERRABILITY"};
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(4392,114,<134,3>,<136,11>)
+```
+ assertTrue( oldValue + "<" + newValue, oldValue.compareTo( newValue ) < 0 );
+			oldValue = newValue;
+			count++;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(5079,114,<162,3>,<164,11>)
+```
+ assertTrue( oldValue + "<" + newValue, oldValue.compareTo( newValue ) < 0 );
+			oldValue = newValue;
+			count++;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(4639,196,<103,8>,<103,204>)
+```
+ String[] colNames = {"PROCEDURE_CAT", "PROCEDURE_SCHEM", "PROCEDURE_NAME", "COLUMN_NAME", "COLUMN_TYPE", "DATA_TYPE", "TYPE_NAME", "PRECISION", "LENGTH", "SCALE", "RADIX", "NULLABLE", "REMARKS" };
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(13265,196,<671,2>,<671,198>)
+```
+ String[] colNames = {"PROCEDURE_CAT", "PROCEDURE_SCHEM", "PROCEDURE_NAME", "COLUMN_NAME", "COLUMN_TYPE", "DATA_TYPE", "TYPE_NAME", "PRECISION", "LENGTH", "SCALE", "RADIX", "NULLABLE", "REMARKS" };
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -302,6 +359,70 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(14637
 		Statement st = con.createStatement();
 		ResultSet rs;
 		Long oldValue;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(13078,102,<474,16>,<475,80>)
+```
+ // simple Long Value
+                long temp = (((long)value[0]) << 32) | (value[1] & 0xFFFFFFFFL);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(14192,102,<503,16>,<504,80>)
+```
+ // simple Long Value
+                long temp = (((long)value[0]) << 32) | (value[1] & 0xFFFFFFFFL);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(15105,102,<526,16>,<527,80>)
+```
+ // simple Long Value
+                long temp = (((long)value[0]) << 32) | (value[1] & 0xFFFFFFFFL);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(16051,102,<550,16>,<551,80>)
+```
+ // simple Long Value
+                long temp = (((long)value[0]) << 32) | (value[1] & 0xFFFFFFFFL);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(1346,312,<45,8>,<48,79>)
+```
+ st.execute("alter table "+table+" add b varchar(4) primary key");
+        ResultSet rs = st.executeQuery("Select * From " + table);
+        assertRSMetaData( rs, new String[]{"a", "b"},  new int[]{Types.VARCHAR, Types.VARCHAR} );
+        rs = con.getMetaData().getIndexInfo( null, null, table, false, false );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestAlterTable2.java|(2694,312,<75,8>,<78,79>)
+```
+ st.execute("alter table "+table+" add b varchar(4) primary key");
+        ResultSet rs = st.executeQuery("Select * From " + table);
+        assertRSMetaData( rs, new String[]{"a", "b"},  new int[]{Types.VARCHAR, Types.VARCHAR} );
+        rs = con.getMetaData().getIndexInfo( null, null, table, false, false );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestLanguage.java|(7213,140,<241,4>,<244,5>)
+```
+ for (Iterator itr = diff.iterator(); itr.hasNext(); ) {
+					msgBuf.append(itr.next());
+					if (itr.hasNext()) msgBuf.append(',');
+				}
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestLanguage.java|(7728,182,<255,16>,<258,17>)
+```
+ for (Iterator itr = diff.iterator(); itr.hasNext(); ) {
+                    msgBuf.append(itr.next());
+                    if (itr.hasNext()) msgBuf.append(',');
+                }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(13159,87,<418,8>,<418,95>)
+```
+ src != null && (!(src instanceof ExpressionValue) || !((ExpressionValue)src).isEmpty())
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(14713,87,<462,8>,<462,95>)
+```
+ src != null && (!(src instanceof ExpressionValue) || !((ExpressionValue)src).isEmpty())
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -387,30 +508,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(76
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(15096,389,<410,3>,<417,28>)
-```
- con1.createStatement().execute("Create Table transactions (i int identity, v varchar(20))");
-			assertRowCount( 0, "Select * from transactions");
-
-			con1.setAutoCommit(false);
-			con1.createStatement().execute("Insert Into transactions(v) Values('qwert2')");
-
-			ResultSet rs2 = con2.createStatement().executeQuery("Select count(*) from transactions");
-			assertTrue( rs2.next() );
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(15876,389,<432,3>,<439,28>)
-```
- con1.createStatement().execute("Create Table transactions (i int identity, v varchar(20))");
-			assertRowCount( 0, "Select * from transactions");
-
-			con1.setAutoCommit(false);
-			con1.createStatement().execute("Insert Into transactions(v) Values('qwert2')");
-
-			ResultSet rs2 = con2.createStatement().executeQuery("Select count(*) from transactions");
-			assertTrue( rs2.next() );
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7881,261,<209,8>,<213,29>)
 ```
  rs = st.getGeneratedKeys();
@@ -452,6 +549,147 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(91
 		assertEquals( "a", rs.getObject("COLUMN_NAME") ); 
 		assertEquals( "INT", rs.getObject("TYPE_NAME") ); 
 		assertEquals( "5", rs.getObject("COLUMN_Def") );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8196,188,<176,8>,<179,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8526,188,<183,8>,<186,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(9209,188,<198,8>,<201,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(9963,188,<214,8>,<217,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10778,176,<235,2>,<238,43>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(8234,185,<216,8>,<219,29>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(8891,185,<229,8>,<232,29>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertRowCount(1,rs);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(15096,389,<410,3>,<417,28>)
+```
+ con1.createStatement().execute("Create Table transactions (i int identity, v varchar(20))");
+			assertRowCount( 0, "Select * from transactions");
+
+			con1.setAutoCommit(false);
+			con1.createStatement().execute("Insert Into transactions(v) Values('qwert2')");
+
+			ResultSet rs2 = con2.createStatement().executeQuery("Select count(*) from transactions");
+			assertTrue( rs2.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(15876,389,<432,3>,<439,28>)
+```
+ con1.createStatement().execute("Create Table transactions (i int identity, v varchar(20))");
+			assertRowCount( 0, "Select * from transactions");
+
+			con1.setAutoCommit(false);
+			con1.createStatement().execute("Insert Into transactions(v) Values('qwert2')");
+
+			ResultSet rs2 = con2.createStatement().executeQuery("Select count(*) from transactions");
+			assertTrue( rs2.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/TableResult.java|(5522,114,<180,6>,<180,120>)
+```
+ store = ((StorePageLink)insertStorePages.get( (int)(filePos & 0x3FFFFFFFFFFFFFFFL) )).getStore( table, con, lock);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/TableResult.java|(5845,114,<186,5>,<186,119>)
+```
+ store = ((StorePageLink)insertStorePages.get( (int)(filePos & 0x3FFFFFFFFFFFFFFFL) )).getStore( table, con, lock);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(5362,123,<156,2>,<158,38>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(sql);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(6835,123,<202,2>,<204,38>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(sql);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(13880,123,<346,2>,<348,38>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs = st.executeQuery(sql);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(4881,112,<167,2>,<172,3>)
+```
+ if(num.scale < scale){
+			num.setScale(scale);
+		}else
+		if(num.scale > scale){
+			setScale(num.scale);
+		}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/MutableNumeric.java|(6715,112,<235,2>,<240,3>)
+```
+ if(num.scale < scale){
+			num.setScale(scale);
+		}else
+		if(num.scale > scale){
+			setScale(num.scale);
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSubstring.java|(1948,134,<59,2>,<61,84>)
+```
+ int length = param3.getInt();
+		if(length < 0) 
+			throw SmallSQLException.create(Language.SUBSTR_INVALID_LEN, new Integer(length));
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSubstring.java|(2617,134,<80,2>,<82,84>)
+```
+ int length = param3.getInt();
+		if(length < 0) 
+			throw SmallSQLException.create(Language.SUBSTR_INVALID_LEN, new Integer(length));
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -504,6 +742,24 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(37
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(3748,92,<75,8>,<75,100>)
 ```
  a("timestamp"         , new Timestamp(99, 1,1,0,0,0,0),      new Timestamp(99, 2,2,0,0,0,0))
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(10100,132,<364,2>,<368,40>)
+```
+ assertTrue( rs.next() );
+		
+		assertNull(rs.getObject("i"));
+		assertTrue( rs.next() );
+		oldValue = Math.abs( rs.getInt("i") );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(10755,132,<391,2>,<395,40>)
+```
+ assertTrue( rs.next() );
+		
+		assertNull(rs.getObject("i"));
+		assertTrue( rs.next() );
+		oldValue = Math.abs( rs.getInt("i") );
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -611,6 +867,22 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(505
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSubstring.java|(2167,105,<63,30>,<67,3>)
+```
+ {
+			byte[] b = new byte[length];
+			System.arraycopy(bytes, start, b, 0, length);
+			return b;		
+		}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionLTrim.java|(1919,90,<61,2>,<63,11>)
+```
+ byte[] b = new byte[length];
+		System.arraycopy(bytes, start, b, 0, length);
+		return b;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10261,245,<221,2>,<227,13>)
 ```
  pr.setObject( 1, testValue.small);
@@ -630,6 +902,26 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(11
 		assertTrue( "To few rows", rs.next());
 		assertFalse( "To many rows", rs.next() );
 		pr.close();
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/GroupResult.java|(3480,160,<89,7>,<94,3>)
+```
+ {
+			int idx = internalExpressions.indexOf(expr);
+			if(idx >= 0) return idx;
+			internalExpressions.add(expr);
+			return internalExpressions.size()-1;
+		}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/GroupResult.java|(4267,160,<111,36>,<116,3>)
+```
+ {
+			int idx = internalExpressions.indexOf(expr);
+			if(idx >= 0) return idx;
+			internalExpressions.add(expr);
+			return internalExpressions.size()-1;
+		}
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -747,6 +1039,24 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(8376,191,<249,4>,<253,32>)
+```
+ if(failed == null){
+					failed = new BatchUpdateException(ex.getMessage(), ex.getSQLState(), ex.getErrorCode(), result);
+					failed.initCause(ex);
+				}
+				failed.setNextException(ex);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(7052,245,<271,16>,<275,44>)
+```
+ if(failed == null){
+                    failed = new BatchUpdateException(ex.getMessage(), ex.getSQLState(), ex.getErrorCode(), result);
+                    failed.initCause(ex);
+                }
+                failed.setNextException(ex);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3576,237,<102,48>,<109,2>)
 ```
  {
@@ -771,21 +1081,85 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(6369,282
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(8376,191,<249,4>,<253,32>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(45022,240,<1239,24>,<1243,25>)
 ```
- if(failed == null){
-					failed = new BatchUpdateException(ex.getMessage(), ex.getSQLState(), ex.getErrorCode(), result);
-					failed.initCause(ex);
-				}
-				failed.setNextException(ex);
+ if(token2 != null && token2.value == SQLTokenizer.POINT){
+                            expr.setNameAfterTableAlias( nextIdentifier() );
+                        }else{
+                            previousToken();
+                        }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(7052,245,<271,16>,<275,44>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(50855,272,<1332,32>,<1336,33>)
 ```
- if(failed == null){
-                    failed = new BatchUpdateException(ex.getMessage(), ex.getSQLState(), ex.getErrorCode(), result);
-                    failed.initCause(ex);
-                }
-                failed.setNextException(ex);
+ if(token2 != null && token2.value == SQLTokenizer.POINT){
+                                    expr.setNameAfterTableAlias( nextIdentifier() );
+                                }else{
+                                    previousToken();
+                                }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(9939,181,<237,8>,<241,37>)
+```
+ assertEquals(0, rs.getRow());
+        assertFalse(rs.isLast());
+        assertFalse(rs.isFirst());
+        assertFalse(rs.isBeforeFirst());
+        assertTrue(rs.isAfterLast());
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(10545,181,<256,8>,<260,37>)
+```
+ assertEquals(0, rs.getRow());
+        assertFalse(rs.isLast());
+        assertFalse(rs.isFirst());
+        assertFalse(rs.isBeforeFirst());
+        assertTrue(rs.isAfterLast());
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(1577,435,<46,3>,<53,99>)
+```
+ con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
+			assertRowCount( 0, "Select * from Scrollable");
+
+			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
+			assertRowCount( 1, "Select * from Scrollable");
+			assertRowCount( 0, "Select * from Scrollable Where 1=0");
+
+			Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(3032,444,<79,3>,<86,108>)
+```
+ con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
+			assertRowCount( 0, "Select * from Scrollable");
+
+			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
+			assertRowCount( 1, "Select * from Scrollable");
+			assertRowCount( 0, "Select * from Scrollable Where 1=0");
+
+            Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(4450,444,<111,3>,<118,108>)
+```
+ con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
+			assertRowCount( 0, "Select * from Scrollable");
+
+			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
+			assertRowCount( 1, "Select * from Scrollable");
+			assertRowCount( 0, "Select * from Scrollable Where 1=0");
+
+            Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(6059,444,<147,3>,<154,108>)
+```
+ con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
+			assertRowCount( 0, "Select * from Scrollable");
+
+			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
+			assertRowCount( 1, "Select * from Scrollable");
+			assertRowCount( 0, "Select * from Scrollable Where 1=0");
+
+            Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -869,6 +1243,18 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(10123,2
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(19400,143,<564,8>,<565,112>)
+```
+ long lobFilePos = readLong();
+        StoreImpl store = table.getLobStore( ((TableStorePage)storePage).con, lobFilePos, SQLTokenizer.SELECT );
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(20622,143,<597,8>,<598,112>)
+```
+ long lobFilePos = readLong();
+        StoreImpl store = table.getLobStore( ((TableStorePage)storePage).con, lobFilePos, SQLTokenizer.SELECT );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/Index.java|(13388,134,<382,3>,<384,20>)
 ```
  // the first digit include 0-null; 1-empty; 2 another value
@@ -927,6 +1313,22 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(19305
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Index.java|(12105,116,<331,3>,<334,43>)
+```
+ node = node.getChildNode(digit);
+			
+			if(node == null) return null;
+			if(nodeList != null) nodeList.add(node);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Index.java|(13527,113,<385,3>,<388,43>)
+```
+ node = node.getChildNode(digit);
+
+			if(node == null) return null;
+			if(nodeList != null) nodeList.add(node);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18762,470,<707,2>,<725,36>)
 ```
  //jetzt irgendwo in die Mitte scrollen
@@ -970,6 +1372,26 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(19578
 		count = -1;
 		while(rs.next()) count++;		
 		assertEquals( valueCount, count );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6541,153,<136,12>,<141,25>)
+```
+ pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6961,153,<150,12>,<155,25>)
+```
+ pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1139,6 +1561,22 @@ Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(1
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestExceptions.java|(3818,130,<87,5>,<90,22>)
+```
+ init();
+        Connection con = AllTests.getConnection();
+        Statement st = con.createStatement();
+		ResultSet rs = null;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(17235,118,<650,2>,<653,22>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs = null;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(19401,172,<581,8>,<584,48>)
 ```
  String catalog;
@@ -1184,6 +1622,16 @@ Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2
 ```
  puffer[ offset++ ] = (byte)(value >> 8);
 		puffer[ offset++ ] = (byte)(value);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3451,74,<101,29>,<101,103>)
+```
+ digits = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(16305,89,<476,24>,<476,113>)
+```
+ digits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'}
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1235,6 +1683,24 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(4003,
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(10314,181,<249,8>,<253,38>)
+```
+ assertEquals(0, rs.getRow());
+        assertFalse(rs.isLast());
+        assertFalse(rs.isFirst());
+        assertTrue(rs.isBeforeFirst());
+        assertFalse(rs.isAfterLast());
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(10777,181,<263,8>,<267,38>)
+```
+ assertEquals(0, rs.getRow());
+        assertFalse(rs.isLast());
+        assertFalse(rs.isFirst());
+        assertTrue(rs.isBeforeFirst());
+        assertFalse(rs.isAfterLast());
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(1525,308,<59,8>,<68,9>)
 ```
  // wait until all threads are finish
@@ -1273,6 +1739,22 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(5191,
             if(throwable != null){
                 throw throwable;
             }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(9538,151,<225,8>,<228,34>)
+```
+ assertEquals("qwert3", rs.getString("v"));
+        assertEquals(3, rs.getRow());
+        assertTrue(rs.isLast());
+        assertFalse(rs.isFirst());
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(9738,151,<231,8>,<234,34>)
+```
+ assertEquals("qwert3", rs.getString("v"));
+        assertEquals(3, rs.getRow());
+        assertTrue(rs.isLast());
+        assertFalse(rs.isFirst());
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1368,6 +1850,24 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestMoneyRounding.java|
             //e.printStackTrace();
         }
     }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(18073,236,<434,16>,<438,17>)
+```
+ int updateCount = pr.executeUpdate();
+                if (updateCount != 1){
+                    System.out.println( "  Failed: Update count should be 1 but it is " + updateCount + ".");
+                    return;
+                }
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(20835,236,<487,16>,<491,17>)
+```
+ int updateCount = pr.executeUpdate();
+                if (updateCount != 1){
+                    System.out.println( "  Failed: Update count should be 1 but it is " + updateCount + ".");
+                    return;
+                }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1467,6 +1967,18 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(19913,9
 	            pr.setByte  (  16, (byte)28 );
 	            pr.setBytes (  17, byteArray );
 	            pr.setString(  18, "varchar (255) NULL" );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(6881,113,<218,27>,<219,66>)
+```
+ (byte)((hexDigit2int( hex[ offset++ ] ) << 4)
+                                | hexDigit2int( hex[ offset++ ] ))
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(8472,113,<262,23>,<263,66>)
+```
+ (byte)((hexDigit2int( hex[ offset++ ] ) << 4)
+                                | hexDigit2int( hex[ offset++ ] ))
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1694,29 +2206,19 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(129
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(2698,180,<73,8>,<76,33>)
 ```
- assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertFalse( "To many rows", rs.next() );
+ Connection con = AllTests.getConnection();
+        Statement st = con.createStatement();
+        int isolation = con.getTransactionIsolation();
+        con.setAutoCommit(false);
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(9914,237,<213,8>,<217,49>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestAlterTable.java|(3602,180,<96,8>,<99,33>)
 ```
- assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertFalse( "To many rows", rs.next() );
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10735,219,<234,2>,<238,43>)
-```
- assertTrue( "To few rows", rs.next() );
-		assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-		assertTrue( "To few rows", rs.next() );
-		assertFalse( "To many rows", rs.next() );
+ Connection con = AllTests.getConnection();
+        Statement st = con.createStatement();
+        int isolation = con.getTransactionIsolation();
+        con.setAutoCommit(false);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1807,6 +2309,54 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(5031,318,<148,3>,<154,18>)
+```
+ con.createStatement().execute("Insert Into transactions(v) Select v From transactions");
+			assertRowCount( 2, "Select * from transactions");
+
+			con.createStatement().execute("Insert Into transactions(v) (Select v From transactions)");
+			assertRowCount( 4, "Select * from transactions");
+			
+			con.rollback();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(6099,318,<179,3>,<185,18>)
+```
+ con.createStatement().execute("Insert Into transactions(v) Select v From transactions");
+			assertRowCount( 2, "Select * from transactions");
+
+			con.createStatement().execute("Insert Into transactions(v) (Select v From transactions)");
+			assertRowCount( 4, "Select * from transactions");
+			
+			con.rollback();
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(9914,237,<213,8>,<217,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10735,219,<234,2>,<238,43>)
+```
+ assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(12014,232,<352,5>,<357,6>)
 ```
  try{
@@ -1827,6 +2377,20 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(7444
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(1991,107,<54,8>,<56,39>)
+```
+ con.log.println(sql);
+        SQLParser parser = new SQLParser();
+        cmd = parser.parse( con, sql );
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSStatement.java|(2932,113,<107,12>,<109,41>)
+```
+ con.log.println(sql);
+            SQLParser parser = new SQLParser();
+            cmd = parser.parse(con, sql);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(6409,261,<191,47>,<196,5>)
 ```
  {
@@ -1844,6 +2408,20 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(11192,26
         }catch(NumberFormatException e){/*ignore it if it not a number*/}
         return "true".equalsIgnoreCase( val ) || "yes".equalsIgnoreCase( val ) || "t".equalsIgnoreCase( val );
     }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRTrim.java|(1868,86,<59,2>,<61,11>)
+```
+ byte[] b = new byte[length];
+		System.arraycopy(bytes, 0, b, 0, length);
+		return b;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionLeft.java|(1845,86,<58,2>,<60,11>)
+```
+ byte[] b = new byte[length];
+		System.arraycopy(bytes, 0, b, 0, length);
+		return b;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -1929,27 +2507,30 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.j
 ```
 
 
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 4.414498141%
+*****************************
+** Number of clone classes:
+** 86
+*****************************
+** Number of clones:
+** 192
+*****************************
+** Size (SLOC) of largest clone: 
+** 23
+*****************************
+** The largest clones:
+** {|project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6284,837,<128,69>,<156,5>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 2             ======= 
 ==============================================
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSubstring.java|(1877,205,<58,2>,<61,84>)
-```
- int start  = Math.min( Math.max( 0, param2.getInt() - 1), byteLen);
-		int length = param3.getInt();
-		if(length < 0) 
-			throw SmallSQLException.create(Language.SUBSTR_INVALID_LEN, new Integer(length));
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSubstring.java|(2547,204,<79,2>,<82,84>)
-```
- int start  = Math.min( Math.max( 0, param2.getInt() - 1), strLen);
-		int length = param3.getInt();
-		if(length < 0) 
-			throw SmallSQLException.create(Language.SUBSTR_INVALID_LEN, new Integer(length));
-```
-
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(3402,367,<100,8>,<106,48>)
 ```
@@ -2115,46 +2696,6 @@ final class ExpressionFunctionDayOfYear extends ExpressionFunctionReturnInt {
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13042,139,<361,8>,<364,41>)
-```
- if(newSize > page.length) resizePage(newSize);
-
-        page[ offset++ ] = (byte)(value >> 8);
-        page[ offset++ ] = (byte)(value);
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(18576,153,<539,8>,<542,48>)
-```
- if(newSize > page.length) resizePage(newSize);
-
-        page[ offset++ ] = (byte)(lengthColumn >> 8);
-        page[ offset++ ] = (byte)(lengthColumn);
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(6976,292,<189,8>,<196,54>)
-```
- try{
-            st.getGeneratedKeys();
-            fail("NO_GENERATED_KEYS");
-        }catch(SQLException ex){
-            assertSQLException("01000", 0, ex);
-        }
-        assertEquals("UpdateCount", 1, st.getUpdateCount());
-        assertNull("getResultSet", st.getResultSet());
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(9783,292,<249,8>,<256,54>)
-```
- try{
-            pr.getGeneratedKeys();
-            fail("NO_GENERATED_KEYS");
-        }catch(SQLException ex){
-            assertSQLException("01000", 0, ex);
-        }
-        assertEquals("UpdateCount", 1, pr.getUpdateCount());
-        assertNull("getResultSet", pr.getResultSet());
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionArithmetic.java|(34427,250,<925,2>,<932,29>)
 ```
  if(dataTypeIdx >= NVARCHAR_IDX)
@@ -2214,37 +2755,92 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(3400,325
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(13257,209,<419,6>,<422,47>)
+Location: |project://smallsql0.21_src/src/smallsql/database/StorePageMap.java|(2488,57,<99,2>,<100,21>)
 ```
- Expression col = columnExpressions.get(i);
-						if(!col.isDefinitelyWritable())
-							throw SmallSQLException.create(Language.COL_READONLY, new Integer(i));
-						ExpressionName exp = (ExpressionName)col;
+ int i = (int)(key % table.length);
+		Entry e = table[i];
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(14811,251,<463,6>,<466,52>)
+Location: |project://smallsql0.21_src/src/smallsql/database/StorePageMap.java|(5413,60,<198,2>,<199,24>)
 ```
- Expression rsColumn = columnExpressions.get(i); // Column of the ResultSet
-						if(!rsColumn.isDefinitelyWritable())
-							throw SmallSQLException.create(Language.COL_READONLY, new Integer(i));
-						ExpressionName exp = (ExpressionName)rsColumn;
+ int i = (int)(key % table.length);
+		Entry prev = table[i];
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(12683,131,<468,2>,<472,18>)
+Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(1818,152,<61,4>,<65,5>)
 ```
- init();
-		Connection con = AllTests.getConnection();
-		Statement st = con.createStatement();
-		ResultSet rs;
-		Double oldValue;
+ public static Money createFromUnscaledValue(long value){
+        Money money = new Money();
+        money.value = value;
+        return money;
+    }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(13334,130,<494,2>,<498,17>)
+Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(1978,151,<67,4>,<71,5>)
 ```
- init();
-		Connection con = AllTests.getConnection();
-		Statement st = con.createStatement();
-		ResultSet rs;
-		Float oldValue;
+ public static Money createFromUnscaledValue(int value){
+        Money money = new Money();
+        money.value = value;
+        return money;
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSubstring.java|(1877,205,<58,2>,<61,84>)
+```
+ int start  = Math.min( Math.max( 0, param2.getInt() - 1), byteLen);
+		int length = param3.getInt();
+		if(length < 0) 
+			throw SmallSQLException.create(Language.SUBSTR_INVALID_LEN, new Integer(length));
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionSubstring.java|(2547,204,<79,2>,<82,84>)
+```
+ int start  = Math.min( Math.max( 0, param2.getInt() - 1), strLen);
+		int length = param3.getInt();
+		if(length < 0) 
+			throw SmallSQLException.create(Language.SUBSTR_INVALID_LEN, new Integer(length));
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(17107,146,<529,4>,<531,5>)
+```
+ public void updateDate(int columnIndex, Date x) throws SQLException {
+		updateValue( columnIndex, DateTime.valueOf(x), SQLTokenizer.DATE);
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(17259,146,<532,4>,<534,5>)
+```
+ public void updateTime(int columnIndex, Time x) throws SQLException {
+		updateValue( columnIndex, DateTime.valueOf(x), SQLTokenizer.TIME);
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(17411,161,<535,4>,<537,5>)
+```
+ public void updateTimestamp(int columnIndex, Timestamp x) throws SQLException {
+		updateValue( columnIndex, DateTime.valueOf(x), SQLTokenizer.TIMESTAMP);
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3068,186,<90,4>,<93,5>)
+```
+ public void setByte(int parameterIndex, byte x) throws SQLException {
+        checkStatement();
+        cmd.setParamValue( parameterIndex, new Integer(x), SQLTokenizer.TINYINT);
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3272,189,<96,4>,<99,5>)
+```
+ public void setShort(int parameterIndex, short x) throws SQLException {
+        checkStatement();
+        cmd.setParamValue( parameterIndex, new Integer(x), SQLTokenizer.SMALLINT);
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(3479,180,<102,4>,<105,5>)
+```
+ public void setInt(int parameterIndex, int x) throws SQLException {
+        checkStatement();
+        cmd.setParamValue( parameterIndex, new Integer(x), SQLTokenizer.INT);
+    }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -2301,6 +2897,70 @@ Location: |project://smallsql0.21_src/src/smallsql/database/Index.java|(14283,35
 				}
 				return node.addRoot();
 			}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(11871,118,<269,8>,<272,21>)
+```
+ value.dataType  = dataType;
+        value.small     = small;
+        value.large     = large;
+        return value;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(10563,118,<206,8>,<209,21>)
+```
+ value.dataType  = dataType;
+        value.small     = small;
+        value.large     = large;
+        return value;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(12683,131,<468,2>,<472,18>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		Double oldValue;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(13334,130,<494,2>,<498,17>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		Float oldValue;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(1930,87,<72,2>,<73,46>)
+```
+ String[] dataNew = new String[newSize];
+		System.arraycopy(data, 0, dataNew, 0, size);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Strings.java|(2089,86,<79,8>,<80,50>)
+```
+ String[] array = new String[size];
+        System.arraycopy(data, 0, array, 0, size);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(4444,151,<123,8>,<127,9>)
+```
+ if(orderBy != null) {
+            for(int i=0; i<orderBy.size(); i++){
+            	compileLinkExpression( orderBy.get(i));
+            }
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(4599,118,<128,2>,<132,3>)
+```
+ if(groupBy != null){
+			for(int i=0; i<groupBy.size(); i++){
+				compileLinkExpression( groupBy.get(i) );
+			}
+		}
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -2401,6 +3061,22 @@ Location: |project://smallsql0.21_src/src/smallsql/database/IndexNode.java|(7362
 		saveRemainderValue(remainderValue, offset);
 		value = (unique) ? (Object)new Long(rowOffset) : new LongTreeList(rowOffset);
 	}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(17075,239,<461,12>,<464,57>)
+```
+ //create a serialize lock on the table
+            ResultSet rs1 = con1.createStatement().executeQuery("Select count(*) from transactions");
+            assertTrue( rs1.next() );
+            assertEquals( "Count(*)", 1, rs1.getInt(1) );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(17342,252,<466,12>,<469,57>)
+```
+ //reading should be possible on a second connection
+            ResultSet rs2 = con2.createStatement().executeQuery("Select count(*) from transactions");
+            assertTrue( rs2.next() );
+            assertEquals( "Count(*)", 1, rs2.getInt(1) );
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -2671,6 +3347,32 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(58
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(13918,213,<280,8>,<280,221>)
+```
+ String[] colNames3 = {"TABLE_CAT", "TABLE_SCHEM", "TABLE_NAME", "NON_UNIQUE", "INDEX_QUALIFIER", "INDEX_NAME", "TYPE", "ORDINAL_POSITION", "COLUMN_NAME", "ASC_OR_DESC", "CARDINALITY", "PAGES", "FILTER_CONDITION"};
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(32471,212,<872,3>,<872,215>)
+```
+ String[] colNames = {"TABLE_CAT", "TABLE_SCHEM", "TABLE_NAME", "NON_UNIQUE", "INDEX_QUALIFIER", "INDEX_NAME", "TYPE", "ORDINAL_POSITION", "COLUMN_NAME", "ASC_OR_DESC", "CARDINALITY", "PAGES", "FILTER_CONDITION"};
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4284,185,<126,4>,<129,5>)
+```
+ public void setBigDecimal(int parameterIndex, BigDecimal x) throws SQLException {
+        checkStatement();
+        cmd.setParamValue( parameterIndex, x, SQLTokenizer.DECIMAL);
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSPreparedStatement.java|(4487,177,<132,4>,<135,5>)
+```
+ public void setString(int parameterIndex, String x) throws SQLException {
+        checkStatement();
+        cmd.setParamValue( parameterIndex, x, SQLTokenizer.VARCHAR);
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/Language/Language.java|(12108,343,<292,33>,<306,2>)
 ```
  {
@@ -2726,6 +3428,26 @@ Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(
 					
 			// order the new Values after it position in the table
 			Expression[] updateValues = new Expression[count];
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/DateTime.java|(5047,119,<174,3>,<179,20>)
+```
+ final int year;
+			final int month;
+			final int day;
+			final int hour;
+			final int minute;
+			final int second;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/DateTime.java|(5067,121,<175,3>,<180,20>)
+```
+ final int month;
+			final int day;
+			final int hour;
+			final int minute;
+			final int second;
+			final int millis;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -2920,6 +3642,18 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3051,89,<125,2>,<126,45>)
+```
+ Expression[] array = new Expression[size];
+		System.arraycopy( data, 0, array, 0, size);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Expressions.java|(3210,95,<131,2>,<132,46>)
+```
+ Expression[] dataNew = new Expression[newSize];
+		System.arraycopy(data, 0, dataNew, 0, size);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6153,342,<180,4>,<189,5>)
 ```
  public Time getTime(int columnIndex) throws SQLException {
@@ -2945,6 +3679,41 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
             throw SmallSQLException.createFromException( e );
         }
     }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(12063,240,<292,12>,<297,49>)
+```
+ try{
+                // reset for the next test
+                Statement st = con.createStatement();
+                st.execute("DELETE FROM " + tableName);
+                st.close();
+            }catch(Exception ee){/* ignore it */}
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(30346,179,<726,8>,<730,44>)
+```
+ try{
+            Statement st = con.createStatement();
+            st.execute("DELETE FROM " + tableName);
+            st.close();
+        }catch(Exception e){/* ignore it */}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13042,139,<361,8>,<364,41>)
+```
+ if(newSize > page.length) resizePage(newSize);
+
+        page[ offset++ ] = (byte)(value >> 8);
+        page[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(18576,153,<539,8>,<542,48>)
+```
+ if(newSize > page.length) resizePage(newSize);
+
+        page[ offset++ ] = (byte)(lengthColumn >> 8);
+        page[ offset++ ] = (byte)(lengthColumn);
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3109,6 +3878,53 @@ Location: |project://smallsql0.21_src/src/smallsql/database/DateTime.java|(22184
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(13220,180,<267,8>,<270,31>)
+```
+ assertRSMetaData(rs, colNames, colTypes);
+        assertTrue(rs.next());
+        assertEquals("Columnname:", "id1", rs.getString("COLUMN_NAME"));
+        assertFalse(rs.next());
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(13716,182,<275,8>,<278,31>)
+```
+ assertRSMetaData(rs, colNames2, colTypes2);
+        assertTrue(rs.next());
+        assertEquals("Columnname:", "id1", rs.getString("COLUMN_NAME"));
+        assertFalse(rs.next());
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(14427,182,<283,8>,<286,31>)
+```
+ assertRSMetaData(rs, colNames3, colTypes3);
+        assertTrue(rs.next());
+        assertEquals("Columnname:", "id1", rs.getString("COLUMN_NAME"));
+        assertFalse(rs.next());
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(6976,292,<189,8>,<196,54>)
+```
+ try{
+            st.getGeneratedKeys();
+            fail("NO_GENERATED_KEYS");
+        }catch(SQLException ex){
+            assertSQLException("01000", 0, ex);
+        }
+        assertEquals("UpdateCount", 1, st.getUpdateCount());
+        assertNull("getResultSet", st.getResultSet());
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(9783,292,<249,8>,<256,54>)
+```
+ try{
+            pr.getGeneratedKeys();
+            fail("NO_GENERATED_KEYS");
+        }catch(SQLException ex){
+            assertSQLException("01000", 0, ex);
+        }
+        assertEquals("UpdateCount", 1, pr.getUpdateCount());
+        assertNull("getResultSet", pr.getResultSet());
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(19401,276,<581,8>,<585,102>)
 ```
  String catalog;
@@ -3253,6 +4069,36 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
             throw SmallSQLException.createFromException( e );
         }
     }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(4117,122,<126,2>,<129,28>)
+```
+ if(value > Integer.MAX_VALUE)
+			return Integer.MAX_VALUE;
+		if(value < Integer.MIN_VALUE)
+			return Integer.MIN_VALUE;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(4313,110,<134,2>,<137,25>)
+```
+ if(value > Long.MAX_VALUE)
+			return Long.MAX_VALUE;
+		if(value < Long.MIN_VALUE)
+			return Long.MIN_VALUE;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(75433,103,<1955,31>,<1955,134>)
+```
+ COMMANDS_ESCAPE = {SQLTokenizer.D, SQLTokenizer.T, SQLTokenizer.TS, SQLTokenizer.FN, SQLTokenizer.CALL}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(75940,122,<1958,31>,<1958,153>)
+```
+ COMMANDS_DROP = {SQLTokenizer.DATABASE, SQLTokenizer.TABLE, SQLTokenizer.VIEW, SQLTokenizer.INDEX, SQLTokenizer.PROCEDURE}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(78829,121,<1977,31>,<1977,152>)
+```
+ MISSING_TOKEN_LIST = {SQLTokenizer.COMMA, SQLTokenizer.FROM, SQLTokenizer.GROUP, SQLTokenizer.HAVING, SQLTokenizer.ORDER}
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3510,6 +4356,34 @@ final class ExpressionFunctionYear extends ExpressionFunctionReturnInt {
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(13257,209,<419,6>,<422,47>)
+```
+ Expression col = columnExpressions.get(i);
+						if(!col.isDefinitelyWritable())
+							throw SmallSQLException.create(Language.COL_READONLY, new Integer(i));
+						ExpressionName exp = (ExpressionName)col;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/CommandSelect.java|(14811,251,<463,6>,<466,52>)
+```
+ Expression rsColumn = columnExpressions.get(i); // Column of the ResultSet
+						if(!rsColumn.isDefinitelyWritable())
+							throw SmallSQLException.create(Language.COL_READONLY, new Integer(i));
+						ExpressionName exp = (ExpressionName)rsColumn;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/DateTime.java|(5550,106,<194,4>,<195,66>)
+```
+ if(idx2 < 0) idx2 = datetime.length();
+				day = Integer.parseInt(datetime.substring(idx1, idx2).trim());
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/DateTime.java|(6084,109,<213,4>,<214,69>)
+```
+ if(idx2 < 0) idx2 = datetime.length();
+				second = Integer.parseInt(datetime.substring(idx1, idx2).trim());
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestDataTypes.java|(8048,93,<183,12>,<184,53>)
 ```
  String q = (val == null) ? "" : quote;
@@ -3572,6 +4446,20 @@ Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(4
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(17578,169,<538,4>,<540,5>)
+```
+ public void updateAsciiStream(int columnIndex, InputStream x, int length) throws SQLException {
+		updateValue( columnIndex, x, SQLTokenizer.LONGVARCHAR, length);
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(17753,172,<541,4>,<543,5>)
+```
+ public void updateBinaryStream(int columnIndex, InputStream x, int length) throws SQLException {
+		updateValue( columnIndex, x, SQLTokenizer.LONGVARBINARY, length);
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(4115,342,<114,2>,<120,51>)
 ```
  theSuite.addTestSuite(TestOrderBy.class);
@@ -3591,6 +4479,26 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(4160,353
         theSuite.addTestSuite(TestThreads.class);
         theSuite.addTestSuite(TestTokenizer.class);
         theSuite.addTestSuite(TestTransactions.class);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(2077,149,<59,4>,<61,5>)
+```
+ static String createTableViewFileName(Database database, String name){
+        return database.getName() + '/' + name + TABLE_VIEW_EXTENTION;
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(2231,127,<63,1>,<65,2>)
+```
+ static String createLobFileName(Database database, String name){
+		return database.getName() + '/' + name + LOB_EXTENTION;
+	}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(2363,127,<67,1>,<69,2>)
+```
+ static String createIdxFileName(Database database, String name){
+		return database.getName() + '/' + name + IDX_EXTENTION;
+	}
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -3749,6 +4657,25 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSCallableStatement.
 ```
 
 
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 19.93071984%
+*****************************
+** Number of clone classes:
+** 50
+*****************************
+** Number of clones:
+** 539
+*****************************
+** Size (SLOC) of largest clone: 
+** 20
+*****************************
+** The largest clones:
+** {|project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5927,767,<116,12>,<141,25>),|project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5879,788,<115,12>,<140,35>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -4415,61 +5342,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTr
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,379,<338,2>,<351,36>)
-```
- assertTrue( rs.next() );
-		
-		oldValue = (Integer)rs.getObject("i");
-		assertNull(oldValue);
-		assertTrue( rs.next() );
-		oldValue = (Integer)rs.getObject("i");
-		
-		int count = 1;
-		while(rs.next()){
-			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
-			oldValue = (Integer)rs.getObject("i");
-			count++;
-		}
-		assertEquals( valueCount, count );
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,165,<338,2>,<343,40>)
-```
- assertTrue( rs.next() );
-		
-		oldValue = (Integer)rs.getObject("i");
-		assertNull(oldValue);
-		assertTrue( rs.next() );
-		oldValue = (Integer)rs.getObject("i");
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,341,<338,2>,<350,3>)
-```
- assertTrue( rs.next() );
-		
-		oldValue = (Integer)rs.getObject("i");
-		assertNull(oldValue);
-		assertTrue( rs.next() );
-		oldValue = (Integer)rs.getObject("i");
-		
-		int count = 1;
-		while(rs.next()){
-			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
-			oldValue = (Integer)rs.getObject("i");
-			count++;
-		}
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,187,<338,2>,<345,16>)
-```
- assertTrue( rs.next() );
-		
-		oldValue = (Integer)rs.getObject("i");
-		assertNull(oldValue);
-		assertTrue( rs.next() );
-		oldValue = (Integer)rs.getObject("i");
-		
-		int count = 1;
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(4356,498,<125,8>,<137,9>)
 ```
  if(needTrim && obj1 != null){
@@ -4504,48 +5376,159 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(438
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10261,245,<221,2>,<227,13>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(26418,156,<623,12>,<625,52>)
 ```
- pr.setObject( 1, testValue.small);
-		pr.setObject( 2, testValue.large);
-		rs = pr.executeQuery();
-		assertTrue( "To few rows", rs.next() );
-		assertTrue( "To few rows", rs.next() );
-		assertFalse( "To many rows", rs.next() );
-		pr.close();
+ fos.close();
+            java.io.FileInputStream fis = new java.io.FileInputStream(tableName+".bin");
+            long time = -System.currentTimeMillis();
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,169,<223,2>,<227,13>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(26444,130,<624,12>,<625,52>)
 ```
- rs = pr.executeQuery();
-		assertTrue( "To few rows", rs.next() );
-		assertTrue( "To few rows", rs.next() );
-		assertFalse( "To many rows", rs.next() );
-		pr.close();
+ java.io.FileInputStream fis = new java.io.FileInputStream(tableName+".bin");
+            long time = -System.currentTimeMillis();
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,207,<222,2>,<227,13>)
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(3944,131,<116,2>,<120,18>)
 ```
- pr.setObject( 2, testValue.large);
-		rs = pr.executeQuery();
-		assertTrue( "To few rows", rs.next() );
-		assertTrue( "To few rows", rs.next() );
-		assertFalse( "To many rows", rs.next() );
-		pr.close();
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		String oldValue;
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,192,<222,2>,<226,43>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18497,170,<699,2>,<702,15>)
 ```
- pr.setObject( 2, testValue.large);
-		rs = pr.executeQuery();
-		assertTrue( "To few rows", rs.next() );
-		assertTrue( "To few rows", rs.next() );
-		assertFalse( "To many rows", rs.next() );
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(3955,120,<117,2>,<120,18>)
 ```
- assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertFalse( "To many rows", rs.next() );
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		String oldValue;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5793,342,<168,4>,<177,5>)
+```
+ public Date getDate(int columnIndex) throws SQLException {
+        try{
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getDate( expr.getLong() );
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5850,285,<168,61>,<177,5>)
+```
+ {
+        try{
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getDate( expr.getLong() );
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4187,236,<123,8>,<129,9>)
+```
+ try{
+            Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+            return expr.getLong();
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5861,267,<169,8>,<176,9>)
+```
+ try{
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getDate( expr.getLong() );
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4176,254,<122,61>,<130,5>)
+```
+ {
+        try{
+            Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+            return expr.getLong();
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6501,357,<190,4>,<199,5>)
+```
+ public Timestamp getTimestamp(int columnIndex) throws SQLException {
+        try{
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getTimestamp( expr.getLong() );
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6568,290,<190,71>,<199,5>)
+```
+ {
+        try{
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getTimestamp( expr.getLong() );
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4119,311,<122,4>,<130,5>)
+```
+ public long getLong(int columnIndex) throws SQLException {
+        try{
+            Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+            return expr.getLong();
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5864,171,<169,11>,<174,9>)
+```
+ {
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getDate( expr.getLong() );
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6579,272,<191,8>,<198,9>)
+```
+ try{
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getTimestamp( expr.getLong() );
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -4582,6 +5565,28 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/AllTests.java|(3773,287
 		theSuite.addTest     (TestJoins.suite());
         theSuite.addTestSuite(TestLanguage.class);
 		theSuite.addTestSuite(TestMoneyRounding.class );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(21308,369,<834,3>,<834,372>)
+```
+ {SQLTokenizer.getKeyWord(SQLTokenizer.BIT),             Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.BIT) ),             Utils.getInteger(1),      	null, null, null, 				Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null,          Boolean.FALSE, Boolean.FALSE, null, Utils.getInteger(0), Utils.getInteger(0), null, null, null}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(24201,347,<842,3>,<842,350>)
+```
+ {SQLTokenizer.getKeyWord(SQLTokenizer.CHAR),         	 Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.CHAR) ),         	  Utils.getInteger(65535),   	"'",  "'",  "length", 			Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null, 			Boolean.FALSE, Boolean.FALSE, null, null, 				 null, 				  null, null, null}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(22433,348,<837,3>,<837,351>)
+```
+ {SQLTokenizer.getKeyWord(SQLTokenizer.LONGVARBINARY),   Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.LONGVARBINARY) ),   Utils.getInteger(2147483647),	"0x", null, null, 		 		Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null, 			Boolean.FALSE, Boolean.FALSE, null, null, 				 null, 				  null, null, null}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(23493,348,<840,3>,<840,351>)
+```
+ {SQLTokenizer.getKeyWord(SQLTokenizer.LONGVARCHAR),     Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.LONGVARCHAR) ),     Utils.getInteger(2147483647),	"'",  "'",  null, 		 		Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null, 			Boolean.FALSE, Boolean.FALSE, null, null, 				 null, 				  null, null, null}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(24908,379,<844,3>,<844,382>)
+```
+ {SQLTokenizer.getKeyWord(SQLTokenizer.NUMERIC),         Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.NUMERIC) ),         Utils.getInteger(38),     	null, null, "precision,scale", 	Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), Boolean.FALSE, Boolean.FALSE, Boolean.FALSE, null, Utils.getInteger(0), Utils.getInteger(38),null, null, null}
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -4869,22 +5874,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(361
         assertTrue("isAfterLast", rs.isAfterLast() );
         assertEquals("getRow", 0, rs.getRow() );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3391,551,<95,8>,<107,48>)
-```
- assertFalse("previous", rs.previous() );
-        assertEquals("getRow", 0, rs.getRow() );
-        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
-        assertFalse("isAfterLast", rs.isAfterLast() );
-        
-        assertTrue("last", rs.last() );
-        assertEquals("getRow", 1, rs.getRow() );
-        assertTrue("isLast", rs.isLast() );
-        
-        rs.afterLast();
-        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
-        assertTrue("isAfterLast", rs.isAfterLast() );
-        assertEquals("getRow", 0, rs.getRow() );
-```
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3491,451,<97,8>,<107,48>)
 ```
  assertTrue("isBeforeFirst", rs.isBeforeFirst() );
@@ -4919,6 +5908,22 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(333
  assertEquals("getRow", 1, rs.getRow() );
         
         assertFalse("previous", rs.previous() );
+        assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        
+        rs.afterLast();
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3391,551,<95,8>,<107,48>)
+```
+ assertFalse("previous", rs.previous() );
         assertEquals("getRow", 0, rs.getRow() );
         assertTrue("isBeforeFirst", rs.isBeforeFirst() );
         assertFalse("isAfterLast", rs.isAfterLast() );
@@ -5079,11 +6084,9 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(344
         assertFalse("isBeforeFirst", rs.isBeforeFirst() );
         assertTrue("isAfterLast", rs.isAfterLast() );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3441,396,<96,8>,<105,58>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3550,287,<98,8>,<105,58>)
 ```
- assertEquals("getRow", 0, rs.getRow() );
-        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
-        assertFalse("isAfterLast", rs.isAfterLast() );
+ assertFalse("isAfterLast", rs.isAfterLast() );
         
         assertTrue("last", rs.last() );
         assertEquals("getRow", 1, rs.getRow() );
@@ -5092,9 +6095,11 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(344
         rs.afterLast();
         assertFalse("isBeforeFirst", rs.isBeforeFirst() );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3550,287,<98,8>,<105,58>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3441,396,<96,8>,<105,58>)
 ```
- assertFalse("isAfterLast", rs.isAfterLast() );
+ assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
         
         assertTrue("last", rs.last() );
         assertEquals("getRow", 1, rs.getRow() );
@@ -5211,16 +6216,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(333
         assertTrue("last", rs.last() );
         assertEquals("getRow", 1, rs.getRow() );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3441,301,<96,8>,<102,43>)
-```
- assertEquals("getRow", 0, rs.getRow() );
-        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
-        assertFalse("isAfterLast", rs.isAfterLast() );
-        
-        assertTrue("last", rs.last() );
-        assertEquals("getRow", 1, rs.getRow() );
-        assertTrue("isLast", rs.isLast() );
-```
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3441,336,<96,8>,<104,23>)
 ```
  assertEquals("getRow", 0, rs.getRow() );
@@ -5237,6 +6232,16 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(339
 ```
  assertFalse("previous", rs.previous() );
         assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(3441,301,<96,8>,<102,43>)
+```
+ assertEquals("getRow", 0, rs.getRow() );
         assertTrue("isBeforeFirst", rs.isBeforeFirst() );
         assertFalse("isAfterLast", rs.isAfterLast() );
         
@@ -5409,55 +6414,106 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(297
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,379,<338,2>,<351,36>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(3944,131,<116,2>,<120,18>)
 ```
- assertTrue( rs.next() );
-		
-		oldValue = (Integer)rs.getObject("i");
-		assertNull(oldValue);
-		assertTrue( rs.next() );
-		oldValue = (Integer)rs.getObject("i");
-		
-		int count = 1;
-		while(rs.next()){
-			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
-			oldValue = (Integer)rs.getObject("i");
-			count++;
-		}
-		assertEquals( valueCount, count );
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		String oldValue;
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,341,<338,2>,<350,3>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(3955,120,<117,2>,<120,18>)
 ```
- assertTrue( rs.next() );
-		
-		oldValue = (Integer)rs.getObject("i");
-		assertNull(oldValue);
-		assertTrue( rs.next() );
-		oldValue = (Integer)rs.getObject("i");
-		
-		int count = 1;
-		while(rs.next()){
-			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
-			oldValue = (Integer)rs.getObject("i");
-			count++;
-		}
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		String oldValue;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18497,184,<699,2>,<703,12>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
+		int count;
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(10636,306,<268,8>,<273,29>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7881,261,<209,8>,<213,29>)
 ```
- assertEquals(1,pr.executeUpdate());
-        rs = pr.getGeneratedKeys();
+ rs = st.getGeneratedKeys();
         assertNotNull("RETURN_GENERATED_KEYS", rs);
         assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
         assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
         assertRowCount(1,rs);
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(10636,275,<268,8>,<272,74>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7918,224,<210,8>,<213,29>)
 ```
- assertEquals(1,pr.executeUpdate());
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7971,171,<211,8>,<213,29>)
+```
+ assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7422,193,<200,8>,<202,74>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(8234,185,<216,8>,<219,29>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(11049,208,<276,8>,<280,29>)
+```
+ pr.execute();
         rs = pr.getGeneratedKeys();
         assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7385,230,<199,8>,<202,74>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7881,261,<209,8>,<213,29>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7918,224,<210,8>,<213,29>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7971,171,<211,8>,<213,29>)
+```
+ assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7422,193,<200,8>,<202,74>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
         assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
         assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
 ```
@@ -5470,6 +6526,59 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(738
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10261,245,<221,2>,<227,13>)
+```
+ pr.setObject( 1, testValue.small);
+		pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,169,<223,2>,<227,13>)
+```
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,207,<222,2>,<227,13>)
+```
+ pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,192,<222,2>,<226,43>)
+```
+ pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,154,<223,2>,<226,43>)
+```
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10261,230,<221,2>,<226,43>)
+```
+ pr.setObject( 1, testValue.small);
+		pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(10636,306,<268,8>,<273,29>)
 ```
  assertEquals(1,pr.executeUpdate());
@@ -5487,13 +6596,86 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(106
         assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
         assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(11049,208,<276,8>,<280,29>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7422,193,<200,8>,<202,74>)
 ```
- pr.execute();
-        rs = pr.getGeneratedKeys();
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7385,230,<199,8>,<202,74>)
+```
+ rs = st.getGeneratedKeys();
         assertNotNull("RETURN_GENERATED_KEYS", rs);
-        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10261,245,<221,2>,<227,13>)
+```
+ pr.setObject( 1, testValue.small);
+		pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,207,<222,2>,<227,13>)
+```
+ pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,192,<222,2>,<226,43>)
+```
+ pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,154,<223,2>,<226,43>)
+```
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10261,230,<221,2>,<226,43>)
+```
+ pr.setObject( 1, testValue.small);
+		pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7881,261,<209,8>,<213,29>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
         assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7918,224,<210,8>,<213,29>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7422,193,<200,8>,<202,74>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
 ```
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7385,230,<199,8>,<202,74>)
 ```
@@ -5569,14 +6751,77 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5793,342,<168,4>,<177,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(10636,306,<268,8>,<273,29>)
 ```
- public Date getDate(int columnIndex) throws SQLException {
+ assertEquals(1,pr.executeUpdate());
+        rs = pr.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7422,193,<200,8>,<202,74>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7385,230,<199,8>,<202,74>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,169,<223,2>,<227,13>)
+```
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8196,188,<176,8>,<179,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,186,<182,8>,<185,47>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,154,<223,2>,<226,43>)
+```
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6501,357,<190,4>,<199,5>)
+```
+ public Timestamp getTimestamp(int columnIndex) throws SQLException {
         try{
 			Expression expr = getValue(columnIndex);
             wasNull = expr.isNull();
 			if(wasNull) return null;
-			return DateTime.getDate( expr.getLong() );
+			return DateTime.getTimestamp( expr.getLong() );
         }catch(Exception e){
             throw SmallSQLException.createFromException( e );
         }
@@ -5628,19 +6873,6 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(41
         }
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6501,357,<190,4>,<199,5>)
-```
- public Timestamp getTimestamp(int columnIndex) throws SQLException {
-        try{
-			Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-			if(wasNull) return null;
-			return DateTime.getTimestamp( expr.getLong() );
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-    }
-```
 Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6568,290,<190,71>,<199,5>)
 ```
  {
@@ -5661,6 +6893,28 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(41
             Expression expr = getValue(columnIndex);
             wasNull = expr.isNull();
             return expr.getLong();
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6582,176,<191,11>,<196,9>)
+```
+ {
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getTimestamp( expr.getLong() );
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5793,342,<168,4>,<177,5>)
+```
+ public Date getDate(int columnIndex) throws SQLException {
+        try{
+			Expression expr = getValue(columnIndex);
+            wasNull = expr.isNull();
+			if(wasNull) return null;
+			return DateTime.getDate( expr.getLong() );
         }catch(Exception e){
             throw SmallSQLException.createFromException( e );
         }
@@ -5894,113 +7148,243 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(65
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6501,357,<190,4>,<199,5>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5079,395,<149,4>,<158,5>)
 ```
- public Timestamp getTimestamp(int columnIndex) throws SQLException {
+ public BigDecimal getBigDecimal(int columnIndex, int scale) throws SQLException {
         try{
-			Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-			if(wasNull) return null;
-			return DateTime.getTimestamp( expr.getLong() );
+            MutableNumeric obj = getValue(columnIndex).getNumeric();
+            wasNull = obj == null;
+            if(wasNull) return null;
+            return obj.toBigDecimal(scale);
         }catch(Exception e){
             throw SmallSQLException.createFromException( e );
         }
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5850,285,<168,61>,<177,5>)
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5170,297,<150,8>,<157,9>)
+```
+ try{
+            MutableNumeric obj = getValue(columnIndex).getNumeric();
+            wasNull = obj == null;
+            if(wasNull) return null;
+            return obj.toBigDecimal(scale);
+        }catch(Exception e){
+            throw SmallSQLException.createFromException( e );
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5173,201,<150,11>,<155,9>)
+```
+ {
+            MutableNumeric obj = getValue(columnIndex).getNumeric();
+            wasNull = obj == null;
+            if(wasNull) return null;
+            return obj.toBigDecimal(scale);
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5159,315,<149,84>,<158,5>)
 ```
  {
         try{
-			Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-			if(wasNull) return null;
-			return DateTime.getDate( expr.getLong() );
+            MutableNumeric obj = getValue(columnIndex).getNumeric();
+            wasNull = obj == null;
+            if(wasNull) return null;
+            return obj.toBigDecimal(scale);
         }catch(Exception e){
             throw SmallSQLException.createFromException( e );
         }
     }
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4187,236,<123,8>,<129,9>)
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,379,<338,2>,<351,36>)
 ```
- try{
-            Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-            return expr.getLong();
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
+ assertTrue( rs.next() );
+		
+		oldValue = (Integer)rs.getObject("i");
+		assertNull(oldValue);
+		assertTrue( rs.next() );
+		oldValue = (Integer)rs.getObject("i");
+		
+		int count = 1;
+		while(rs.next()){
+			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
+			oldValue = (Integer)rs.getObject("i");
+			count++;
+		}
+		assertEquals( valueCount, count );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5861,267,<169,8>,<176,9>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,165,<338,2>,<343,40>)
 ```
- try{
-			Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-			if(wasNull) return null;
-			return DateTime.getDate( expr.getLong() );
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
+ assertTrue( rs.next() );
+		
+		oldValue = (Integer)rs.getObject("i");
+		assertNull(oldValue);
+		assertTrue( rs.next() );
+		oldValue = (Integer)rs.getObject("i");
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4176,254,<122,61>,<130,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,123,<338,2>,<342,26>)
 ```
- {
-        try{
-            Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-            return expr.getLong();
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-    }
+ assertTrue( rs.next() );
+		
+		oldValue = (Integer)rs.getObject("i");
+		assertNull(oldValue);
+		assertTrue( rs.next() );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6568,290,<190,71>,<199,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,341,<338,2>,<350,3>)
 ```
- {
-        try{
-			Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-			if(wasNull) return null;
-			return DateTime.getTimestamp( expr.getLong() );
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-    }
+ assertTrue( rs.next() );
+		
+		oldValue = (Integer)rs.getObject("i");
+		assertNull(oldValue);
+		assertTrue( rs.next() );
+		oldValue = (Integer)rs.getObject("i");
+		
+		int count = 1;
+		while(rs.next()){
+			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
+			oldValue = (Integer)rs.getObject("i");
+			count++;
+		}
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(4119,311,<122,4>,<130,5>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,187,<338,2>,<345,16>)
 ```
- public long getLong(int columnIndex) throws SQLException {
-        try{
-            Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-            return expr.getLong();
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-    }
+ assertTrue( rs.next() );
+		
+		oldValue = (Integer)rs.getObject("i");
+		assertNull(oldValue);
+		assertTrue( rs.next() );
+		oldValue = (Integer)rs.getObject("i");
+		
+		int count = 1;
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5793,342,<168,4>,<177,5>)
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18497,184,<699,2>,<703,12>)
 ```
- public Date getDate(int columnIndex) throws SQLException {
-        try{
-			Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-			if(wasNull) return null;
-			return DateTime.getDate( expr.getLong() );
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-    }
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
+		int count;
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(6579,272,<191,8>,<198,9>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18497,170,<699,2>,<702,15>)
 ```
- try{
-			Expression expr = getValue(columnIndex);
-            wasNull = expr.isNull();
-			if(wasNull) return null;
-			return DateTime.getTimestamp( expr.getLong() );
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18508,142,<700,2>,<701,98>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18554,127,<701,2>,<703,12>)
+```
+ Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
+		int count;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18508,173,<700,2>,<703,12>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
+		int count;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18497,153,<699,2>,<701,98>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18508,159,<700,2>,<702,15>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8196,188,<176,8>,<179,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,186,<182,8>,<185,47>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7385,230,<199,8>,<202,74>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7881,261,<209,8>,<213,29>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7918,224,<210,8>,<213,29>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7971,171,<211,8>,<213,29>)
+```
+ assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7422,193,<200,8>,<202,74>)
+```
+ assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
+        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(1577,435,<46,3>,<53,99>)
+```
+ con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
+			assertRowCount( 0, "Select * from Scrollable");
+
+			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
+			assertRowCount( 1, "Select * from Scrollable");
+			assertRowCount( 0, "Select * from Scrollable Where 1=0");
+
+			Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestScrollable.java|(1577,332,<46,3>,<51,60>)
+```
+ con.createStatement().execute("Create Table Scrollable (i counter, v varchar(20))");
+			assertRowCount( 0, "Select * from Scrollable");
+
+			con.createStatement().execute("Insert Into Scrollable(v) Values('qwert')");
+			assertRowCount( 1, "Select * from Scrollable");
+			assertRowCount( 0, "Select * from Scrollable Where 1=0");
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -6110,55 +7494,14 @@ Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.j
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(26418,156,<623,12>,<625,52>)
+Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(16812,165,<588,1>,<593,2>)
 ```
- fos.close();
-            java.io.FileInputStream fis = new java.io.FileInputStream(tableName+".bin");
-            long time = -System.currentTimeMillis();
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(26444,130,<624,12>,<625,52>)
-```
- java.io.FileInputStream fis = new java.io.FileInputStream(tableName+".bin");
-            long time = -System.currentTimeMillis();
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5079,395,<149,4>,<158,5>)
-```
- public BigDecimal getBigDecimal(int columnIndex, int scale) throws SQLException {
-        try{
-            MutableNumeric obj = getValue(columnIndex).getNumeric();
-            wasNull = obj == null;
-            if(wasNull) return null;
-            return obj.toBigDecimal(scale);
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-    }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5170,297,<150,8>,<157,9>)
-```
- try{
-            MutableNumeric obj = getValue(columnIndex).getNumeric();
-            wasNull = obj == null;
-            if(wasNull) return null;
-            return obj.toBigDecimal(scale);
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSResultSet.java|(5159,315,<149,84>,<158,5>)
-```
- {
-        try{
-            MutableNumeric obj = getValue(columnIndex).getNumeric();
-            wasNull = obj == null;
-            if(wasNull) return null;
-            return obj.toBigDecimal(scale);
-        }catch(Exception e){
-            throw SmallSQLException.createFromException( e );
-        }
-    }
+ /**
+	 * Read a short value from the index.
+	 */
+	final private int getUnsignedShort(){
+		return ((data[ offset++ ] & 0xFF) << 8) | (data[ offset++ ] & 0xFF);
+	}
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -6492,24 +7835,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
-```
- assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertTrue( "To few rows", rs.next() );
-        assertFalse( "To many rows", rs.next() );
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,169,<223,2>,<227,13>)
-```
- rs = pr.executeQuery();
-		assertTrue( "To few rows", rs.next() );
-		assertTrue( "To few rows", rs.next() );
-		assertFalse( "To many rows", rs.next() );
-		pr.close();
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5879,788,<115,12>,<140,35>)
 ```
  pr.setObject( 1, testValue.small);
@@ -6931,6 +8256,14 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(64
  pr.execute();
 
             pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6493,137,<135,12>,<139,35>)
+```
+ pr.setObject( 1, testValue.small);
             pr.setObject( 2, null);
             pr.execute();
 
@@ -7957,6 +9290,15 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(64
             pr.setObject( 2, null);
             pr.execute();
 ```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6541,153,<136,12>,<141,25>)
+```
+ pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+```
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6100,594,<121,12>,<141,25>)
 ```
  pr.execute();
@@ -8207,6 +9549,14 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(58
  pr.setObject( 1, testValue.small);
             pr.setObject( 2, testValue.large);
             pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5975,138,<117,12>,<121,25>)
+```
+ pr.execute();
 
             pr.setObject( 1, testValue.small);
             pr.setObject( 2, testValue.small);
@@ -8900,6 +10250,14 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(64
  pr.execute();
 
             pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6493,137,<135,12>,<139,35>)
+```
+ pr.setObject( 1, testValue.small);
             pr.setObject( 2, null);
             pr.execute();
 
@@ -9926,6 +11284,15 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(64
             pr.setObject( 2, null);
             pr.execute();
 ```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6541,153,<136,12>,<141,25>)
+```
+ pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+```
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(6100,594,<121,12>,<141,25>)
 ```
  pr.execute();
@@ -10147,6 +11514,14 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(58
  pr.setObject( 1, testValue.small);
             pr.setObject( 2, testValue.large);
             pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5975,138,<117,12>,<121,25>)
+```
+ pr.execute();
 
             pr.setObject( 1, testValue.small);
             pr.setObject( 2, testValue.small);
@@ -10387,23 +11762,6 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(59
             pr.setObject( 1, testValue.large);
             pr.setObject( 2, testValue.large);
             pr.execute();
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(3208,431,<106,12>,<117,87>)
-```
- // wait until all threads are finish
-            for(int i = 0; i < threadList.size(); i++){
-                Thread thread = (Thread)threadList.get(i);
-                thread.join(5000);
-            }
-
-            // throw the exception if one occur
-            if(throwable != null){
-                throw throwable;
-            }
-
-            assertEqualsRsValue(new Integer(200), "SELECT value FROM ConcurrentWrite");
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
@@ -10465,6 +11823,14 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9478,
 			count++;
 		}
 		assertEquals( valueCount, count );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9520,113,<341,2>,<345,16>)
+```
+ assertNull(oldValue);
+		assertTrue( rs.next() );
+		oldValue = (Integer)rs.getObject("i");
+		
+		int count = 1;
 ```
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9545,242,<342,2>,<350,3>)
 ```
@@ -10543,6 +11909,47 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9478,
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(3944,131,<116,2>,<120,18>)
+```
+ init();
+		Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		String oldValue;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(3955,120,<117,2>,<120,18>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement();
+		ResultSet rs;
+		String oldValue;
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18508,173,<700,2>,<703,12>)
+```
+ Connection con = AllTests.getConnection();
+		Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs;
+		int count;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestThreads.java|(3208,431,<106,12>,<117,87>)
+```
+ // wait until all threads are finish
+            for(int i = 0; i < threadList.size(); i++){
+                Thread thread = (Thread)threadList.get(i);
+                thread.join(5000);
+            }
+
+            // throw the exception if one occur
+            if(throwable != null){
+                throw throwable;
+            }
+
+            assertEqualsRsValue(new Integer(200), "SELECT value FROM ConcurrentWrite");
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
 Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(2798,336,<84,3>,<90,52>)
 ```
  assertRowCount( 0, "Select * from transactions");
@@ -10555,73 +11962,148 @@ Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(7385,230,<199,8>,<202,74>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(11049,208,<276,8>,<280,29>)
+```
+ pr.execute();
+        rs = pr.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(8234,185,<216,8>,<219,29>)
 ```
  rs = st.getGeneratedKeys();
         assertNotNull("RETURN_GENERATED_KEYS", rs);
-        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
-        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
-```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(10636,306,<268,8>,<273,29>)
-```
- assertEquals(1,pr.executeUpdate());
-        rs = pr.getGeneratedKeys();
-        assertNotNull("RETURN_GENERATED_KEYS", rs);
-        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
-        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
         assertRowCount(1,rs);
 ```
-Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(10636,275,<268,8>,<272,74>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(11049,177,<276,8>,<279,72>)
 ```
- assertEquals(1,pr.executeUpdate());
+ pr.execute();
         rs = pr.getGeneratedKeys();
         assertNotNull("RETURN_GENERATED_KEYS", rs);
-        assertEquals("ColumnCount",1,rs.getMetaData().getColumnCount());
-        assertEquals("ColumnCount","i",rs.getMetaData().getColumnName(1));
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/Table.java|(12314,314,<357,6>,<364,7>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8196,188,<176,8>,<179,49>)
 ```
- // first check if another connection has a lock before creating a table lock
-						if(locks.size() > 0){
-							Iterator values = locks.values().iterator();
-							while(values.hasNext()){
-								TableStorePage lock = (TableStorePage)values.next();
-								if(lock.con != con) return null;
-							}
-						}
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/Table.java|(12418,210,<358,26>,<364,7>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,169,<223,2>,<227,13>)
 ```
- {
-							Iterator values = locks.values().iterator();
-							while(values.hasNext()){
-								TableStorePage lock = (TableStorePage)values.next();
-								if(lock.con != con) return null;
-							}
-						}
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,186,<182,8>,<185,47>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,154,<223,2>,<226,43>)
+```
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
 ```
 
 =-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(21308,369,<834,3>,<834,372>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10261,245,<221,2>,<227,13>)
 ```
- {SQLTokenizer.getKeyWord(SQLTokenizer.BIT),             Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.BIT) ),             Utils.getInteger(1),      	null, null, null, 				Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null,          Boolean.FALSE, Boolean.FALSE, null, Utils.getInteger(0), Utils.getInteger(0), null, null, null}
+ pr.setObject( 1, testValue.small);
+		pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(24201,347,<842,3>,<842,350>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,169,<223,2>,<227,13>)
 ```
- {SQLTokenizer.getKeyWord(SQLTokenizer.CHAR),         	 Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.CHAR) ),         	  Utils.getInteger(65535),   	"'",  "'",  "length", 			Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null, 			Boolean.FALSE, Boolean.FALSE, null, null, 				 null, 				  null, null, null}
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(22433,348,<837,3>,<837,351>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,207,<222,2>,<227,13>)
 ```
- {SQLTokenizer.getKeyWord(SQLTokenizer.LONGVARBINARY),   Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.LONGVARBINARY) ),   Utils.getInteger(2147483647),	"0x", null, null, 		 		Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null, 			Boolean.FALSE, Boolean.FALSE, null, null, 				 null, 				  null, null, null}
+ pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+		pr.close();
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(23493,348,<840,3>,<840,351>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8196,188,<176,8>,<179,49>)
 ```
- {SQLTokenizer.getKeyWord(SQLTokenizer.LONGVARCHAR),     Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.LONGVARCHAR) ),     Utils.getInteger(2147483647),	"'",  "'",  null, 		 		Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), null, 			Boolean.FALSE, Boolean.FALSE, null, null, 				 null, 				  null, null, null}
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
 ```
-Location: |project://smallsql0.21_src/src/smallsql/database/SSDatabaseMetaData.java|(24908,379,<844,3>,<844,382>)
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10299,192,<222,2>,<226,43>)
 ```
- {SQLTokenizer.getKeyWord(SQLTokenizer.NUMERIC),         Utils.getShort(SQLTokenizer.getSQLDataType( SQLTokenizer.NUMERIC) ),         Utils.getInteger(38),     	null, null, "precision,scale", 	Utils.getShort(typeNullable), Boolean.FALSE, Utils.getShort(typeSearchable), Boolean.FALSE, Boolean.FALSE, Boolean.FALSE, null, Utils.getInteger(0), Utils.getInteger(38),null, null, null}
+ pr.setObject( 2, testValue.large);
+		rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(10337,154,<223,2>,<226,43>)
+```
+ rs = pr.executeQuery();
+		assertTrue( "To few rows", rs.next() );
+		assertTrue( "To few rows", rs.next() );
+		assertFalse( "To many rows", rs.next() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(8477,237,<182,8>,<186,49>)
+```
+ assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertTrue( "To few rows", rs.next() );
+        assertFalse( "To many rows", rs.next() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(8234,185,<216,8>,<219,29>)
+```
+ rs = st.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(11049,208,<276,8>,<280,29>)
+```
+ pr.execute();
+        rs = pr.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
+        assertRowCount(1,rs);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestStatement.java|(11049,177,<276,8>,<279,72>)
+```
+ pr.execute();
+        rs = pr.getGeneratedKeys();
+        assertNotNull("RETURN_GENERATED_KEYS", rs);
+        assertEquals("ColumnCount",2,rs.getMetaData().getColumnCount());
 ```
 

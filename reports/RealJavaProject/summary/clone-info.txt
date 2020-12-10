@@ -1,4 +1,23 @@
 
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 29.06976744%
+*****************************
+** Number of clone classes:
+** 2
+*****************************
+** Number of clones:
+** 5
+*****************************
+** Size (SLOC) of largest clone: 
+** 13
+*****************************
+** The largest clones:
+** {|project://RealJavaProject/src/com/example/DuplicationTwoExample.java|(101,219,<5,37>,<17,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -74,6 +93,25 @@ Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(4
 ```
 
 
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 29.06976744%
+*****************************
+** Number of clone classes:
+** 2
+*****************************
+** Number of clones:
+** 5
+*****************************
+** Size (SLOC) of largest clone: 
+** 13
+*****************************
+** The largest clones:
+** {|project://RealJavaProject/src/com/example/DuplicationTwoExample.java|(65,255,<5,1>,<17,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
@@ -149,8 +187,61 @@ Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(4
 ```
 
 
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 15.11627907%
+*****************************
+** Number of clone classes:
+** 1
+*****************************
+** Number of clones:
+** 2
+*****************************
+** Size (SLOC) of largest clone: 
+** 13
+*****************************
+** The largest clones:
+** {|project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)}
+*****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)
+```
+ public void testAgainstOtherClass() {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>)
+```
+ {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+```
+
