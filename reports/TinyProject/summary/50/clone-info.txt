@@ -332,33 +332,483 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(41,474,<3,1>,<18
 ****************************************
 *****************************
 ** Clone percentage
-** 0.%
+** 277.4193548%
 *****************************
 ** Number of clone classes:
-** 0
+** 1
 *****************************
 ** Number of clones:
-** 0
+** 16
 *****************************
 ** Size (SLOC) of largest clone: 
-** 0
+** 16
 *****************************
 ** The largest clones:
-** {}
+** {|project://TinyProject/src/DuplicationExamples.java|(78,438,<4,37>,<19,2>),|project://TinyProject/src/DuplicationExamples.java|(42,474,<4,1>,<19,2>)}
 ** The largest clones in code:
 ** 
+** largest clone number: 1
+** {
+		boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+	}
+**
+
+** largest clone number: 2
+** public void testAgainstOtherClass() {
+		boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+	}
+**
+
 *****************************
 ** The largest clone classes in SLOC:
-** 0
+** 172
 *****************************
 ** The largest clone classes (loc):
-** {}
+** {[|project://TinyProject/src/DuplicationExamples.java|(42,474,<4,1>,<19,2>),|project://TinyProject/src/DuplicationExamples.java|(83,178,<5,2>,<11,38>),|project://TinyProject/src/DuplicationExamples.java|(83,298,<5,2>,<14,38>),|project://TinyProject/src/DuplicationExamples.java|(105,356,<6,2>,<16,38>),|project://TinyProject/src/DuplicationExamples.java|(105,276,<6,2>,<14,38>),|project://TinyProject/src/DuplicationExamples.java|(83,338,<5,2>,<15,38>),|project://TinyProject/src/DuplicationExamples.java|(83,378,<5,2>,<16,38>),|project://TinyProject/src/DuplicationExamples.java|(105,316,<6,2>,<15,38>),|project://TinyProject/src/DuplicationExamples.java|(105,396,<6,2>,<17,38>),|project://TinyProject/src/DuplicationExamples.java|(83,418,<5,2>,<17,38>),|project://TinyProject/src/DuplicationExamples.java|(105,407,<6,2>,<18,9>),|project://TinyProject/src/DuplicationExamples.java|(78,438,<4,37>,<19,2>),|project://TinyProject/src/DuplicationExamples.java|(83,258,<5,2>,<13,38>),|project://TinyProject/src/DuplicationExamples.java|(105,236,<6,2>,<13,38>),|project://TinyProject/src/DuplicationExamples.java|(105,196,<6,2>,<12,38>),|project://TinyProject/src/DuplicationExamples.java|(83,218,<5,2>,<12,38>)]}
 *****************************
 ** The largest clone classes in code:
 ** 
+** largest clone class number: 1
+** public void testAgainstOtherClass() {
+		boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+	}
+**
+boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+**
+{
+		boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+	}
+**
+boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+**
+
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://TinyProject/src/DuplicationExamples.java|(42,474,<4,1>,<19,2>)
+```
+ public void testAgainstOtherClass() {
+		boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+	}
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(83,178,<5,2>,<11,38>)
+```
+ boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(83,298,<5,2>,<14,38>)
+```
+ boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(105,356,<6,2>,<16,38>)
+```
+ if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(105,276,<6,2>,<14,38>)
+```
+ if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(83,338,<5,2>,<15,38>)
+```
+ boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(83,378,<5,2>,<16,38>)
+```
+ boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(105,316,<6,2>,<15,38>)
+```
+ if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(105,396,<6,2>,<17,38>)
+```
+ if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(83,418,<5,2>,<17,38>)
+```
+ boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(105,407,<6,2>,<18,9>)
+```
+ if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(78,438,<4,37>,<19,2>)
+```
+ {
+		boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		return;
+	}
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(83,258,<5,2>,<13,38>)
+```
+ boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(105,236,<6,2>,<13,38>)
+```
+ if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(105,196,<6,2>,<12,38>)
+```
+ if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(83,218,<5,2>,<12,38>)
+```
+ boolean b = false;
+		if (b && true) {
+			System.out.println("This is true");
+		} 
+		b = false;
+		System.out.println("This is false");
+		System.out.println("This is false");
+		System.out.println("This is false");
+```
+

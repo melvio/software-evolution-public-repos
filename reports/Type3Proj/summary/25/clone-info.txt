@@ -148,33 +148,88 @@ Location: |project://Type3Proj/src/org/Type3.java|(301,72,<19,2>,<21,20>)
 ****************************************
 *****************************
 ** Clone percentage
-** 0.%
+** 60.%
 *****************************
 ** Number of clone classes:
-** 0
+** 2
 *****************************
 ** Number of clones:
-** 0
+** 5
 *****************************
 ** Size (SLOC) of largest clone: 
-** 0
+** 3
 *****************************
 ** The largest clones:
-** {}
+** {|project://Type3Proj/src/org/Type3.java|(123,72,<9,2>,<11,20>),|project://Type3Proj/src/org/Type3.java|(72,48,<6,2>,<8,20>)}
 ** The largest clones in code:
 ** 
+** largest clone number: 1
+** int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+**
+
+** largest clone number: 2
+** int x = 3;
+		int y = 3 + x;
+		int z = 3 + x + y;
+**
+
 *****************************
 ** The largest clone classes in SLOC:
-** 0
+** 7
 *****************************
 ** The largest clone classes (loc):
-** {}
+** {[|project://Type3Proj/src/org/Type3.java|(123,72,<9,2>,<11,20>),|project://Type3Proj/src/org/Type3.java|(123,51,<9,2>,<10,28>),|project://Type3Proj/src/org/Type3.java|(148,47,<10,2>,<11,20>)]}
 *****************************
 ** The largest clone classes in code:
 ** 
+** largest clone class number: 1
+** int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+**
+int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+**
+int b = 3 + x + y + z + a;
+		return s.length();
+**
+
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type3Proj/src/org/Type3.java|(72,48,<6,2>,<8,20>)
+```
+ int x = 3;
+		int y = 3 + x;
+		int z = 3 + x + y;
+```
+Location: |project://Type3Proj/src/org/Type3.java|(85,35,<7,2>,<8,20>)
+```
+ int y = 3 + x;
+		int z = 3 + x + y;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type3Proj/src/org/Type3.java|(123,72,<9,2>,<11,20>)
+```
+ int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+		return s.length();
+```
+Location: |project://Type3Proj/src/org/Type3.java|(123,51,<9,2>,<10,28>)
+```
+ int a = 3 + x + y + z;
+		int b = 3 + x + y + z + a;
+```
+Location: |project://Type3Proj/src/org/Type3.java|(148,47,<10,2>,<11,20>)
+```
+ int b = 3 + x + y + z + a;
+		return s.length();
+```
+

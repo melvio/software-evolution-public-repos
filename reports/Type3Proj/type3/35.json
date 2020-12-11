@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "name": "/src/org/Type3.java",
+    "clone_data": "<div class=\"youjustclickedon\">You're looking at the page for the file: Type3.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://Type3Proj/src/org/Type3.java|(123,72,<9,2>,<11,20>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/Type3Proj/src/org/Type3.java#L9-L11 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> int a = 3 + x + y + z;\n\t\tint b = 3 + x + y + z + a;\n\t\treturn s.length();\n</div></code></pre><div class=\"cloneloc\">Location: |project://Type3Proj/src/org/Type3.java|(123,51,<9,2>,<10,28>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/Type3Proj/src/org/Type3.java#L9-L10 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> int a = 3 + x + y + z;\n\t\tint b = 3 + x + y + z + a;\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/org/Type3.java"
+    ]
+  }
+]

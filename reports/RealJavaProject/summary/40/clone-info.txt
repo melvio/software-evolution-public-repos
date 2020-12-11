@@ -338,33 +338,695 @@ Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(4
 ****************************************
 *****************************
 ** Clone percentage
-** 0.%
+** 167.4418605%
 *****************************
 ** Number of clone classes:
-** 0
+** 8
 *****************************
 ** Number of clones:
-** 0
+** 46
 *****************************
 ** Size (SLOC) of largest clone: 
-** 0
+** 13
 *****************************
 ** The largest clones:
-** {}
+** {|project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)}
 ** The largest clones in code:
 ** 
+** largest clone number: 1
+** {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+**
+
+** largest clone number: 2
+** public void testAgainstOtherClass() {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+**
+
 *****************************
 ** The largest clone classes in SLOC:
-** 0
+** 38
 *****************************
 ** The largest clone classes (loc):
-** {}
+** {[|project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)],[|project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)],[|project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)],[|project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)]}
 *****************************
 ** The largest clone classes in code:
 ** 
+** largest clone class number: 1
+** public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+{
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+
+** largest clone class number: 2
+** public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+{
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+
+** largest clone class number: 3
+** public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+{
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+
+** largest clone class number: 4
+** public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+**
+System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+{
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+**
+System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+**
+System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+**
+
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>)
+```
+ public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>)
+```
+ System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)
+```
+ {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>)
+```
+ public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)
+```
+ {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>)
+```
+ public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)
+```
+ {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>)
+```
+ System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>)
+```
+ public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>)
+```
+ System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)
+```
+ {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>)
+```
+ public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>)
+```
+ System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)
+```
+ {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)
+```
+ public void testAgainstOtherClass() {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>)
+```
+ {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(1000,149,<45,2>,<52,3>)
+```
+ for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)
+```
+ public void testAgainstOtherClass() {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(1000,149,<45,2>,<52,3>)
+```
+ for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>)
+```
+ {
+		if (true) {
+			System.out.println("This is true");
+		} 
+		for (int i = 0; i < 10; i++) {
+			if (true) {
+				System.out.println("True!");
+			}
+			if (true) {
+				System.out.println("True 2!");
+			}
+		}
+	}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(64,197,<5,1>,<12,2>)
+```
+ public void duplicate() {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,136,<6,2>,<10,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(93,108,<6,2>,<9,26>)
+```
+ System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,108,<7,2>,<10,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(149,108,<8,2>,<11,26>)
+```
+ System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(121,136,<7,2>,<11,26>)
+```
+ System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+```
+Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(88,173,<5,25>,<12,2>)
+```
+ {
+		System.out.println("1");
+		System.out.println("2");
+		System.out.println("3");
+		System.out.println("4");
+		System.out.println("5");
+		System.out.println("6");
+	}
+```
+

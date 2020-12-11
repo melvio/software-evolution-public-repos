@@ -236,33 +236,650 @@ Location: |project://Type2Clones/src/testt/VariableClone.java|(276,108,<17,2>,<2
 ****************************************
 *****************************
 ** Clone percentage
-** 0.%
+** 290.%
 *****************************
 ** Number of clone classes:
-** 0
+** 4
 *****************************
 ** Number of clones:
-** 0
+** 24
 *****************************
 ** Size (SLOC) of largest clone: 
-** 0
+** 13
 *****************************
 ** The largest clones:
-** {}
+** {|project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>),|project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>)}
 ** The largest clones in code:
 ** 
+** largest clone number: 1
+** // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+
+** largest clone number: 2
+** {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+
 *****************************
 ** The largest clone classes in SLOC:
-** 0
+** 58
 *****************************
 ** The largest clone classes (loc):
-** {}
+** {[|project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>),|project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>),|project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>),|project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)],[|project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>),|project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>),|project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>),|project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)],[|project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>),|project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>),|project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>),|project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)],[|project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>),|project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>),|project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>),|project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)]}
 *****************************
 ** The largest clone classes in code:
 ** 
+** largest clone class number: 1
+** // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+{
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+
+** largest clone class number: 2
+** // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+{
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+
+** largest clone class number: 3
+** // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+{
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+
+** largest clone class number: 4
+** // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+{
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+**
+if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+**
+
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>)
+```
+ // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>)
+```
+ {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>)
+```
+ if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)
+```
+ if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>)
+```
+ // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>)
+```
+ if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>)
+```
+ {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)
+```
+ if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>)
+```
+ // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>)
+```
+ {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>)
+```
+ if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)
+```
+ if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>)
+```
+ // method clone
+	public int imatype2clone(String x) {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(84,327,<5,2>,<15,3>)
+```
+ if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(80,334,<4,36>,<16,2>)
+```
+ {
+		if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.startsWith("hiya mom")){
+			return (x + x).length();
+		} else if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+	}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>)
+```
+ if (x.endsWith("hiyaa dad")) {
+			return x.length() * 2;
+		} else if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+Location: |project://Type2Clones/src/FirstClone.java|(286,125,<11,9>,<15,3>)
+```
+ if (x.contains("hiyaa sis")) {
+			return x.length() + x.length();
+		} else {
+			return x.length() * 5 - (x+x+x).length();
+		}
+```
+

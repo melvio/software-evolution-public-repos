@@ -332,33 +332,118 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(41,474,<3,1>,<18
 ****************************************
 *****************************
 ** Clone percentage
-** 0.%
+** 45.16129032%
 *****************************
 ** Number of clone classes:
-** 0
+** 1
 *****************************
 ** Number of clones:
-** 0
+** 3
 *****************************
 ** Size (SLOC) of largest clone: 
-** 0
+** 10
 *****************************
 ** The largest clones:
-** {}
+** {|project://TinyProject/src/DuplicationExamples.java|(582,316,<23,6>,<32,38>)}
 ** The largest clones in code:
 ** 
+** largest clone number: 1
+** String monthString;
+	     switch (month) {
+	         case 11: monthString = "November";
+	                  break;
+	         case 12: monthString = "December";
+	                  break;
+	         default: monthString = "Invalid month";
+	                  break;
+	     }
+	     System.out.println(monthString);
+**
+
 *****************************
 ** The largest clone classes in SLOC:
-** 0
+** 28
 *****************************
 ** The largest clone classes (loc):
-** {}
+** {[|project://TinyProject/src/DuplicationExamples.java|(582,316,<23,6>,<32,38>),|project://TinyProject/src/DuplicationExamples.java|(582,276,<23,6>,<31,7>),|project://TinyProject/src/DuplicationExamples.java|(609,289,<24,6>,<32,38>)]}
 *****************************
 ** The largest clone classes in code:
 ** 
+** largest clone class number: 1
+** String monthString;
+	     switch (month) {
+	         case 11: monthString = "November";
+	                  break;
+	         case 12: monthString = "December";
+	                  break;
+	         default: monthString = "Invalid month";
+	                  break;
+	     }
+	     System.out.println(monthString);
+**
+String monthString;
+	     switch (month) {
+	         case 11: monthString = "November";
+	                  break;
+	         case 12: monthString = "December";
+	                  break;
+	         default: monthString = "Invalid month";
+	                  break;
+	     }
+**
+switch (month) {
+	         case 11: monthString = "November";
+	                  break;
+	         case 12: monthString = "December";
+	                  break;
+	         default: monthString = "Invalid month";
+	                  break;
+	     }
+	     System.out.println(monthString);
+**
+
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://TinyProject/src/DuplicationExamples.java|(582,316,<23,6>,<32,38>)
+```
+ String monthString;
+	     switch (month) {
+	         case 11: monthString = "November";
+	                  break;
+	         case 12: monthString = "December";
+	                  break;
+	         default: monthString = "Invalid month";
+	                  break;
+	     }
+	     System.out.println(monthString);
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(582,276,<23,6>,<31,7>)
+```
+ String monthString;
+	     switch (month) {
+	         case 11: monthString = "November";
+	                  break;
+	         case 12: monthString = "December";
+	                  break;
+	         default: monthString = "Invalid month";
+	                  break;
+	     }
+```
+Location: |project://TinyProject/src/DuplicationExamples.java|(609,289,<24,6>,<32,38>)
+```
+ switch (month) {
+	         case 11: monthString = "November";
+	                  break;
+	         case 12: monthString = "December";
+	                  break;
+	         default: monthString = "Invalid month";
+	                  break;
+	     }
+	     System.out.println(monthString);
+```
+
