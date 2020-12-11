@@ -1,16 +1,1 @@
-[
-  {
-    "name": "/src/org/main/a/OverFile1Type1.java",
-    "clone_data": "<div class=\"youjustclickedon\">You're looking at the page for the file: OverFile1Type1.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(119,143,<7,2>,<13,3>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/DifferentTypesProject/src/org/main/a/OverFile1Type1.java#L7-L13 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> if (x + y > 3 || x + y < -2) {\n\t\t\tSystem.exit(10);\n\t\t\treturn new Integer(0);\n\t\t} else {\n\t\t\tThread.sleep(1337);\n\t\t\treturn new Error(\"oeps\");\n\t\t}\n</div></code></pre></div>\n",
-    "clone_sisters": [
-      "/src/org/main/a/OverFile1Type1.java"
-    ]
-  },
-  {
-    "name": "/src/org/main/a/Type2Clone.java",
-    "clone_data": "<div class=\"youjustclickedon\">You're looking at the page for the file: Type2Clone.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/DifferentTypesProject/src/org/main/a/Type2Clone.java#L11-L21 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> long f() {\n\t\tFunction<String, String> funcEmpToString = (String s) -> {\n\t\t\treturn s + s;\n\t\t};\n\t\tList<String> employeeList = Arrays.asList(new String(\"Tom Jones\"), new String(\"Harry Major\"),\n\t\t\t\tnew String(\"Ethan Hardy\"), new String(\"Nancy Smith\"), new String(\"Deborah Sprightly\"));\n\t\tList<String> empNameList = Collections.emptyList();\n\t\tempNameList.forEach(System.out::println);\n\n\t\treturn 1;\n\t}\n</div></code></pre><div class=\"cloneloc\">Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(201,386,<11,10>,<21,2>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/DifferentTypesProject/src/org/main/a/Type2Clone.java#L11-L21 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> {\n\t\tFunction<String, String> funcEmpToString = (String s) -> {\n\t\t\treturn s + s;\n\t\t};\n\t\tList<String> employeeList = Arrays.asList(new String(\"Tom Jones\"), new String(\"Harry Major\"),\n\t\t\t\tnew String(\"Ethan Hardy\"), new String(\"Nancy Smith\"), new String(\"Deborah Sprightly\"));\n\t\tList<String> empNameList = Collections.emptyList();\n\t\tempNameList.forEach(System.out::println);\n\n\t\treturn 1;\n\t}\n</div></code></pre></div>\n",
-    "clone_sisters": [
-      "/src/org/main/a/Type2Clone.java"
-    ]
-  }
-]
+[]

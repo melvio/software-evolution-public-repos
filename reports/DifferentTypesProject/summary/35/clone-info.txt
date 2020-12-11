@@ -32,6 +32,8 @@
 			}
 
 		}
+**
+
 ** largest clone number: 2
 ** for (int i = 0 ; i < x ; x = x + y, y = x + y) {
 			if (x > y) {
@@ -45,8 +47,10 @@
 			}
 
 		}
+**
+
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 22
 *****************************
 ** The largest clone classes (loc):
@@ -66,7 +70,9 @@
 				break;
 			}
 
-		}for (int i = 0 ; i < x ; x = x + y, y = x + y) {
+		}
+**
+for (int i = 0 ; i < x ; x = x + y, y = x + y) {
 			if (x > y) {
 				continue;
 			} else if (x * y > x || true) {
@@ -78,6 +84,8 @@
 			}
 
 		}
+**
+
 *****************************
  
 ==============================================
@@ -195,6 +203,8 @@ public class OverFile1Type1 {
 
 }
 
+**
+
 ** largest clone number: 2
 ** package org.main.a;
 
@@ -214,8 +224,10 @@ public class OverFile2Type1 {
 
 }
 
+**
+
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 24
 *****************************
 ** The largest clone classes (loc):
@@ -240,6 +252,8 @@ public class OverFile1Type1 {
 	}
 
 }
+
+**
 package org.main.a;
 
 public class OverFile2Type1 {
@@ -257,6 +271,8 @@ public class OverFile2Type1 {
 	}
 
 }
+
+**
 
 *****************************
  
@@ -343,61 +359,33 @@ public class OverFile2Type1 {
 ****************************************
 *****************************
 ** Clone percentage
-** 8.536585366%
+** 0.%
 *****************************
 ** Number of clone classes:
-** 1
+** 0
 *****************************
 ** Number of clones:
-** 1
+** 0
 *****************************
 ** Size (SLOC) of largest clone: 
-** 7
+** 0
 *****************************
 ** The largest clones:
-** {|project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(119,143,<7,2>,<13,3>)}
+** {}
 ** The largest clones in code:
 ** 
-** largest clone number: 1
-** if (x + y > 3 || x + y < -2) {
-			System.exit(10);
-			return new Integer(0);
-		} else {
-			Thread.sleep(1337);
-			return new Error("oeps");
-		}
 *****************************
-** The largest clone SLOC:
-** 7
+** The largest clone classes in SLOC:
+** 0
 *****************************
 ** The largest clone classes (loc):
-** {[|project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(119,143,<7,2>,<13,3>)]}
+** {}
 *****************************
 ** The largest clone classes in code:
 ** 
-** largest clone class number: 1
-** if (x + y > 3 || x + y < -2) {
-			System.exit(10);
-			return new Integer(0);
-		} else {
-			Thread.sleep(1337);
-			return new Error("oeps");
-		}
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(119,143,<7,2>,<13,3>)
-```
- if (x + y > 3 || x + y < -2) {
-			System.exit(10);
-			return new Integer(0);
-		} else {
-			Thread.sleep(1337);
-			return new Error("oeps");
-		}
-```
-

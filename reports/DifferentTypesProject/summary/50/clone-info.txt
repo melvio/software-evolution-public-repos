@@ -32,6 +32,8 @@
 			}
 
 		}
+**
+
 ** largest clone number: 2
 ** for (int i = 0 ; i < x ; x = x + y, y = x + y) {
 			if (x > y) {
@@ -45,8 +47,10 @@
 			}
 
 		}
+**
+
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 22
 *****************************
 ** The largest clone classes (loc):
@@ -66,7 +70,9 @@
 				break;
 			}
 
-		}for (int i = 0 ; i < x ; x = x + y, y = x + y) {
+		}
+**
+for (int i = 0 ; i < x ; x = x + y, y = x + y) {
 			if (x > y) {
 				continue;
 			} else if (x * y > x || true) {
@@ -78,6 +84,8 @@
 			}
 
 		}
+**
+
 *****************************
  
 ==============================================
@@ -183,6 +191,8 @@ public class OverFile1Type1 {
 
 }
 
+**
+
 ** largest clone number: 2
 ** package org.main.a;
 
@@ -202,8 +212,10 @@ public class OverFile2Type1 {
 
 }
 
+**
+
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 24
 *****************************
 ** The largest clone classes (loc):
@@ -228,6 +240,8 @@ public class OverFile1Type1 {
 	}
 
 }
+
+**
 package org.main.a;
 
 public class OverFile2Type1 {
@@ -245,6 +259,8 @@ public class OverFile2Type1 {
 	}
 
 }
+
+**
 
 *****************************
  
@@ -331,121 +347,33 @@ public class OverFile2Type1 {
 ****************************************
 *****************************
 ** Clone percentage
-** 32.92682927%
+** 0.%
 *****************************
 ** Number of clone classes:
-** 2
+** 0
 *****************************
 ** Number of clones:
-** 3
+** 0
 *****************************
 ** Size (SLOC) of largest clone: 
-** 10
+** 0
 *****************************
 ** The largest clones:
-** {|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>),|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(201,386,<11,10>,<21,2>)}
+** {}
 ** The largest clones in code:
 ** 
-** largest clone number: 1
-** long f() {
-		Function<String, String> funcEmpToString = (String s) -> {
-			return s + s;
-		};
-		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
-				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
-		List<String> empNameList = Collections.emptyList();
-		empNameList.forEach(System.out::println);
-
-		return 1;
-	}
-** largest clone number: 2
-** {
-		Function<String, String> funcEmpToString = (String s) -> {
-			return s + s;
-		};
-		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
-				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
-		List<String> empNameList = Collections.emptyList();
-		empNameList.forEach(System.out::println);
-
-		return 1;
-	}
 *****************************
-** The largest clone SLOC:
-** 20
+** The largest clone classes in SLOC:
+** 0
 *****************************
 ** The largest clone classes (loc):
-** {[|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>),|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(201,386,<11,10>,<21,2>)]}
+** {}
 *****************************
 ** The largest clone classes in code:
 ** 
-** largest clone class number: 1
-** long f() {
-		Function<String, String> funcEmpToString = (String s) -> {
-			return s + s;
-		};
-		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
-				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
-		List<String> empNameList = Collections.emptyList();
-		empNameList.forEach(System.out::println);
-
-		return 1;
-	}{
-		Function<String, String> funcEmpToString = (String s) -> {
-			return s + s;
-		};
-		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
-				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
-		List<String> empNameList = Collections.emptyList();
-		empNameList.forEach(System.out::println);
-
-		return 1;
-	}
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>)
-```
- long f() {
-		Function<String, String> funcEmpToString = (String s) -> {
-			return s + s;
-		};
-		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
-				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
-		List<String> empNameList = Collections.emptyList();
-		empNameList.forEach(System.out::println);
-
-		return 1;
-	}
-```
-Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(201,386,<11,10>,<21,2>)
-```
- {
-		Function<String, String> funcEmpToString = (String s) -> {
-			return s + s;
-		};
-		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
-				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
-		List<String> empNameList = Collections.emptyList();
-		empNameList.forEach(System.out::println);
-
-		return 1;
-	}
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://DifferentTypesProject/src/org/main/a/OverFile1Type1.java|(119,143,<7,2>,<13,3>)
-```
- if (x + y > 3 || x + y < -2) {
-			System.exit(10);
-			return new Integer(0);
-		} else {
-			Thread.sleep(1337);
-			return new Error("oeps");
-		}
-```
-

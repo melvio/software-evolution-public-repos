@@ -1,7 +1,7 @@
 [
   {
     "clonetype": "Combined",
-    "percentage": 101.25
+    "percentage": 75.0
   },
   {
     "clonetype": "Type 1",
@@ -13,6 +13,6 @@
   },
   {
     "clonetype": "Type 3",
-    "percentage": 26.25
+    "percentage": 0.0
   }
 ]

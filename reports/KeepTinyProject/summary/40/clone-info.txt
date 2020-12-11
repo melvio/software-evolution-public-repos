@@ -20,7 +20,7 @@
 ** The largest clones in code:
 ** 
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 0
 *****************************
 ** The largest clone classes (loc):
@@ -56,7 +56,7 @@
 ** The largest clones in code:
 ** 
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 0
 *****************************
 ** The largest clone classes (loc):
@@ -92,7 +92,7 @@
 ** The largest clones in code:
 ** 
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 0
 *****************************
 ** The largest clone classes (loc):

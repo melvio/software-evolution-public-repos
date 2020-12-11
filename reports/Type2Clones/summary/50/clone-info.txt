@@ -20,7 +20,7 @@
 ** The largest clones in code:
 ** 
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 0
 *****************************
 ** The largest clone classes (loc):
@@ -70,6 +70,8 @@
 			return y.length() * 5 - (y+y+y).length();
 		}
 	}
+**
+
 ** largest clone number: 2
 ** // method clone
 	public int imatype2clone(String x) {
@@ -85,8 +87,10 @@
 			return x.length() * 5 - (x+x+x).length();
 		}
 	}
+**
+
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 26
 *****************************
 ** The largest clone classes (loc):
@@ -108,7 +112,9 @@
 		} else {
 			return x.length() * 5 - (x+x+x).length();
 		}
-	}// method clone
+	}
+**
+// method clone
 	public int imatype2clonetoo(String y) {
 		if (y.startsWith("hiya mom")){
 			return (y + y).length();
@@ -122,6 +128,8 @@
 			return y.length() * 5 - (y+y+y).length();
 		}
 	}
+**
+
 *****************************
  
 ==============================================
@@ -228,83 +236,33 @@ Location: |project://Type2Clones/src/testt/VariableClone.java|(276,108,<17,2>,<2
 ****************************************
 *****************************
 ** Clone percentage
-** 20.%
+** 0.%
 *****************************
 ** Number of clone classes:
-** 1
+** 0
 *****************************
 ** Number of clones:
-** 2
+** 0
 *****************************
 ** Size (SLOC) of largest clone: 
-** 9
+** 0
 *****************************
 ** The largest clones:
-** {|project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)}
+** {}
 ** The largest clones in code:
 ** 
-** largest clone number: 1
-** if (x.startsWith("hiya mom")){
-			return (x + x).length();
-		} else if (x.endsWith("hiyaa dad")) {
-			return x.length() * 2;
-		} else if (x.contains("hiyaa sis")) {
-			return x.length() + x.length();
-		} else {
-			return x.length() * 5 - (x+x+x).length();
-		}
 *****************************
-** The largest clone SLOC:
-** 16
+** The largest clone classes in SLOC:
+** 0
 *****************************
 ** The largest clone classes (loc):
-** {[|project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>),|project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>)]}
+** {}
 *****************************
 ** The largest clone classes in code:
 ** 
-** largest clone class number: 1
-** if (x.startsWith("hiya mom")){
-			return (x + x).length();
-		} else if (x.endsWith("hiyaa dad")) {
-			return x.length() * 2;
-		} else if (x.contains("hiyaa sis")) {
-			return x.length() + x.length();
-		} else {
-			return x.length() * 5 - (x+x+x).length();
-		}if (x.endsWith("hiyaa dad")) {
-			return x.length() * 2;
-		} else if (x.contains("hiyaa sis")) {
-			return x.length() + x.length();
-		} else {
-			return x.length() * 5 - (x+x+x).length();
-		}
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://Type2Clones/src/FirstClone.java|(152,259,<7,9>,<15,3>)
-```
- if (x.startsWith("hiya mom")){
-			return (x + x).length();
-		} else if (x.endsWith("hiyaa dad")) {
-			return x.length() * 2;
-		} else if (x.contains("hiyaa sis")) {
-			return x.length() + x.length();
-		} else {
-			return x.length() * 5 - (x+x+x).length();
-		}
-```
-Location: |project://Type2Clones/src/FirstClone.java|(220,191,<9,9>,<15,3>)
-```
- if (x.endsWith("hiyaa dad")) {
-			return x.length() * 2;
-		} else if (x.contains("hiyaa sis")) {
-			return x.length() + x.length();
-		} else {
-			return x.length() * 5 - (x+x+x).length();
-		}
-```
-

@@ -36,6 +36,8 @@
 		System.out.println("This is false");
 		return;
 	}
+**
+
 ** largest clone number: 2
 ** {
 		boolean b = false;
@@ -53,8 +55,10 @@
 		System.out.println("This is false");
 		return;
 	}
+**
+
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 32
 *****************************
 ** The largest clone classes (loc):
@@ -78,7 +82,9 @@
 		System.out.println("This is false");
 		System.out.println("This is false");
 		return;
-	}{
+	}
+**
+{
 		boolean b = false;
 		if (b && true) {
 			System.out.println("This is true");
@@ -94,6 +100,8 @@
 		System.out.println("This is false");
 		return;
 	}
+**
+
 *****************************
  
 ==============================================
@@ -206,6 +214,8 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(77,438,<3,37>,<1
 		System.out.println("This is false");
 		return;
 	}
+**
+
 ** largest clone number: 2
 ** public void testAgainstOtherClass() {
 		boolean b = false;
@@ -223,8 +233,10 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(77,438,<3,37>,<1
 		System.out.println("This is false");
 		return;
 	}
+**
+
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 32
 *****************************
 ** The largest clone classes (loc):
@@ -248,7 +260,9 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(77,438,<3,37>,<1
 		System.out.println("This is false");
 		System.out.println("This is false");
 		return;
-	}public void testAgainstOtherClass() {
+	}
+**
+public void testAgainstOtherClass() {
 		boolean b = false;
 		if (b && true) {
 			System.out.println("This is true");
@@ -264,6 +278,8 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(77,438,<3,37>,<1
 		System.out.println("This is false");
 		return;
 	}
+**
+
 *****************************
  
 ==============================================
@@ -332,7 +348,7 @@ Location: |project://TinyProject/src/DuplicationExamples2.java|(41,474,<3,1>,<18
 ** The largest clones in code:
 ** 
 *****************************
-** The largest clone SLOC:
+** The largest clone classes in SLOC:
 ** 0
 *****************************
 ** The largest clone classes (loc):
