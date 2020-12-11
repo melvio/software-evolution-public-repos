@@ -372,255 +372,33 @@ Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(4
 ****************************************
 *****************************
 ** Clone percentage
-** 59.30232558%
+** 0.%
 *****************************
 ** Number of clone classes:
-** 3
+** 0
 *****************************
 ** Number of clones:
-** 10
+** 0
 *****************************
 ** Size (SLOC) of largest clone: 
-** 13
+** 0
 *****************************
 ** The largest clones:
-** {|project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)}
+** {}
 ** The largest clones in code:
 ** 
-** largest clone number: 1
-** {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-**
-
-** largest clone number: 2
-** public void testAgainstOtherClass() {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-**
-
 *****************************
 ** The largest clone classes in SLOC:
-** 42
+** 0
 *****************************
 ** The largest clone classes (loc):
-** {[|project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(1000,149,<45,2>,<52,3>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>),|project://RealJavaProject/src/com/example/DuplicationExamples.java|(1029,120,<45,31>,<52,3>)]}
+** {}
 *****************************
 ** The largest clone classes in code:
 ** 
-** largest clone class number: 1
-** public void testAgainstOtherClass() {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-**
-for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-**
-{
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-**
-{
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-**
-
 *****************************
  
 ==============================================
 ====== Start of clone classes printing ======= 
 ======             Type: 3             ======= 
 ==============================================
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://RealJavaProject/src/com/duplication/DuplicationExamples2.java|(0,227,<1,0>,<12,3>)
-```
- package com.duplication;
-
-public class DuplicationExamples2 {
-	
-	public void testAgainstOtherClass() {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		System.out.println("This is false");
-		return;
-	}
-}
-
-```
-Location: |project://RealJavaProject/src/com/duplication/DuplicationExamples2.java|(69,153,<5,1>,<11,2>)
-```
- public void testAgainstOtherClass() {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		System.out.println("This is false");
-		return;
-	}
-```
-Location: |project://RealJavaProject/src/com/duplication/DuplicationExamples2.java|(28,197,<3,0>,<12,1>)
-```
- public class DuplicationExamples2 {
-	
-	public void testAgainstOtherClass() {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		System.out.println("This is false");
-		return;
-	}
-}
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)
-```
- public void testAgainstOtherClass() {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-```
-Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>)
-```
- {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-```
-Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(1000,149,<45,2>,<52,3>)
-```
- for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-```
-
-=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
-Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(898,255,<41,1>,<53,2>)
-```
- public void testAgainstOtherClass() {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-```
-Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(1000,149,<45,2>,<52,3>)
-```
- for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-```
-Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(934,219,<41,37>,<53,2>)
-```
- {
-		if (true) {
-			System.out.println("This is true");
-		} 
-		for (int i = 0; i < 10; i++) {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-	}
-```
-Location: |project://RealJavaProject/src/com/example/DuplicationExamples.java|(1029,120,<45,31>,<52,3>)
-```
- {
-			if (true) {
-				System.out.println("True!");
-			}
-			if (true) {
-				System.out.println("True 2!");
-			}
-		}
-```
-
