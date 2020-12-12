@@ -1,0 +1,192 @@
+
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.%
+*****************************
+** Number of clone classes:
+** 0
+*****************************
+** Number of clones:
+** 0
+*****************************
+** Size (SLOC) of largest clone: 
+** 0
+*****************************
+** The largest clones:
+** {}
+** The largest clones in code:
+** 
+*****************************
+** The largest clone classes in SLOC:
+** 0
+*****************************
+** The largest clone classes (loc):
+** {}
+*****************************
+** The largest clone classes in code:
+** 
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 1             ======= 
+==============================================
+
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 24.39024390%
+*****************************
+** Number of clone classes:
+** 1
+*****************************
+** Number of clones:
+** 2
+*****************************
+** Size (SLOC) of largest clone: 
+** 10
+*****************************
+** The largest clones:
+** {|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(590,351,<23,1>,<33,2>),|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>)}
+** The largest clones in code:
+** 
+** largest clone number: 1
+** int g() {
+		Function<String, String> f = (String e) -> {
+			return e + e;
+		};
+		List<String> l = Arrays.asList(new String("Tom Jones"), new String("Harry Major"), new String("Ethan Hardy"),
+				new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> l2 = Collections.emptyList();
+		l2.forEach(System.out::println);
+
+		return 1;
+	}
+**
+
+** largest clone number: 2
+** long f() {
+		Function<String, String> funcEmpToString = (String s) -> {
+			return s + s;
+		};
+		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
+				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> empNameList = Collections.emptyList();
+		empNameList.forEach(System.out::println);
+
+		return 1;
+	}
+**
+
+*****************************
+** The largest clone classes in SLOC:
+** 20
+*****************************
+** The largest clone classes (loc):
+** {[|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>),|project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(590,351,<23,1>,<33,2>)]}
+*****************************
+** The largest clone classes in code:
+** 
+** largest clone class number: 1
+** long f() {
+		Function<String, String> funcEmpToString = (String s) -> {
+			return s + s;
+		};
+		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
+				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> empNameList = Collections.emptyList();
+		empNameList.forEach(System.out::println);
+
+		return 1;
+	}
+**
+int g() {
+		Function<String, String> f = (String e) -> {
+			return e + e;
+		};
+		List<String> l = Arrays.asList(new String("Tom Jones"), new String("Harry Major"), new String("Ethan Hardy"),
+				new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> l2 = Collections.emptyList();
+		l2.forEach(System.out::println);
+
+		return 1;
+	}
+**
+
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 2             ======= 
+==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(192,395,<11,1>,<21,2>)
+```
+ long f() {
+		Function<String, String> funcEmpToString = (String s) -> {
+			return s + s;
+		};
+		List<String> employeeList = Arrays.asList(new String("Tom Jones"), new String("Harry Major"),
+				new String("Ethan Hardy"), new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> empNameList = Collections.emptyList();
+		empNameList.forEach(System.out::println);
+
+		return 1;
+	}
+```
+Location: |project://DifferentTypesProject/src/org/main/a/Type2Clone.java|(590,351,<23,1>,<33,2>)
+```
+ int g() {
+		Function<String, String> f = (String e) -> {
+			return e + e;
+		};
+		List<String> l = Arrays.asList(new String("Tom Jones"), new String("Harry Major"), new String("Ethan Hardy"),
+				new String("Nancy Smith"), new String("Deborah Sprightly"));
+		List<String> l2 = Collections.emptyList();
+		l2.forEach(System.out::println);
+
+		return 1;
+	}
+```
+
+
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.%
+*****************************
+** Number of clone classes:
+** 0
+*****************************
+** Number of clones:
+** 0
+*****************************
+** Size (SLOC) of largest clone: 
+** 0
+*****************************
+** The largest clones:
+** {}
+** The largest clones in code:
+** 
+*****************************
+** The largest clone classes in SLOC:
+** 0
+*****************************
+** The largest clone classes (loc):
+** {}
+*****************************
+** The largest clone classes in code:
+** 
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 3             ======= 
+==============================================
