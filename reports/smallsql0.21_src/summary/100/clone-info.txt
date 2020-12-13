@@ -1,0 +1,949 @@
+
+****************************************
+******** Type 1 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 1.191280838%
+*****************************
+** Number of clone classes:
+** 11
+*****************************
+** Number of clones:
+** 22
+*****************************
+** Size (SLOC) of largest clone: 
+** 19
+*****************************
+** The largest clones:
+** {|project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(2976,966,<85,8>,<107,48>),|project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(4893,966,<128,8>,<150,48>)}
+** The largest clones in code:
+** 
+** largest clone number: 1
+** assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        assertFalse("next", rs.next() );
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+        
+        assertTrue("first", rs.first() );
+        assertEquals("getRow", 1, rs.getRow() );
+        
+        assertFalse("previous", rs.previous() );
+        assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        
+        rs.afterLast();
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+**
+
+** largest clone number: 2
+** assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        assertFalse("next", rs.next() );
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+        
+        assertTrue("first", rs.first() );
+        assertEquals("getRow", 1, rs.getRow() );
+        
+        assertFalse("previous", rs.previous() );
+        assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        
+        rs.afterLast();
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+**
+
+*****************************
+** The largest clone classes in SLOC:
+** 38
+*****************************
+** The largest clone classes (loc):
+** {[|project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(2976,966,<85,8>,<107,48>),|project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(4893,966,<128,8>,<150,48>)]}
+*****************************
+** The largest clone classes in code:
+** 
+** largest clone class number: 1
+** assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        assertFalse("next", rs.next() );
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+        
+        assertTrue("first", rs.first() );
+        assertEquals("getRow", 1, rs.getRow() );
+        
+        assertFalse("previous", rs.previous() );
+        assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        
+        rs.afterLast();
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+**
+assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        assertFalse("next", rs.next() );
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+        
+        assertTrue("first", rs.first() );
+        assertEquals("getRow", 1, rs.getRow() );
+        
+        assertFalse("previous", rs.previous() );
+        assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        
+        rs.afterLast();
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+**
+
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 1             ======= 
+==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(2976,966,<85,8>,<107,48>)
+```
+ assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        assertFalse("next", rs.next() );
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+        
+        assertTrue("first", rs.first() );
+        assertEquals("getRow", 1, rs.getRow() );
+        
+        assertFalse("previous", rs.previous() );
+        assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        
+        rs.afterLast();
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestResultSet.java|(4893,966,<128,8>,<150,48>)
+```
+ assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        assertFalse("next", rs.next() );
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+        
+        assertTrue("first", rs.first() );
+        assertEquals("getRow", 1, rs.getRow() );
+        
+        assertFalse("previous", rs.previous() );
+        assertEquals("getRow", 0, rs.getRow() );
+        assertTrue("isBeforeFirst", rs.isBeforeFirst() );
+        assertFalse("isAfterLast", rs.isAfterLast() );
+        
+        assertTrue("last", rs.last() );
+        assertEquals("getRow", 1, rs.getRow() );
+        assertTrue("isLast", rs.isLast() );
+        
+        rs.afterLast();
+        assertFalse("isBeforeFirst", rs.isBeforeFirst() );
+        assertTrue("isAfterLast", rs.isAfterLast() );
+        assertEquals("getRow", 0, rs.getRow() );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(9446,379,<338,2>,<351,36>)
+```
+ assertTrue( rs.next() );
+		
+		oldValue = (Integer)rs.getObject("i");
+		assertNull(oldValue);
+		assertTrue( rs.next() );
+		oldValue = (Integer)rs.getObject("i");
+		
+		int count = 1;
+		while(rs.next()){
+			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
+			oldValue = (Integer)rs.getObject("i");
+			count++;
+		}
+		assertEquals( valueCount, count );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(11549,379,<423,2>,<436,36>)
+```
+ assertTrue( rs.next() );
+		
+		oldValue = (Integer)rs.getObject("i");
+		assertNull(oldValue);
+		assertTrue( rs.next() );
+		oldValue = (Integer)rs.getObject("i");
+		
+		int count = 1;
+		while(rs.next()){
+			assertTrue( oldValue.compareTo( (Integer)rs.getObject("i") ) < 0 );
+			oldValue = (Integer)rs.getObject("i");
+			count++;
+		}
+		assertEquals( valueCount, count );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3576,237,<102,48>,<109,2>)
+```
+ {
+		StringBuffer buf = new StringBuffer(bytes.length << 1);
+		for(int i=0; i<bytes.length; i++){
+			buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+			buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+		}
+		return buf.toString();
+	}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(6369,282,<205,43>,<212,5>)
+```
+ {
+        StringBuffer buf = new StringBuffer(bytes.length << 1);
+        for(int i=0; i<bytes.length; i++){
+            buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+            buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+        }
+        return buf.toString();
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(17470,585,<422,13>,<433,37>)
+```
+ pr.setDouble(  8 , 23.45 );
+	            pr.setDouble(  9 , 567.45 );
+	            pr.setFloat (  10 , (float)78.89 );
+	            pr.setTime  (  11, new Time( System.currentTimeMillis() ) );
+	            pr.setShort (  12, (short)23456 );
+	            pr.setFloat (  13, (float)34.56 );
+	            pr.setString(  14, "sysname (30) NULL" );
+	            pr.setString(  15 , "text NULL" );
+	            pr.setByte  (  16, (byte)28 );
+	            pr.setBytes (  17, byteArray );
+	            pr.setString(  18, "varchar (255) NULL" );
+	            pr.setInt   (  19 , i );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(22756,629,<530,17>,<541,41>)
+```
+ pr.setDouble(  8 , 23.45 );
+	                pr.setDouble(  9 , 567.45 );
+	                pr.setFloat (  10 , (float)78.89 );
+	                pr.setTime  (  11, new Time( System.currentTimeMillis() ) );
+	                pr.setShort (  12, (short)23456 );
+	                pr.setFloat (  13, (float)34.56 );
+	                pr.setString(  14, "sysname (30) NULL" );
+	                pr.setString(  15 , "text NULL" );
+	                pr.setByte  (  16, (byte)28 );
+	                pr.setBytes (  17, byteArray );
+	                pr.setString(  18, "varchar (255) NULL" );
+	                pr.setInt   (  19 , i );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(6193,386,<207,2>,<222,36>)
+```
+ assertTrue( rs.next() );
+		oldValue = rs.getString("v");
+		
+		int count = 1;
+		while(oldValue != null && rs.next()){
+			String newValue = rs.getString("v");
+			if(newValue != null){
+				assertTrue( oldValue.compareTo( newValue ) > 0 );
+				count++;
+			}
+			oldValue = newValue;
+		}
+		assertNull(oldValue);
+		assertFalse( rs.next() );
+
+		assertEquals( valueCount, count );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(6879,386,<235,2>,<250,36>)
+```
+ assertTrue( rs.next() );
+		oldValue = rs.getString("v");
+		
+		int count = 1;
+		while(oldValue != null && rs.next()){
+			String newValue = rs.getString("v");
+			if(newValue != null){
+				assertTrue( oldValue.compareTo( newValue ) > 0 );
+				count++;
+			}
+			oldValue = newValue;
+		}
+		assertNull(oldValue);
+		assertFalse( rs.next() );
+
+		assertEquals( valueCount, count );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(9409,376,<331,4>,<341,50>)
+```
+ //there are more entries in this node
+				result |= (((long)nextEntry) << shift);
+				if(listEnum.stack>=3){
+					listEnum.offsetStack[listEnum.stack] = offset;
+					return result;
+				}
+				listEnum.offsetStack[listEnum.stack] = offset+pointerSize;
+				offset = getPointer();
+				shift -= 16;
+				listEnum.stack++;
+				listEnum.resultStack[listEnum.stack] = result;
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/LongTreeList.java|(10726,377,<376,4>,<386,50>)
+```
+ // there are more entries in this node
+				result |= (((long)nextEntry) << shift);
+				if(listEnum.stack>=3){
+					listEnum.offsetStack[listEnum.stack] = offset;
+					return result;
+				}
+				listEnum.offsetStack[listEnum.stack] = offset+pointerSize;
+				offset = getPointer();
+				shift -= 16;
+				listEnum.stack++;
+				listEnum.resultStack[listEnum.stack] = result;
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(8907,817,<262,3>,<274,76>)
+```
+ assertEquals( 1, con.createStatement().executeUpdate("Update transactions set v='qwert1'") );
+			assertEqualsRsValue("qwert1", "Select * from transactions");
+			assertEqualsRsValue(new Integer(1), "Select count(*) from transactions");
+			
+            assertEquals( 1, con.createStatement().executeUpdate("Update transactions set v='qwert2'") );
+            assertEqualsRsValue("qwert2", "Select * from transactions");
+            assertEqualsRsValue(new Integer(1), "Select count(*) from transactions");
+            
+			Savepoint savepoint = con.setSavepoint();
+			
+			assertEquals( 1, con.createStatement().executeUpdate("Update transactions set v='qwert 3'") );
+			assertEqualsRsValue("qwert 3", "Select * from transactions");
+			assertEqualsRsValue(new Integer(1), "Select count(*) from transactions");
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestTransactions.java|(10897,847,<305,12>,<317,85>)
+```
+ assertEquals(1, con.createStatement().executeUpdate("Update transactions set v='qwert1'"));
+            assertEqualsRsValue("qwert1", "Select * from transactions");
+            assertEqualsRsValue(new Integer(1), "Select count(*) from transactions");
+
+            assertEquals(1, con.createStatement().executeUpdate("Update transactions set v='qwert2'"));
+            assertEqualsRsValue("qwert2", "Select * from transactions");
+            assertEqualsRsValue(new Integer(1), "Select count(*) from transactions");
+
+            Savepoint savepoint = con.setSavepoint();
+
+            assertEquals(1, con.createStatement().executeUpdate("Update transactions set v='qwert 3'"));
+            assertEqualsRsValue("qwert 3", "Select * from transactions");
+            assertEqualsRsValue(new Integer(1), "Select count(*) from transactions");
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionRound.java|(1636,311,<46,2>,<60,3>)
+```
+ if(isNull()) return 0;
+		final int places = param2.getInt();
+		double value = param1.getDouble();
+		long factor = 1;
+		if(places > 0){
+			for(int i=0; i<places; i++){
+				factor *= 10;
+			}
+			value *= factor;
+		}else{
+			for(int i=0; i>places; i--){
+				factor *= 10;
+			}
+			value /= factor;
+		}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/ExpressionFunctionTruncate.java|(1645,311,<46,2>,<60,3>)
+```
+ if(isNull()) return 0;
+		final int places = param2.getInt();
+		double value = param1.getDouble();
+		long factor = 1;
+		if(places > 0){
+			for(int i=0; i<places; i++){
+				factor *= 10;
+			}
+			value *= factor;
+		}else{
+			for(int i=0; i>places; i--){
+				factor *= 10;
+			}
+			value /= factor;
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(18762,470,<707,2>,<725,36>)
+```
+ //jetzt irgendwo in die Mitte scrollen
+		rs.next();
+		rs.next();
+		rs.previous(); //dann soll der Zeiger nicht am Ende des bereits gefetchten stehen
+		
+		rs.last();
+		count = 0;
+		while(rs.previous()) count++;		
+		assertEquals( valueCount, count );
+
+		rs.beforeFirst();
+		count = -1;
+		while(rs.next()) count++;		
+		assertEquals( valueCount, count );
+
+		rs.beforeFirst();
+		count = -1;
+		while(rs.next()) count++;		
+		assertEquals( valueCount, count );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOrderBy.java|(19578,470,<738,2>,<756,36>)
+```
+ //jetzt irgendwo in die Mitte scrollen
+		rs.next();
+		rs.next();
+		rs.previous(); //dann soll der Zeiger nicht am Ende des bereits gefetchten stehen
+		
+		rs.last();
+		count = 0;
+		while(rs.previous()) count++;		
+		assertEquals( valueCount, count );
+
+		rs.beforeFirst();
+		count = -1;
+		while(rs.next()) count++;		
+		assertEquals( valueCount, count );
+
+		rs.beforeFirst();
+		count = -1;
+		while(rs.next()) count++;		
+		assertEquals( valueCount, count );
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(26188,386,<618,12>,<625,52>)
+```
+ java.io.FileOutputStream fos = new java.io.FileOutputStream(tableName+".bin");
+            byte bytes[] = new byte[1024];
+            for(int i=0; i<rowCount; i++){
+                fos.write(bytes);
+            }
+            fos.close();
+            java.io.FileInputStream fis = new java.io.FileInputStream(tableName+".bin");
+            long time = -System.currentTimeMillis();
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(27620,386,<655,12>,<662,52>)
+```
+ java.io.FileOutputStream fos = new java.io.FileOutputStream(tableName+".bin");
+            byte bytes[] = new byte[1024];
+            for(int i=0; i<rowCount; i++){
+                fos.write(bytes);
+            }
+            fos.close();
+            java.io.FileInputStream fis = new java.io.FileInputStream(tableName+".bin");
+            long time = -System.currentTimeMillis();
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(17112,904,<415,13>,<432,55>)
+```
+ pr.setBytes (  1, byteArray );
+	            pr.setString(  2 , "Test" );
+	            pr.setDate  (  3 , new Date( System.currentTimeMillis() ) );
+	            pr.setFloat (  4, (float)1234.56789 );
+	            pr.setFloat (  5 , (float)9876.54321 );
+	            pr.setBytes (  6, largeByteArray );
+	            pr.setInt   (  7 , i );
+	            pr.setDouble(  8 , 23.45 );
+	            pr.setDouble(  9 , 567.45 );
+	            pr.setFloat (  10 , (float)78.89 );
+	            pr.setTime  (  11, new Time( System.currentTimeMillis() ) );
+	            pr.setShort (  12, (short)23456 );
+	            pr.setFloat (  13, (float)34.56 );
+	            pr.setString(  14, "sysname (30) NULL" );
+	            pr.setString(  15 , "text NULL" );
+	            pr.setByte  (  16, (byte)28 );
+	            pr.setBytes (  17, byteArray );
+	            pr.setString(  18, "varchar (255) NULL" );
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BenchTest.java|(19913,904,<469,13>,<486,55>)
+```
+ pr.setBytes (  1, byteArray );
+	            pr.setString(  2 , "Test" );
+	            pr.setDate  (  3 , new Date( System.currentTimeMillis() ) );
+	            pr.setFloat (  4, (float)1234.56789 );
+	            pr.setFloat (  5 , (float)9876.54321 );
+	            pr.setBytes (  6, largeByteArray );
+	            pr.setInt   (  7 , i );
+	            pr.setDouble(  8 , 23.45 );
+	            pr.setDouble(  9 , 567.45 );
+	            pr.setFloat (  10 , (float)78.89 );
+	            pr.setTime  (  11, new Time( System.currentTimeMillis() ) );
+	            pr.setShort (  12, (short)23456 );
+	            pr.setFloat (  13, (float)34.56 );
+	            pr.setString(  14, "sysname (30) NULL" );
+	            pr.setString(  15 , "text NULL" );
+	            pr.setByte  (  16, (byte)28 );
+	            pr.setBytes (  17, byteArray );
+	            pr.setString(  18, "varchar (255) NULL" );
+```
+
+
+****************************************
+******** Type 2 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.6632308212%
+*****************************
+** Number of clone classes:
+** 8
+*****************************
+** Number of clones:
+** 18
+*****************************
+** Size (SLOC) of largest clone: 
+** 23
+*****************************
+** The largest clones:
+** {|project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6284,837,<128,69>,<156,5>)}
+** The largest clones in code:
+** 
+** largest clone number: 1
+** {
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+    }
+**
+
+*****************************
+** The largest clone classes in SLOC:
+** 44
+*****************************
+** The largest clone classes (loc):
+** {[|project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6284,837,<128,69>,<156,5>),|project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5879,815,<115,12>,<141,25>)]}
+*****************************
+** The largest clone classes in code:
+** 
+** largest clone class number: 1
+** {
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+    }
+**
+pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+**
+
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 2             ======= 
+==============================================
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(8442,320,<183,8>,<184,44>)
+```
+ int[] colTypes = {Types.VARCHAR, Types.NULL, Types.VARCHAR, Types.VARCHAR, Types.SMALLINT, Types.VARCHAR, Types.INTEGER, Types.NULL, Types.INTEGER, Types.INTEGER, Types.INTEGER, Types.NULL, Types.VARCHAR, Types.NULL, Types.NULL, Types.INTEGER, Types.INTEGER, Types.VARCHAR};
+		assertRSMetaData( rs, colNames, colTypes);
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(10017,331,<211,8>,<212,49>)
+```
+ int[] colTypes = {Types.VARCHAR, Types.SMALLINT, Types.INTEGER, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.SMALLINT, Types.BOOLEAN, Types.SMALLINT, Types.BOOLEAN, Types.BOOLEAN, Types.BOOLEAN, Types.NULL, Types.INTEGER, Types.INTEGER, Types.NULL, Types.NULL, Types.NULL };
+        assertRSMetaData(rs, colNames, colTypes);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Language/Language.java|(12108,343,<292,33>,<306,2>)
+```
+ {
+		Set inserted = new HashSet(); // for duplicates checking
+		
+		for (int i = 0; i < entries.length; i++) {
+			String key = entries[i][0];
+			
+			if (! inserted.add(key)) {
+				throw new IllegalArgumentException("Duplicate key: " + key);
+			}
+			else {
+				String value = entries[i][1];
+				messages.put(key, value);
+			}
+		}
+	}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Language/Language.java|(12780,353,<318,35>,<332,2>)
+```
+ {
+		Set inserted = new HashSet(); // for duplicates checking
+		
+		for (int i = 0; i < SQL_STATES.length; i++) {
+			String key = SQL_STATES[i][0];
+			
+			if (! inserted.add(key)) {
+				throw new IllegalArgumentException("Duplicate key: " + key);
+			}
+			else {
+				String value = SQL_STATES[i][1];
+				sqlStates.put(key, value);
+			}
+		}
+	}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(3529,284,<102,1>,<109,2>)
+```
+ private static String bytes2hex( byte[] bytes ){
+		StringBuffer buf = new StringBuffer(bytes.length << 1);
+		for(int i=0; i<bytes.length; i++){
+			buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+			buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+		}
+		return buf.toString();
+	}
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(6330,321,<205,4>,<212,5>)
+```
+ static String bytes2hex( byte[] bytes ){
+        StringBuffer buf = new StringBuffer(bytes.length << 1);
+        for(int i=0; i<bytes.length; i++){
+            buf.append( digits[ (bytes[i] >> 4) & 0x0F ] );
+            buf.append( digits[ (bytes[i]     ) & 0x0F ] );
+        }
+        return buf.toString();
+    }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(4356,498,<125,8>,<137,9>)
+```
+ if(needTrim && obj1 != null){
+            // trim for CHAR and BINARY
+            if(obj1 instanceof String) obj1 = ((String)obj1).trim();
+            if(obj1 instanceof byte[]){
+                byte[] tmp = (byte[])obj1;
+                int k=tmp.length-1;
+                for(; k>= 0; k--) if(tmp[k] != 0) break;
+                k++;
+                byte[] tmp2 = new byte[k];
+                System.arraycopy( tmp, 0, tmp2, 0, k);
+                obj1 = tmp2;
+            }
+        }
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/BasicTestCase.java|(4858,372,<138,2>,<150,3>)
+```
+ if(needTrim && obj2 != null){
+			// trim for CHAR and BINARY
+			if(obj2 instanceof String) obj2 = ((String)obj2).trim();
+			if(obj2 instanceof byte[]){
+				byte[] tmp = (byte[])obj2;
+				int k=tmp.length-1;
+				for(; k>= 0; k--) if(tmp[k] != 0) break;
+				k++;
+				byte[] tmp2 = new byte[k];
+				System.arraycopy( tmp, 0, tmp2, 0, k);
+				obj2 = tmp2;
+			}
+		}
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/MemoryStream.java|(2273,349,<77,2>,<84,37>)
+```
+ puffer[ offset++ ] = (byte)(value >> 56);
+		puffer[ offset++ ] = (byte)(value >> 48);
+		puffer[ offset++ ] = (byte)(value >> 40);
+		puffer[ offset++ ] = (byte)(value >> 32);
+		puffer[ offset++ ] = (byte)(value >> 24);
+		puffer[ offset++ ] = (byte)(value >> 16);
+		puffer[ offset++ ] = (byte)(value >> 8);
+		puffer[ offset++ ] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Money.java|(3400,325,<119,2>,<126,34>)
+```
+ bytes[offset++] = (byte)(value >> 56);
+		bytes[offset++] = (byte)(value >> 48);
+		bytes[offset++] = (byte)(value >> 40);
+		bytes[offset++] = (byte)(value >> 32);
+		bytes[offset++] = (byte)(value >> 24);
+		bytes[offset++] = (byte)(value >> 16);
+		bytes[offset++] = (byte)(value >> 8);
+		bytes[offset++] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/StoreImpl.java|(13972,375,<392,8>,<399,41>)
+```
+ page[ offset++ ] = (byte)(value >> 56);
+        page[ offset++ ] = (byte)(value >> 48);
+        page[ offset++ ] = (byte)(value >> 40);
+        page[ offset++ ] = (byte)(value >> 32);
+        page[ offset++ ] = (byte)(value >> 24);
+        page[ offset++ ] = (byte)(value >> 16);
+        page[ offset++ ] = (byte)(value >> 8);
+        page[ offset++ ] = (byte)(value);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/Utils.java|(5534,319,<179,8>,<186,34>)
+```
+ result[0] = (byte)(value >> 56);
+        result[1] = (byte)(value >> 48);
+        result[2] = (byte)(value >> 40);
+        result[3] = (byte)(value >> 32);
+        result[4] = (byte)(value >> 24);
+        result[5] = (byte)(value >> 16);
+        result[6] = (byte)(value >> 8);
+        result[7] = (byte)(value);
+```
+Location: |project://smallsql0.21_src/src/smallsql/database/Identity.java|(2300,277,<71,2>,<78,28>)
+```
+ page[ 0 ] = (byte)(value >> 56);
+		page[ 1 ] = (byte)(value >> 48);
+		page[ 2 ] = (byte)(value >> 40);
+		page[ 3 ] = (byte)(value >> 32);
+		page[ 4 ] = (byte)(value >> 24);
+		page[ 5 ] = (byte)(value >> 16);
+		page[ 6 ] = (byte)(value >> 8);
+		page[ 7 ] = (byte)(value);
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/database/SQLParser.java|(77660,504,<1969,28>,<1969,532>)
+```
+ MISSING_SQL_DATATYPE = { SQLTokenizer.SQL_BIGINT , SQLTokenizer.SQL_BINARY , SQLTokenizer.SQL_BIT , SQLTokenizer.SQL_CHAR , SQLTokenizer.SQL_DATE , SQLTokenizer.SQL_DECIMAL , SQLTokenizer.SQL_DOUBLE , SQLTokenizer.SQL_FLOAT , SQLTokenizer.SQL_INTEGER , SQLTokenizer.SQL_LONGVARBINARY , SQLTokenizer.SQL_LONGVARCHAR , SQLTokenizer.SQL_REAL , SQLTokenizer.SQL_SMALLINT , SQLTokenizer.SQL_TIME , SQLTokenizer.SQL_TIMESTAMP , SQLTokenizer.SQL_TINYINT , SQLTokenizer.SQL_VARBINARY , SQLTokenizer.SQL_VARCHAR }
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(8448,267,<183,14>,<183,281>)
+```
+ colTypes = {Types.VARCHAR, Types.NULL, Types.VARCHAR, Types.VARCHAR, Types.SMALLINT, Types.VARCHAR, Types.INTEGER, Types.NULL, Types.INTEGER, Types.INTEGER, Types.INTEGER, Types.NULL, Types.VARCHAR, Types.NULL, Types.NULL, Types.INTEGER, Types.INTEGER, Types.VARCHAR}
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestDBMetaData.java|(10023,273,<211,14>,<211,287>)
+```
+ colTypes = {Types.VARCHAR, Types.SMALLINT, Types.INTEGER, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.SMALLINT, Types.BOOLEAN, Types.SMALLINT, Types.BOOLEAN, Types.BOOLEAN, Types.BOOLEAN, Types.NULL, Types.INTEGER, Types.INTEGER, Types.NULL, Types.NULL, Types.NULL }
+```
+
+=-=-=-=-=-= Clone Class =-=-=-=-=-=-=
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestJoins.java|(6284,837,<128,69>,<156,5>)
+```
+ {
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+    }
+```
+Location: |project://smallsql0.21_src/src/smallsql/junit/TestOperatoren.java|(5879,815,<115,12>,<141,25>)
+```
+ pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.large);
+            pr.execute();
+
+            pr.setObject( 1, testValue.large);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, testValue.small);
+            pr.execute();
+
+            pr.setObject( 1, testValue.small);
+            pr.setObject( 2, null);
+            pr.execute();
+
+            pr.setObject( 1, null);
+            pr.setObject( 2, null);
+            pr.execute();
+```
+
+
+****************************************
+******** Type 3 clone detection ********
+****************************************
+*****************************
+** Clone percentage
+** 0.%
+*****************************
+** Number of clone classes:
+** 0
+*****************************
+** Number of clones:
+** 0
+*****************************
+** Size (SLOC) of largest clone: 
+** 0
+*****************************
+** The largest clones:
+** {}
+** The largest clones in code:
+** 
+*****************************
+** The largest clone classes in SLOC:
+** 0
+*****************************
+** The largest clone classes (loc):
+** {}
+*****************************
+** The largest clone classes in code:
+** 
+*****************************
+ 
+==============================================
+====== Start of clone classes printing ======= 
+======             Type: 3             ======= 
+==============================================

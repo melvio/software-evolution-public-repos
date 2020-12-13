@@ -1,0 +1,9 @@
+[
+  {
+    "name": "/src/FirstClone.java",
+    "clone_data": "<div class=\"youjustclickedon\">You're looking at the page for the file: FirstClone.java</div><div class=\"clonesurround\"><div class=\"cloneseparator\">\n=-=-=-=-=-= Clone Class =-=-=-=-=-=-=\n</div><div class=\"cloneloc\">Location: |project://Type2Clones/src/FirstClone.java|(28,386,<3,1>,<16,2>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/Type2Clones/src/FirstClone.java#L3-L16 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> // method clone\n\tpublic int imatype2clone(String x) {\n\t\tif (x.startsWith(\"hiya mom\")){\n\t\t\treturn (x + x).length();\n\t\t} else if (x.startsWith(\"hiya mom\")){\n\t\t\treturn (x + x).length();\n\t\t} else if (x.endsWith(\"hiyaa dad\")) {\n\t\t\treturn x.length() * 2;\n\t\t} else if (x.contains(\"hiyaa sis\")) {\n\t\t\treturn x.length() + x.length();\n\t\t} else {\n\t\t\treturn x.length() * 5 - (x+x+x).length();\n\t\t}\n\t}\n</div></code></pre><div class=\"cloneloc\">Location: |project://Type2Clones/src/FirstClone.java|(418,389,<18,1>,<31,2>)\n</div><div class=\"fixmenowurl\"><a href=https://github.com/melvio/software-evolution-public-repos/blob/main/projects/Type2Clones/src/FirstClone.java#L18-L31 target=\"_blank\">Click here to fix me now on GitHub!</a></div><div class=\"clonecode\"><pre><code> // method clone\n\tpublic int imatype2clonetoo(String y) {\n\t\tif (y.startsWith(\"hiya mom\")){\n\t\t\treturn (y + y).length();\n\t\t} else if (y.startsWith(\"hiya mom\")){\n\t\t\treturn (y + y).length();\n\t\t} else if (y.endsWith(\"hiyaa dad\")) {\n\t\t\treturn y.length() * 2;\n\t\t} else if (y.contains(\"hiyaa sis\")) {\n\t\t\treturn y.length() + y.length();\n\t\t} else {\n\t\t\treturn y.length() * 5 - (y+y+y).length();\n\t\t}\n\t}\n</div></code></pre></div>\n",
+    "clone_sisters": [
+      "/src/FirstClone.java"
+    ]
+  }
+]
